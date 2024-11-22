@@ -1,6 +1,6 @@
 ###### Created 22 Nov 2024
 
-# Ratio is now a Cardano DRep
+# Ratio is a Cardano DRep
 
 ##### Current Psuedonyms
 | `Ratio13 on Discord` |    | `St8tikRatio on Github` |
