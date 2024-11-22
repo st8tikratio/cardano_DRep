@@ -2,6 +2,8 @@
 
 ##### Current Psuedonyms
 ###### Ratio13 on Discord
+- ![img](https://github.com/st8tikratio/cardano_DRep/blob/main/discord.png)
+
 ###### St8tikRatio on Github
 
 ##### Former Psuedonyms and Platforms:
