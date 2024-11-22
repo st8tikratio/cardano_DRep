@@ -20,15 +20,20 @@
 
 ---
 
-## Code Of Conduct
+## Current Governance Actions
+- [Governance Actions](https://gov.tools/governance_actions)
+
+---
+
+## Personal Code Of Conduct
 
 > Coming Soon
 
 ---
 
-## Ethical Ideation
+## Personal Ethical Ideations
 
->Coming Soon
+> Coming Soon
 
 ---
 
