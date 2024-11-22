@@ -38,7 +38,7 @@
 
 ---
 
-## Community Discord Channels
+## Community Discord Membership
 - [Gimbalabs](https://discord.gg/76ZJzG6v97)
 - [Gamechanger](https://discord.gg/ZXJ9nZw4YB)
 - [The Hard Forq Cafe](https://discord.gg/HT6vJ45dZ7)
