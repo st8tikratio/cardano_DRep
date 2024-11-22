@@ -20,8 +20,9 @@
 
 ---
 
-## Current Governance Actions
-- [Governance Actions](https://gov.tools/governance_actions)
+##  Governance
+- [Current Governance Actions](https://gov.tools/governance_actions)
+- [Cardano Constitution Repo]()
 
 ---
 
