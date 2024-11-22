@@ -1,4 +1,4 @@
-# This is the DRep Repo for Ratio
+# Ratio is now a Cardano DRep
 
 ##### Former Psuedonyms and Platforms:
 ###### Ratio13 on Discord
