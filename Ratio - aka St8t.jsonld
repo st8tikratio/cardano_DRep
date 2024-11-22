@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Ratio - aka St8tik - aka St8tikRatio"
+    },
+    "motivations": {
+      "@value": "Heavily active from 2021-2022 in Cardano Catalyst, Catalyst United Discord server. Recently re-entered the community in October 2024. Hiatus was due to life events.\n\nNow, just as then, the motivation is to make Cardano a better blockchain. This means open, available and economically feasible and viable for members of all nationalities, ethnicities and locales. "
+    },
+    "objectives": {
+      "@value": "The Cardano Blockchain should be a blockchain for good, built out for all persons interested in its capacities and not just the plutocrats, whales and big-wallet holders.\n\nTransparency, auditability, accountability, equality and other first principles should apply to all those impacting the blockchain, development and parameters.\n\nAll community code, present and future, SHOULD BE 100% open-source without hidden  and closed-source API calls.\n\nThe community is prone to undue influence, self-interest at the expense of others, by many larger entities. Removing these traits and behaviors are top of mind and priority."
+    },
+    "paymentAddress": {
+      "@value": "addr1q8az39s44yazt46guyk6u9edevcgaywhufpk7t0zmn2srme5jhvwhffe090edsqn88jvw0jlppm5fy95rywf4h9g870qgk8hcw"
+    },
+    "qualifications": {
+      "@value": "Qualifications are a subjective measure of one's self-described knowledge. The Cardano blockchain does not proivide income and therefore personal gain will never be a motivating factor for decisions, discussions, or actions.\n\nActed as both a CA and VCA during Catalyst funding periods allowing insight into grifting, abuse and resistance by and from past persons and entities."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Github Repo"
+        },
+        "uri": {
+          "@value": "https://github.com/st8tikratio"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Github DRep Repo"
+        },
+        "uri": {
+          "@value": "https://github.com/st8tikratio/cardano_DRep/"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Discord User ID: 862387697619173376"
+        },
+        "uri": {
+          "@value": "www.discord.com"
+        }
+      }
+    ]
+  }
+}
