@@ -1,11 +1,9 @@
 # Ratio is now a Cardano DRep
 
 ##### Current Psuedonyms
-###### Ratio13 on Discord
-- ![img](https://github.com/st8tikratio/cardano_DRep/blob/main/discord.png)
-
-###### St8tikRatio on Github
-
+| `Ratio13 on Discord` |    | `St8tikRatio on Github` |
+| ------------------ | -- |--------------------- |
+|![img](https://github.com/st8tikratio/cardano_DRep/blob/main/ratio_discord_prof.jpeg) | | ![img](https://github.com/st8tikratio/cardano_DRep/blob/main/SR_Github_Prof.jpeg) |
 ##### Former Psuedonyms and Platforms:
 ###### St8tik on Twitter
 
