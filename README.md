@@ -11,7 +11,7 @@
 
 ---
 
-## Profile Links
+## DRep Profile
 - [Direct Link](https://gov.tools/drep_directory/drep1zagwghdf0q2yz0ra70p6zgvmug9zns2yxefygsfn6suq5qvgqq0)
 - [DRep Directory](https://gov.tools/drep_directory) and **search using:**
    1. **Name:** `ratio` OR `st8tik`
