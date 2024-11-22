@@ -1,14 +1,17 @@
 # Ratio is now a Cardano DRep
 
-##### Former Psuedonyms and Platforms:
+##### Current Psuedonyms
 ###### Ratio13 on Discord
-###### St8tik on Twitter
 ###### St8tikRatio on Github
+
+##### Former Psuedonyms and Platforms:
+###### St8tik on Twitter
 
 ---
 
 ## Profile Links
-- [Gov Tools Profile Page](https://gov.tools/connected/drep_directory/drep1zagwghdf0q2yz0ra70p6zgvmug9zns2yxefygsfn6suq5qvgqq0)
+- [DRep Directory](https://gov.tools/drep_directory)
+- **DRep ID:** `drep1zagwghdf0q2yz0ra70p6zgvmug9zns2yxefygsfn6suq5qvgqq0`
 - [JSON ID file](https://github.com/st8tikratio/cardano_DRep/blob/main/Ratio%20-%20aka%20St8t.jsonld)
 
 ---
