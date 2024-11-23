@@ -1,6 +1,6 @@
 ###### Created 22 Nov 2024
 
-# Ratio is a Cardano DRep
+# Ratio the DRep
 
 ## Contact
 - [RtD Discord Server](https://discord.gg/ru9BsJPs5F)
