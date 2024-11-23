@@ -45,7 +45,8 @@
 
 ---
 
-## Community Education (Completed & Incomplete)
+## Community Education 
+#### (Completed & Incomplete)
 - Emurgo Cardano Developer
 - Plutus Pioneer Program
 - Prism Pioneer Program
