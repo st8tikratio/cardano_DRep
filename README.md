@@ -33,13 +33,13 @@
 
 ---
 
-## Personal Code Of Conduct
+## DRep Code Of Conduct
 
 - Can be found [HERE](https://github.com/st8tikratio/cardano_DRep/blob/main/ratio-coc.md)
 
 ---
 
-## Personal Ethical Ideations
+## DRep Ethics
 
 > Coming Soon
 
