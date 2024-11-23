@@ -45,6 +45,13 @@
 
 ---
 
+## Community Education (Completed & Incomplete)
+- Emurgo Cardano Developer
+- Plutus Pioneer Program
+- Prism Pioneer Program
+
+---
+
 ## Community Initiatives
 - [Consitution Working Group - Gimbalabs](https://github.com/st8tikratio/Constitution_WG_2022)
   - this project originated from the Gimbalabs A0 Distribution Event circa early 2022
