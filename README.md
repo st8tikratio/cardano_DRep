@@ -3,7 +3,7 @@
 # Ratio is a Cardano DRep
 
 ## Contact
-- [RtD Discord Server]()
+- [RtD Discord Server](https://discord.gg/ru9BsJPs5F)
 
 ## Psuedonyms
 | `Ratio13 on Discord` |    | `St8tikRatio on Github` |
