@@ -44,6 +44,10 @@
 
 ---
 
+## Community Initiatives
+- [Consitution Working Group - Gimbalabs]()
+---
+
 ## Community Discord Membership
 - [Gimbalabs](https://discord.gg/76ZJzG6v97)
 - [Gamechanger](https://discord.gg/ZXJ9nZw4YB)
