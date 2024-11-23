@@ -13,7 +13,7 @@
 
 ## DRep Profile
 - [Direct Link](https://gov.tools/drep_directory/drep1zagwghdf0q2yz0ra70p6zgvmug9zns2yxefygsfn6suq5qvgqq0)
-- There are two **DRep Directories**
+- There are two ways to access the **DRep Directories**
   1. [DRep Directory #1 by Intersect MBO](https://gov.tools/drep_directory)
   2. [DRep Directory #2 by Lido Nation](https://www.1694.io/en/dreps/list)
 - Then search using the following:
