@@ -2,7 +2,10 @@
 
 # Ratio is a Cardano DRep
 
-##### Current Psuedonyms
+## Contact
+- [RtD Discord Server]()
+
+## Psuedonyms
 | `Ratio13 on Discord` |    | `St8tikRatio on Github` |
 | ------------------ | -- |--------------------- |
 |![img](https://github.com/st8tikratio/cardano_DRep/blob/main/ratio_discord_prof.jpeg) | | ![img](https://github.com/st8tikratio/cardano_DRep/blob/main/SR_Github_Prof.jpeg) |
