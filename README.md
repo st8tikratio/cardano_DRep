@@ -15,7 +15,8 @@
 ---
 
 ## DRep Profile
-- [Direct Link](https://gov.tools/drep_directory/drep1zagwghdf0q2yz0ra70p6zgvmug9zns2yxefygsfn6suq5qvgqq0)
+- [Direct link @ gov.tools](https://gov.tools/drep_directory/drep1zagwghdf0q2yz0ra70p6zgvmug9zns2yxefygsfn6suq5qvgqq0)
+- [Direct link @ 1694.io](https://www.1694.io/en/dreps/drep1zagwghdf0q2yz0ra70p6zgvmug9zns2yxefygsfn6suq5qvgqq0)
 - There are two ways to access the **DRep Directories**
   1. [DRep Directory #1 by Intersect MBO](https://gov.tools/drep_directory)
   2. [DRep Directory #2 by Lido Nation](https://www.1694.io/en/dreps/list)
@@ -45,7 +46,11 @@
 ---
 
 ## Community Initiatives
-- [Consitution Working Group - Gimbalabs]()
+- [Consitution Working Group - Gimbalabs](https://github.com/st8tikratio/Constitution_WG_2022)
+  - this project originated from the Gimbalabs A0 Distribution Event circa early 2022
+  - NFT wallet maintained by QuasarSure Enterprises
+  - With oversight from Ratio and Sym
+
 ---
 
 ## Community Discord Membership
