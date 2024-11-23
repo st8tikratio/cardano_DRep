@@ -31,7 +31,7 @@
 
 ## Personal Code Of Conduct
 
-- Can be found [HERE]()
+- Can be found [HERE](https://github.com/st8tikratio/cardano_DRep/blob/main/ratio-coc.md)
 
 ---
 
