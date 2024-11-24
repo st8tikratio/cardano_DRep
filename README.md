@@ -4,9 +4,27 @@
 
 ---
 
+## Why become a Cardano governance DRep?
+- To 'right the ship' and provide a counterbalance to those who are concerned with only themselves at the expense of others.
+- To be the voice for the voiceless, unseen, discounted, abandoned community members.
+- To push Cardano governance beyond one-ada/one-vote and tamp down on the plutocractic nature of blockchain.
+- To educate, discuss and debate through respectful discourse with all persons.
+- To provide transparency where this is none, where data is obscurely in the back corners of the community.
+- To vote or guide based on these principles:
+  - Transparency
+  - Equality
+  - Education
+  - Honesty
+  - Inclusivity
+  - Self-Sovereignty
+  - Decentralization
+  - Sustainability
+
+---
+
 ## Connect
 
-- You can connect with me in the **`Ratio the DRep (RtD)`** Discord server [here](https://discord.gg/ru9BsJPs5F)
+- You can connect with me in the [**`Ratio the DRep (RtD)`**](https://discord.gg/ru9BsJPs5F) Discord server by clicking [**`here`**](https://discord.gg/ru9BsJPs5F)
 
 ---
 
