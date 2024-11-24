@@ -2,17 +2,21 @@
 
 # Ratio the DRep (RtD)
 
-## Connect
-|`Platform`| `Identifier` |
-| ------ | ------ |
-| [`Discord - RtD Server`](https://discord.gg/ru9BsJPs5F)| [![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/RtD_Discord_Server_120H_IMG.jpeg)](https://discord.gg/ru9BsJPs5F)|
+---
 
-## Psuedonyms
-| `Ratio13 on Discord` |    | `St8tikRatio on Github` |
-| ------------------ | -- |--------------------- |
-|![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/Ratio13_Discord_Prof_450W_IMG.jpg) | | ![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/SR_Github_Prof_640H_IMG.jpeg) |
-##### Former Psuedonyms and Platforms:
-###### St8tik on Twitter
+## Connect
+
+- You can connect with me in the `Ratio the DRep` Discord server [here](https://discord.gg/ru9BsJPs5F)
+
+---
+
+## All Psuedonyms & Platforms
+| Platform                                          | Name/Title                                                  | Status              | Avatar/PVP |
+| ------------------                                | -----------------------                                     |-------------------- | ---------- |
+| [`Discord Server`](https://discord.gg/ru9BsJPs5F) | [`DRep & Governance Server`](https://discord.gg/ru9BsJPs5F) | **`ACTIVE`**        | [![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/RtD_Discord_Server_120H_IMG.jpeg)](https://discord.gg/ru9BsJPs5F)
+| `Discord`                                         | `Ratio13`                                                   | **`ACTIVE`**        | ![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/Ratio13_Discord_Avatar_120H.jpg)
+| [`Github`](https://github.com/st8tikratio)        |`st8tikratio`                                                | **`ACTIVE`**        | [![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/St8tikRatio_Github_Avatar_120H_IMG.jpg)](https://github.com/st8tikratio)
+| [`Twitter`](https://x.com)                                | `st8tik`                                                    | **`DELETED`**       | [![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/Twitter_Avatar_120H_IMG.jpg)](https://x.com)
 
 ---
 
@@ -37,7 +41,7 @@
 
 ## DRep Code Of Conduct
 
-- Can be found [HERE](https://github.com/st8tikratio/cardano_DRep/blob/main/ratio-coc.md)
+- Can be found [HERE](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/ratio_CoC.md)
 
 ---
 
@@ -47,11 +51,14 @@
 
 ---
 
-## Community Education 
+## Personal Education 
 #### (Completed & Incomplete)
 - Emurgo Cardano Developer
 - Plutus Pioneer Program
 - Prism Pioneer Program
+- A.S. Science
+- B.S. CIS minor in Psychology
+- M.S. CSIS
 
 ---
 
