@@ -6,12 +6,12 @@
 
 ## Connect
 
-- You can connect with me in the `Ratio the DRep` Discord server [here](https://discord.gg/ru9BsJPs5F)
+- You can connect with me in the **`Ratio the DRep (RtD)`** Discord server [here](https://discord.gg/ru9BsJPs5F)
 
 ---
 
 ## All Psuedonyms & Platforms
-| Platform                                          | Name/Title                                                  | Status              | Avatar/PVP |
+| Platform                                          | Name/Title                                                  | Status              | PP/Avatar/Icon     |
 | ------------------                                | -----------------------                                     |-------------------- | ---------- |
 | [`Discord Server`](https://discord.gg/ru9BsJPs5F) | [`DRep & Governance Server`](https://discord.gg/ru9BsJPs5F) | **`ACTIVE`**        | [![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/RtD_Discord_Server_120H_IMG.jpeg)](https://discord.gg/ru9BsJPs5F)
 | `Discord`                                         | `Ratio13`                                                   | **`ACTIVE`**        | ![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/Ratio13_Discord_Avatar_120H.jpg)
@@ -51,7 +51,7 @@
 
 ---
 
-## Personal Education 
+## Education 
 #### (Completed & Incomplete)
 - Emurgo Cardano Developer
 - Plutus Pioneer Program
@@ -60,6 +60,10 @@
 - B.S. CIS minor in Psychology
 - M.S. CSIS
 
+---
+
+## Employ
+- Retired ca 2005
 ---
 
 ## Community Initiatives
