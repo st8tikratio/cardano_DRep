@@ -6,7 +6,7 @@
 
 ## Why become a Cardano governance DRep?
 - To 'right the ship' and provide a counterbalance to those who are concerned with only themselves at the expense of others.
-- To be the voice for the voiceless, unseen, discounted, abandoned community members.
+- To be the voice for the voiceless, unseen, discounted, and abandoned community members.
 - To push Cardano governance beyond one-ada/one-vote and tamp down on the plutocractic nature of blockchain.
 - To educate, discuss and debate through respectful discourse with all persons.
 - To provide transparency where this is none, where data is obscurely in the back corners of the community.
