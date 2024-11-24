@@ -1,14 +1,16 @@
 ###### Created 22 Nov 2024
 
-# Ratio the DRep
+# Ratio the DRep (RtD)
 
 ## Connect
-![img|width=80](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/RtD_Discord_Server_180H_IMG.jpeg)[RtD Discord Server](https://discord.gg/ru9BsJPs5F)
+|`Platform`| `Identifier` |
+| ------ | ------ |
+| [`Discord - RtD Server`](https://discord.gg/ru9BsJPs5F)| [![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/RtD_Discord_Server_120H_IMG.jpeg)](https://discord.gg/ru9BsJPs5F)|
 
 ## Psuedonyms
 | `Ratio13 on Discord` |    | `St8tikRatio on Github` |
 | ------------------ | -- |--------------------- |
-|![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/Ratio13_Discord_Prof_640H_IMG.jpg) | | ![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/SR_Github_Prof_640H_IMG.jpeg) |
+|![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/Ratio13_Discord_Prof_450W_IMG.jpg) | | ![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/SR_Github_Prof_640H_IMG.jpeg) |
 ##### Former Psuedonyms and Platforms:
 ###### St8tik on Twitter
 
