@@ -2,13 +2,13 @@
 
 # Ratio the DRep
 
-## Contact
-- [RtD Discord Server](https://discord.gg/ru9BsJPs5F)
+## Connect
+![img|width=80](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/RtD_Discord_Server_180H_IMG.jpeg)[RtD Discord Server](https://discord.gg/ru9BsJPs5F)
 
 ## Psuedonyms
 | `Ratio13 on Discord` |    | `St8tikRatio on Github` |
 | ------------------ | -- |--------------------- |
-|![img](https://github.com/st8tikratio/cardano_DRep/blob/main/images/Ratio13_Discord_Prof_IMG.jpeg) | | ![img](https://github.com/st8tikratio/cardano_DRep/blob/main/images/SR_Github_Prof_IMG.jpeg) |
+|![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/Ratio13_Discord_Prof_640H_IMG.jpg) | | ![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/SR_Github_Prof_640H_IMG.jpeg) |
 ##### Former Psuedonyms and Platforms:
 ###### St8tik on Twitter
 
