@@ -9,7 +9,7 @@
 - To be the voice for the voiceless, unseen, discounted, and abandoned community members.
 - To push Cardano governance beyond one-ada/one-vote and tamp down on the plutocractic nature of blockchain.
 - To educate, discuss and debate through respectful discourse with all persons.
-- To provide transparency where this is none, where data is obscurely in the back corners of the community.
+- To provide transparency where it is lacking, where data is obscurely posted in the back corners of the Cardano community.
 - To vote or guide based on these principles:
   - Transparency
   - Equality
