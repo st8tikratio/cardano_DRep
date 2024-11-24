@@ -1,7 +1,7 @@
 ###### Created 22 Nov 2024
 
 # Ratio the DRep (RtD)
-
+###### 🔽 Please scroll through to the end of the page 🔽
 ---
 
 ## Why become a Cardano governance DRep?
@@ -57,13 +57,13 @@
 
 ---
 
-## DRep Code Of Conduct
+## Code Of Conduct
 
 - Can be found [HERE](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/ratio_CoC.md)
 
 ---
 
-## DRep Ethics
+## Ethics Statement
 
 > Coming Soon
 
