@@ -85,7 +85,7 @@
 ---
 
 ## Community Initiatives
-- [Consitution Working Group - Gimbalabs](https://github.com/st8tikratio/Constitution_WG_2022)
+- [2022 Consitution Working Group - Gimbalabs](https://github.com/st8tikratio/Constitution_WG_2022)
   - this project originated from the Gimbalabs A0 Distribution Event circa early 2022
   - NFT wallet maintained by QuasarSure Enterprises
   - With oversight from Ratio and Sym
