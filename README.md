@@ -72,7 +72,7 @@
 
 ---
 
-## 📖 Education 📖
+## 📖 Education
 #### (Completed & Incomplete)
 - Emurgo Cardano Developer
 - Plutus Pioneer Program
