@@ -1,7 +1,7 @@
 ---
-NAME: Repository and Data Issues
-ABOUT: Help us improve this repository
-TITLE: RtD cardano_DRep
+NAME: Repository_and_Data_Issues
+ABOUT: Improvements
+TITLE: RtD
 LABELS: DRep
 ASSIGNEES: st8tikratio
 ---
