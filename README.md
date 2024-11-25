@@ -4,6 +4,24 @@
 ###### 🔽 Please scroll through to the end of the page 🔽
 ---
 
+## 📞 Connect with Ratio
+
+1. Join the governance Discord server, [**`Ratio the DRep (RtD)`**](https://discord.gg/ru9BsJPs5F), by clicking [**`here`**](https://discord.gg/ru9BsJPs5F)
+2. Ask questions in the `Discussions` section of this repo [`here`](https://github.com/st8tikratio/cardano_DRep/discussions). It's okay if you're first to ask!
+3. `more platforms coming...`
+
+---
+
+## 🔍 All Psuedonyms & Platforms
+| Platform                                          | Name/Title                                                  | Status              | PFP/Avatar/Icon     |
+| ------------------                                | -----------------------                                     |-------------------- | ----------          |
+| [`Discord Server`](https://discord.gg/ru9BsJPs5F) | [`RtD Server for DRep & Governance`](https://discord.gg/ru9BsJPs5F) | **`ACTIVE`**        | [![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/RtD_Discord_Server_120H_IMG.jpeg)](https://discord.gg/ru9BsJPs5F)
+| `Discord`                                         | `Ratio13`                                                   | **`ACTIVE`**        | ![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/Ratio13_Discord_Avatar_120H.jpg)
+| [`Github`](https://github.com/st8tikratio)        |`st8tikratio`                                                | **`ACTIVE`**        | [![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/St8tikRatio_Github_Avatar_120H_IMG.jpg)](https://github.com/st8tikratio)
+| [`Twitter`](https://x.com)                                | `st8tik`                                                    | **`REMOVED`**       | [![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/Twitter_Avatar_120H_IMG.jpg)](https://x.com)
+
+---
+
 ## ❓ Why become a Cardano governance DRep?
 - to be a moral and ethical compass
 - to represent those who may be challenged by participating in governance;
@@ -21,24 +39,6 @@
   - Self-Sovereignty
   - Decentralization
   - Sustainability
-
----
-
-## 📞 Connect with Ratio
-
-1. Join the governance Discord server, [**`Ratio the DRep (RtD)`**](https://discord.gg/ru9BsJPs5F), by clicking [**`here`**](https://discord.gg/ru9BsJPs5F)
-2. Ask questions in the `Discussions` section of this repo [`here`](https://github.com/st8tikratio/cardano_DRep/discussions). It's okay if you're first to ask!
-3. `more platforms coming...`
-
----
-
-## 🔍 All Psuedonyms & Platforms
-| Platform                                          | Name/Title                                                  | Status              | PFP/Avatar/Icon     |
-| ------------------                                | -----------------------                                     |-------------------- | ----------          |
-| [`Discord Server`](https://discord.gg/ru9BsJPs5F) | [`RtD Server for DRep & Governance`](https://discord.gg/ru9BsJPs5F) | **`ACTIVE`**        | [![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/RtD_Discord_Server_120H_IMG.jpeg)](https://discord.gg/ru9BsJPs5F)
-| `Discord`                                         | `Ratio13`                                                   | **`ACTIVE`**        | ![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/Ratio13_Discord_Avatar_120H.jpg)
-| [`Github`](https://github.com/st8tikratio)        |`st8tikratio`                                                | **`ACTIVE`**        | [![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/St8tikRatio_Github_Avatar_120H_IMG.jpg)](https://github.com/st8tikratio)
-| [`Twitter`](https://x.com)                                | `st8tik`                                                    | **`REMOVED`**       | [![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/Twitter_Avatar_120H_IMG.jpg)](https://x.com)
 
 ---
 
