@@ -4,16 +4,14 @@ ABOUT: Help us improve this repository
 TITLE: RtD cardano_DRep
 LABELS: DRep
 ASSIGNEES: st8tikratio
-
 ---
 
-**Describe the issue** in a clear and concise description of what the bug is.
+**Describe the issue** in a clear and concise description of what the bug is:
  - `Type here`
 
-
 ---
 
-**Describe expected behavior** in a clear and concise description of what you expected to happen.
+**Describe expected behavior** in a clear and concise description of what you expected to happen:
  - `type here`
 
 ---
@@ -31,5 +29,5 @@ ASSIGNEES: st8tikratio
 
 ---
 
-**Add `additional context`** if needed about the problem here.
+**Add `additional context`** if needed about the problem here:
  - `type here`
