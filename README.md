@@ -23,7 +23,7 @@
 ---
 
 ## ❓ Why become a Cardano governance DRep?
-- to be a moral and ethical compass;
+- to be a moral and ethical compass delegates;
 - to represent those who may be challenged by participating in governance;
 - to educate, discuss and debate through respectful discourse with all persons;
 - to counter the narcicistic greed that is often commonplace within blockchain;
