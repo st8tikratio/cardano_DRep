@@ -1,8 +1,10 @@
-###### 🔺 Working Document 🔺 Author: Ratio 🔺 Date: 26 Nov 2024 🔺
+# <span style="color:magenta">Ethics Statement</span>
 
 ---
 
-# <span style="color:magenta">Ethics Statement</span>
+###### 🔺 Working Document 🔺 Author: Ratio 🔺 Date: 26 Nov 2024 🔺
+
+---
 
 ## Purpose
 
