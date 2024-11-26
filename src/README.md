@@ -1,10 +1,10 @@
 # <span style="color:orange">Welcome to Ratio's Cardano Governance Site</span>
 
-##  <span style="color:magenta">About</span>
+## <span style="color:magenta">About</span>
 
 Hello all! Welcome to the `RtD` (Ratio the DRep) web-book. Here you'll find everything you need to know about me.
 
-##  <span style="color:magenta">Table of Contents</span>
+## <span style="color:magenta">Table of Contents</span>
 1. [Connect with Ratio](connect.md)
 2. [All Pseudonyms and Platforms](dox.md)
 3. [Why Become a DRep?](why.md)
