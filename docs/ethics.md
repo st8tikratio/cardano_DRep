@@ -1,8 +1,10 @@
-###### 🔺 Working Document 🔺 Author: Ratio 🔺 Date: 26 Nov 2024 🔺
+# Ethical Statement
 
 ---
 
-# Ethics Statement
+###### 🔺 Working Document 🔺 Author: Ratio 🔺 Date: 26 Nov 2024 🔺
+
+---
 
 ## Purpose
 
