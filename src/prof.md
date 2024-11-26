@@ -1,4 +1,4 @@
-# DRep Profile
+# <span style="color:magenta">DRep Profile</span>
 
 - [Direct link @ gov.tools](https://gov.tools/drep_directory/drep1zagwghdf0q2yz0ra70p6zgvmug9zns2yxefygsfn6suq5qvgqq0)
 - [Direct link @ 1694.io](https://www.1694.io/en/dreps/drep1zagwghdf0q2yz0ra70p6zgvmug9zns2yxefygsfn6suq5qvgqq0)
