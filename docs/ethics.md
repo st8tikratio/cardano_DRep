@@ -12,10 +12,6 @@ This document outlines relevant actions to be conducted in an ethical and moral 
 
 ## Background
 
-This document outlines relevant actions to be conducted in an ethical and moral manner while executing the community position of a governance Delegated Representative, or DRep. The document will list unacceptable actions and areas where caution should be used. These items are not exhaustive but should be concide enough to provide a broad picture of the DRep's values and character.
-
-## Background
-
 In early 2021 breaking into the Cardano Community was difficult in any actionable way outside of the "YOLO-ing" and "to the moon" crowds. After some research, and time, more opportunities became available and eventually there was a feeling of camaraderie. Until... Interacting with the Cardano Catalyst crowd was difficult. There were (are) people entrenched in the system. Some even manipulated the distribution of funds. Of course there is no proof. Why? Absolutely no transparency. 
 
 Aside from this manipulative crowd, hiding behind the facades of "community" instances of "community" included organizations attempting to consolidate massive amounts of CNTs, Cardano Native Tokens, during distributions events without providing much, if anything, in return.  So much for **COMMUNITY**. There were other instances of, essentially, "no pay, no work." Now everyone's time is worth something. As are their skills. More importantly, everyone's financial situation is different. Ultimately these shortcomings are what drove me to remain active until canine chemotherapy required out-of-town travel once a week. Eventually the inevitable happened causing a slow withdrawal from all blockchain communities in 2022, resulting in a two year hiatus. We all process differently.
