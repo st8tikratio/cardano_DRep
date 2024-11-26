@@ -3,7 +3,7 @@ authors = ["Ratio"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Ratio The Cardano Governance Drep"
+title = "Ratio the DRep for Cardano Governance"
 
 [rust]
 edition = "2021"
