@@ -1,4 +1,4 @@
-# ## <span style="color:magenta">Code of onduct</span>
+# <span style="color:magenta">Code of Conduct</span>
 
 ###### 🔺Working Document🔺
 ###### Author: Ratio
