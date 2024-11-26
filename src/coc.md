@@ -1,5 +1,7 @@
 # <span style="color:magenta">Code of Conduct</span>
 
+---
+
 ###### 🔺 Working Document 🔺 Author: Ratio 🔺 Created on: 23 Nov 2024 🔺
 
 ---
