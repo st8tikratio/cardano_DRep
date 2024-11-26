@@ -1,8 +1,8 @@
 # <span style="color:magenta">Code of Conduct</span>
 
-###### 🔺Working Document🔺
-###### Author: Ratio
-###### Date: 23 Nov 2024
+###### 🔺 Working Document 🔺 Author: Ratio 🔺 Created on: 23 Nov 2024 🔺
+
+---
 
 ## Purpose
 The purpose of this document is to outline appropriate conduct and activities of Ratio, a Cardano DRep. It will also address the conudct of all community members interacting with Ratio wihtin Github, Discord, or any other social-media-type platform where community discourse may arise.
