@@ -72,7 +72,7 @@
 
 ## Ethics Statement
 
-> Coming Soon
+- Can be found [`here`](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/ethics.md)
 
 ---
 
