@@ -3,7 +3,7 @@
 - [Current Governance Actions](https://gov.tools/governance_actions)
 - [Cardano Constitution Repo](https://github.com/st8tikratio/Cardano_Con_and_Gov)
 
-# <span style="color:magenta">Other Useful Links</span>
+# <span style="color:magenta">The Long List</span>
 
 ##### 🔺 `for a complete list and downloadable files click` [here](https://github.com/st8tikratio/Cardano_Con_and_Gov/) 🔺
 
