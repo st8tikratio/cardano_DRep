@@ -1,4 +1,4 @@
-# Education
+# <span style="color:magenta">Education</span>
 
 #### (Completed & Incomplete)
 - Emurgo Cardano Developer
