@@ -1,4 +1,4 @@
-# Community Discord Memberships
+# # <span style="color:magenta">Community Discord Membership</span>
 
 - [Gimbalabs](https://discord.gg/76ZJzG6v97)
 - [Gamechanger](https://discord.gg/ZXJ9nZw4YB)
