@@ -1,4 +1,4 @@
-# DRep Code Of Conduct
+# ## <span style="color:magenta">Code of onduct</span>
 
 ###### 🔺Working Document🔺
 ###### Author: Ratio
