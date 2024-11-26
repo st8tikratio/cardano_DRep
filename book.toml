@@ -1,0 +1,22 @@
+[book]
+authors = ["Ratio"]
+language = "en"
+multilingual = false
+src = "src"
+title = "RtD Info"
+
+[rust]
+edition = "26 Nov 2024"
+
+[output.html]
+git-repository-url = "https://github.com/st8tikratio/cardano_DRep/tree/main"
+edit-url-template = "https://github.com/st8tikratio/cardano_DRep/edit/main/{path}"
+
+[output.html.search]
+limit-results = 20
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 2
+boost-paragraph = 1
+expand = true
+heading-split-level = 2
