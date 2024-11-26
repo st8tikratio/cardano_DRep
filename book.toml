@@ -6,7 +6,7 @@ src = "src"
 title = "RtD Info"
 
 [rust]
-edition = "26 Nov 2024"
+edition = "2021"
 
 [output.html]
 git-repository-url = "https://github.com/st8tikratio/cardano_DRep/tree/main"
