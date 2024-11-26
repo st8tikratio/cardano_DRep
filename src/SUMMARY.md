@@ -1,6 +1,6 @@
 # SUMMARY
 
-[Introduction](./README.md)
+[Welcome To The Resistance](./README.md)
 
 - [Connect With Ratio](./connect.md)
 - [Pseudonyms & Platforms](./dox.md)
