@@ -1,4 +1,4 @@
-# Community Initiatives
+# <span style="color:magenta">Community Initiatives</span>
 
 - [Catalyst United Discord server](https://discord.gg/VbNGWXuv4a)
   - Built-out, integrated and administered the server until 31 Oct 2022.
