@@ -1,10 +1,10 @@
 ###### Created 22 Nov 2024
 
-# $${\color{magenta}Ratio \space \color{orange}the \space \color{magenta}DRep \space \color{red}(RtD)}$$
+# Ratio the DRep (RtD)
 ###### 🔽 Please scroll through to the end of the page 🔽
 ---
 
-## $${\color{yellowgreen}Connect \space With \space Ratio}$$
+## Connect With Ratio
 
 1. Join the governance Discord server, [**`Ratio the DRep (RtD)`**](https://discord.gg/ru9BsJPs5F), by clicking [**`here`**](https://discord.gg/ru9BsJPs5F)
 2. Ask questions in the `Discussions` section of this repo [`here`](https://github.com/st8tikratio/cardano_DRep/discussions). It's okay if you're first to ask!
@@ -12,7 +12,7 @@
 
 ---
 
-## $${\color{yellowgreen}All \space Pseudonyms \space and \space Platforms}$$
+## All Pseudonyms and Platforms
 | Platform                                          | Name/Title                                                  | Status              | PFP/Avatar/Icon     |
 | ------------------                                | -----------------------                                     |-------------------- | ----------          |
 | [`Discord`](https://discord.gg/ru9BsJPs5F) | [`RtD Server for DRep & Governance`](https://discord.gg/ru9BsJPs5F) | **`ACTIVE`**        | [![img](https://github.com/st8tikratio/cardano_DRep/blob/main/imgs/RtD_Discord_Server_120H_IMG.jpeg)](https://discord.gg/ru9BsJPs5F)
@@ -22,7 +22,7 @@
 
 ---
 
-## $${\color{yellowgreen}Why \space \ Become \space \ A \space DRep?}$$
+## Why Become A DRep?
 - to be a moral and ethical compass for delegates;
 - to represent those who may be challenged by participating in governance;
 - to educate, discuss and debate through respectful discourse with all persons;
@@ -42,7 +42,7 @@
 
 ---
 
-## $${\color{yellowgreen}DRep \space Profile}$$
+## DRep Profile
 - [Direct link @ gov.tools](https://gov.tools/drep_directory/drep1zagwghdf0q2yz0ra70p6zgvmug9zns2yxefygsfn6suq5qvgqq0)
 - [Direct link @ 1694.io](https://www.1694.io/en/dreps/drep1zagwghdf0q2yz0ra70p6zgvmug9zns2yxefygsfn6suq5qvgqq0)
 - There are two ways to access the **DRep Directories**
@@ -55,25 +55,25 @@
 
 ---
 
-## $${\color{yellowgreen}Governance}$$
+## Governance
 - [Current Governance Actions](https://gov.tools/governance_actions)
 - [Cardano Constitution Repo](https://github.com/st8tikratio/Cardano_Con_and_Gov)
 
 ---
 
-## $${\color{yellowgreen}Code \space of \space Conduct}$$
+## Code Of Conduct
 
 - Can be found [HERE](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/ratio_CoC.md)
 
 ---
 
-## $${\color{yellowgreen}Ethics \space Statement}$$
+## Ethics Statement
 
 > Coming Soon
 
 ---
 
-## $${\color{yellowgreen}Education}$$
+## Education
 #### (Completed & Incomplete)
 - Emurgo Cardano Developer
 - Plutus Pioneer Program
@@ -84,11 +84,11 @@
 
 ---
 
-## $${\color{yellowgreen}Employ}$$
+## Employ
 - Retired ca 2005
 ---
 
-## $${\color{yellowgreen}Community \space Initiatives}$$
+## Community Initiatives
 - [Catalyst United Discord server](https://discord.gg/VbNGWXuv4a)
   - Built-out, integrated and administered the server until 31 Oct 2022.
   - To be disabled and shut-down on 31 Dec 2024.
@@ -99,7 +99,7 @@
 
 ---
 
-## $${\color{yellowgreen}Community \space Discord \space Memberships}$$
+## Community Discord Memberships
 - [Gimbalabs](https://discord.gg/76ZJzG6v97)
 - [Gamechanger](https://discord.gg/ZXJ9nZw4YB)
 - [The Hard Forq Cafe](https://discord.gg/HT6vJ45dZ7)
@@ -114,4 +114,4 @@
 
 ---
 
-##### $${\color{lightblue}Last \space updated \space on \space 25 \space Nov \space 2024}$$
+##### Last updated on 26 Nov 2024
