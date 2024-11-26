@@ -1,4 +1,4 @@
-# Why Become A DRep?
+# <span style="color:magenta">Why Become a DRep?</span>
 
 - to be a moral and ethical compass for delegates;
 - to represent those who may be challenged by participating in governance;
