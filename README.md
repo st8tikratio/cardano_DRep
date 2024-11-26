@@ -17,8 +17,8 @@
 | ------------------                                | -----------------------                                      |-------------------- | ----------          |
 | [`Discord`](https://discord.gg/ru9BsJPs5F) | [`RtD Server for DRep & Governance`](https://discord.gg/ru9BsJPs5F) | **`ACTIVE`**        | [![img](src/img/RtD_Discord_Server_120H_IMG.jpeg)](https://discord.gg/ru9BsJPs5F)
 | `Discord`                                         | `Ratio13`                                                    | **`ACTIVE`**        | ![img](src/img/Ratio13_Discord_Avatar_120H.jpg)
-| [`Github`](https://github.com/st8tikratio)        |`st8tikratio`                                                 | **`ACTIVE`**        | [![img](src/img/St8tikRatio_Github_Avatar_120H_IMG.jpg)
-| [`X / Twitter`](https://x.com/st8tik)             | `@st8tik`                                                    | **`ACTIVE`**       | [![img](src/img/X_Prof_120H_IMG.jpeg)](https://x.com/st8tik)
+| [`Github`](https://github.com/st8tikratio)        |`st8tikratio`                                                 | **`ACTIVE`**        | ![img](src/img/St8tikRatio_Github_Avatar_120H_IMG.jpg)
+| [`X / Twitter`](https://x.com/st8tik)             | `@st8tik`                                                    | **`ACTIVE`**       | ![img](src/img/X_Prof_120H_IMG.jpeg)
 
 ---
 
@@ -58,6 +58,9 @@
 ## Governance
 - [Current Governance Actions](https://gov.tools/governance_actions)
 - [Cardano Constitution Repo](https://github.com/st8tikratio/Cardano_Con_and_Gov)
+- [Feedback Form - Intersect MBO](https://docs.google.com/forms/d/e/1FAIpQLSck3gj4D9iKw_jJORrBbEQNKWcSDPPl_eu91qtK9XxrkxMw0g/viewform)
+- [Feedback @ cGOV.app by MadOrkestra](https://cgov.app/)
+- More info & links can be found [`here`](https://github.com/st8tikratio/Cardano_Con_and_Gov)
 
 ---
 
