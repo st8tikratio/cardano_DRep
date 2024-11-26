@@ -66,7 +66,7 @@
 
 ## Code Of Conduct
 
-- Can be found [HERE](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/ratio_CoC.md)
+- Can be found [`here`](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/ratio_CoC.md)
 
 ---
 
