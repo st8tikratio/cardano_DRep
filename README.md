@@ -1,3 +1,14 @@
+---
+title: "Ratio the DRep"
+author: "Ratio aka st8tik aka st8tikratio"
+date: "22 Nov 2024"
+output:
+  html_document:
+    toc: true
+    number_section: true
+    toc_float: false
+---
+
 ###### Created 22 Nov 2024
 
 # Ratio the DRep (RtD)
