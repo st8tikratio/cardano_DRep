@@ -1,4 +1,5 @@
-# $${\color{magenta}Welcome \space \color{orange}To \space \color{magenta}Ratio's \space \color{yellow}Governance \space Site}$$
+# <span style="color:blue">Welcome to the Governance Site</span>
+$${\color{magenta}Welcome \space \color{orange}To \space \color{magenta}Ratio's \space \color{yellow}Governance \space Site}$$
 
 ## $${\color{magenta}About}$$
 
