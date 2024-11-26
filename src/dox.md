@@ -1,4 +1,5 @@
-# All Pseudonyms and Platforms
+# <span style="color:magenta">All Psuedonyms & Platforms</span>
+
 | Platform                                          | Name/Title                                                   | Status              | PFP/Avatar/Icon     |
 | ------------------                                | -----------------------                                      |-------------------- | ----------          |
 | [`Discord`](https://discord.gg/ru9BsJPs5F) | [`RtD Server for DRep & Governance`](https://discord.gg/ru9BsJPs5F) | **`ACTIVE`**        | [![img](img/RtD_Discord_Server_120H_IMG.jpeg)](https://discord.gg/ru9BsJPs5F)
