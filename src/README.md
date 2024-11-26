@@ -1,6 +1,6 @@
 # <span style="color:magenta">About</span>
 
-Hello all! Welcome to the `RtD` (Ratio the DRep) web-book. Here you'll find everything you need to know about me.
+Hello all! Welcome to the `RtD` (Ratio the DRep) web-book. Here you'll find everything you need to know about me and useful governance links.
 
 # <span style="color:magenta">Table of Contents</span>
 1. [Connect with Ratio](connect.md)
