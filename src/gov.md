@@ -27,6 +27,7 @@
 
 - [20-Nov-2024 Proposal for Constitution Of The Cardano Blockchain](https://ucarecdn.com/a78167c7-ff20-4f32-9fad-1797206bddb1/)
   **-** [PDF](https://github.com/st8tikratio/Cardano_Con_and_Gov/blob/main/241120_CF%20Proposal%20for%20Cardano%20Constitution_FINAL.pdf)
+  **-** [Annotated](https://github.com/st8tikratio/Cardano_Con_and_Gov/blob/main/Marked-up_241120_CF%20Proposal%20for%20Cardano%20Constitution_FINAL.pdf)
 
 - [Cardano Foundation’s Proposal for a Cardano Constitution website](https://cardanofoundation.org/blog/proposal-for-cardano-constitution)
   
@@ -35,6 +36,7 @@
 - [20-Nov-2024 DRAFT Constitution](https://github.com/IntersectMBO/draft-constitution/tree/main/2024-11-20)
   **-** [PDF](https://github.com/st8tikratio/Cardano_Con_and_Gov/blob/main/20-11-2024_IntersectMBO_draft-constitution.pdf)
   **-** [Markdown](https://github.com/st8tikratio/Cardano_Con_and_Gov/blob/main/20Nov2024_Cardano_DRAFT_Constitution.md)
+  **-** [Annotated](https://github.com/st8tikratio/Cardano_Con_and_Gov/blob/main/Marked_Up_20-11-2024_IntersectMBO_draft-constitution.pdf)
 
 - [2024-09-20-draft-constitution-edits](https://docs.google.com/document/d/1NrDvbQha7xGE2m83QEQGM6H03edUkMgn-PuoNm1YYUc/edit?pli=1&tab=t.0) **-** [PDF](https://github.com/st8tikratio/Cardano_Con_and_Gov/blob/main/2024-09-20-draft-constitution-edits%20-%20Google%20Docs.pdf)
   
@@ -62,7 +64,10 @@
 
 - [Gov Tools](https://gov.tools/) - All things DRep; register, delegate, vote
 - [CIP 1694 - An On-Chain Decentralized Governance Mechanism for Voltaire](https://www.1694.io/en)
+  
 - [Reward Schemes for DReps in Voltaire](https://docs.google.com/document/d/1_uadn9Ord3mAYQGWHQySR73CQciVk2YNc5rt8npJ6Aw/edit?tab=t.0#heading=h.zdwziyr50kye)
+  **-** [PDF](https://github.com/st8tikratio/Cardano_Con_and_Gov/blob/main/Voltaire%20-%20dRep%20reward%20scheme%20options%20-%20Google%20Docs.pdf)
+
 - [DRep Pioneering Program via Intersect](https://docs.intersectmbo.org/cardano/cardano-governance/drep-pioneering-program)
 - [DRep Program Overview via Intersect](https://dreppioneeringprogram.docs.intersectmbo.org/)
 
