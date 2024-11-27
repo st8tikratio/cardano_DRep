@@ -19,7 +19,7 @@
 | [`Discord`](https://discord.gg/ru9BsJPs5F) | [`RtD Server for DRep & Governance`](https://discord.gg/ru9BsJPs5F) | **`ACTIVE`**        | [![img](src/img/RtD_Discord_Server_120H_IMG.jpeg)](https://discord.gg/ru9BsJPs5F)
 | `Discord`                                         | `Ratio13`                                                    | **`ACTIVE`**        | ![img](src/img/Ratio13_Discord_Avatar_120H.jpg)
 | [`Github`](https://github.com/st8tikratio)        |`st8tikratio`                                                 | **`ACTIVE`**        | ![img](src/img/St8tikRatio_Github_Avatar_120H_IMG.jpg)
-| [`X / Twitter`](https://x.com/st8tik)             | `@st8tik`                                                    | **`ACTIVE`**       | ![img](src/img/X_Prof_120H_IMG.jpeg)
+| [`X / Twitter`](https://x.com/st8tik)             | `@st8tik est.2024`                                           | **`ACTIVE`**       | ![img](src/img/X_Prof_120H_IMG.jpeg)
 
 ---
 
