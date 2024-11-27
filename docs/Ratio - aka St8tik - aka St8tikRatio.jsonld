@@ -1,0 +1,141 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Ratio - aka St8tik - aka St8tikRatio"
+    },
+    "motivations": {
+      "@value": "\n\nMotivation is to make Cardano a better blockchain. This means open, available and economically feasible and viable for members of all nationalities, ethnicities and locales. "
+    },
+    "objectives": {
+      "@value": "The Cardano Blockchain should be a blockchain for good, built out for all persons interested in its capacities and not just the plutocrats, whales and big-wallet holders.\n\nTransparency, auditability, accountability, equality and other first principles should apply to all those impacting the blockchain, development and parameters.\n\nAll community code, present and future, SHOULD BE 100% open-source without hidden  and closed-source API calls.\n\nThe community is prone to undue influence, self-interest at the expense of others, by many larger entities. Removing these traits and behaviors are top of mind and priority."
+    },
+    "paymentAddress": {
+      "@value": "addr1q8az39s44yazt46guyk6u9edevcgaywhufpk7t0zmn2srme5jhvwhffe090edsqn88jvw0jlppm5fy95rywf4h9g870qgk8hcw"
+    },
+    "qualifications": {
+      "@value": "https://st8tikratio.github.io/cardano_DRep/index.html"
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "RtD_DRep_Github_Repo_as_st8tikratio"
+        },
+        "uri": {
+          "@value": "https://github.com/st8tikratio/cardano_DRep"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "RtD_Discord_server_as_Ratio13"
+        },
+        "uri": {
+          "@value": "https://discord.gg/ru9BsJPs5F"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "X_account_as_st8tik"
+        },
+        "uri": {
+          "@value": "https://x.com/st8tik"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "RtD_website"
+        },
+        "uri": {
+          "@value": "https://st8tikratio.github.io/cardano_DRep/index.html"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "@st8tik_on_x.com"
+        },
+        "uri": {
+          "@value": "x.com/st8tik"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "st8tikratio_@_github"
+        },
+        "uri": {
+          "@value": "https://github.com/st8tikratio"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "ratio_@_discord"
+        },
+        "uri": {
+          "@value": "https://discord.gg/ru9BsJPs5F"
+        }
+      }
+    ]
+  }
+}
