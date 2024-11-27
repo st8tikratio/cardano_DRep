@@ -1,7 +1,10 @@
-###### Created 22 Nov 2024
-
 # Ratio the DRep (RtD)
-###### 🔽 Please scroll through to the end of the page 🔽
+
+---
+
+###### Created 22 Nov 2024
+###### 🚩 You view and download a PDF of this README file [`here`](docs/ratio-the-drep_for_cardano_governance.pdf) 🚩
+
 ---
 
 ## Connect With Ratio
