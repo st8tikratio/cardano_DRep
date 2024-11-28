@@ -1,1 +1,0 @@
-DELETE after img transfer
