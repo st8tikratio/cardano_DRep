@@ -24,7 +24,7 @@
 | `Discord`                                         | `Ratio13`                                                    | **`ACTIVE`**        | ![img](src/img/Ratio13_Discord_Avatar_120H.jpg)
 | [`Github`](https://github.com/st8tikratio)        |`st8tikratio`                                                 | **`ACTIVE`**        | ![img](src/img/St8tikRatio_Github_Avatar_120H_IMG.jpg)
 | [`X / Twitter`](https://x.com/st8tik)             | `@st8tik - reactivated 2024`                                 | **`ACTIVE`**        | ![img](src/img/X_Prof_120H_IMG.jpeg)
-| [`Keybase`](https://keybase.io/xo_xo)             | `xo_xo`                                                      | **`ACTIVE`**        | ![img](src/img/Keybase_PFP_120H.jpg)
+| [`Keybase`](https://keybase.io/xo_xo)             | `xo_xo`                                                      | **`ACTIVE`**        | ![img](src/img/Keybase_PFP_120H_IMG.jpg)
 
 ---
 
