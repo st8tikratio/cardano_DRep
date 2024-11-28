@@ -4,7 +4,7 @@
 2. Ask questions in `Github Discussions` [`here`](https://github.com/st8tikratio/cardano_DRep/discussions)
 3. Send a message to `@st8tik` on [`X / Twitter`](https://x.com/st8tik)
 4. Chat on [`Keybase`](https://keybase.io/xo_xo)
-5. Send and [`email`](mailto:rat.io@outlook.com)
+5. Send an [`email`](mailto:ratio_the_drep@sudomail.com)
 6. `more platforms coming (as needed)...`
 
 ---
