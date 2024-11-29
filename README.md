@@ -12,7 +12,7 @@
 - [Education](#education)
 - [Employment](#employment)
 - [Community Initiatives](#community-initiatives)
-- [Community Discord Membersgips](#community-discord-memberships)
+- [Community Discord Memberships](#community-discord-memberships)
 
 ---
 
