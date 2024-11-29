@@ -1,8 +1,18 @@
 # Ratio the DRep (RtD)
-
----
-
 ###### 🔺 Created 22 Nov 2024 🔺
+---
+## TABLE OF CONTENTS
+- [Connect With Ratio](#connect-with-ratio)
+- [All Pseudonyms and Platforms](#all-pseudonyms-and-platforms)
+- [Why Become A DRep?](#why-become-a-drep)
+- [DRep Profile](#drep-profile)
+- [Governance](#governance)
+- [Code of Conduct](#code-of-conduct)
+- [Ethics Statement](#ethics-statement)
+- [Education](#education)
+- [Employment](#employment)
+- [Community Initiatives](#community-initiatives)
+- [Community Discord Membersgips](#community-discord-memberships)
 
 ---
 
@@ -93,7 +103,7 @@
 
 ---
 
-## Employ
+## Employment
 
 #### 1980's - 2000's
 - Military
