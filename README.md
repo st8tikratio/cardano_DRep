@@ -59,6 +59,7 @@
 ---
 
 ## DRep Profile
+- [DRep Voting Actions](https://github.com/st8tikratio/cardano_DRep/tree/main/votes)
 - [Direct link @ gov.tools](https://gov.tools/drep_directory/drep1zagwghdf0q2yz0ra70p6zgvmug9zns2yxefygsfn6suq5qvgqq0)
 - [Direct link @ 1694.io](https://www.1694.io/en/dreps/drep1zagwghdf0q2yz0ra70p6zgvmug9zns2yxefygsfn6suq5qvgqq0)
 - There are two ways to access the **DRep Directories**
