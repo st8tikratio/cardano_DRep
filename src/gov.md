@@ -79,7 +79,7 @@
 
 ### <span style="color:orange">DRep, Delegate, Vote and More:</span>
 
-- [Gov Tools](https://gov.tools/) • All things DRep; register, delegate, vote
+- [Gov Tools](https://gov.tools/)
 
 - [CIP 1694 - An On-Chain Decentralized Governance Mechanism for Voltaire](https://www.1694.io/en)
 
