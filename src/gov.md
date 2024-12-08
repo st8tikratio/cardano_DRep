@@ -1,9 +1,9 @@
 # <span style="color:magenta">Governance Short-List</span>
 
 ### <span style="color:orange">Is It Fair, Democratic, Decentralized?</span>
-- [Governance Watch](https://changwatch.com)
+- [Governance Watch `by Cerkoryn`](https://changwatch.com)
   
-- [State Of Governance `via cgov.app by MadOrkestra`](https://cgov.app/governance)
+- [State Of Governance `by MadOrkestra`](https://cgov.app/governance)
 
 ### <span style="color:orange">Rest Of The Short List:</span>
 
