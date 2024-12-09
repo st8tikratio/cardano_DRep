@@ -73,9 +73,11 @@
 ---
 
 ## Governance
-
+### Dashboards
 - [Governance Watch `by Cerkoryn`](https://changwatch.com)
 - [State Of Governance `by MadOrkestra`](https://cgov.app/governance)
+- [Tempo `by danago_2023`](https://tempo.vote/)
+### The Rest
 - [Current Governance Actions](https://gov.tools/governance_actions)
 - [Cardano Constitution Repo](https://github.com/st8tikratio/Cardano_Con_and_Gov)
 - [Feedback Form - Intersect MBO](https://docs.google.com/forms/d/e/1FAIpQLSck3gj4D9iKw_jJORrBbEQNKWcSDPPl_eu91qtK9XxrkxMw0g/viewform)
