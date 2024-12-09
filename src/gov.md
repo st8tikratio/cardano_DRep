@@ -5,6 +5,8 @@
   
 - [State Of Governance `by MadOrkestra`](https://cgov.app/governance)
 
+- [Tempo `by danago_2023`](https://tempo.vote/)
+
 ### <span style="color:orange">Rest Of The Short List:</span>
 
 - [Current Governance Actions](https://gov.tools/governance_actions)
