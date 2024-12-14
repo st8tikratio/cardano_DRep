@@ -11,3 +11,50 @@ TFGEN-02 (x - unquantifiable) Any changes to `txFeeFixed` or `txFeeFixed` must c
 - should read `txFeePerByte` and `txFeeFixed`
 
 #### 2.
+
+**Treasury Cut (treasuryCut)**
+Part of the rewards mechanism
+
+The treasury cut portion of the monetary expansion is transferred to the treasury before any pool rewards are paid
+
+Can be set in the range 0.0-1.0 (0%-100%)
+
+GUARDRAILS
+TC-01 (y) treasuryCut must not be lower than 0.1 (10%)
+
+TC-02 (y) `treasuryCut must not exceed 0.3 (30%)`
+
+TC-03 (y) treasuryCut must not be negative
+
+TC-04 (y) `treasuryCut must not exceed 1.0 (100%)`
+
+TC-05 (~ - no access to change history) treasuryCut must not be changed more than once in any 36 epoch period (approximately 6 months)
+
+- TC-02 and TC-04 appear to conflict or create unecessary redundancy
+
+#### 3.
+
+EIUP-GEN-01 (x - "similar to") The execution prices must be set so ~~tha~~ the
+
+#### 4.
+
+---
+
+
+
+
+
+
+
+## Param Notes
+#### Network Parameters
+- 24,576 Bytes (24KB) >= `maxBlockBodySize` <= 122,880 Bytes (120KB)
+- `maxBlockBodySize` => `maxTxSize`
+- maxTxSize must not exceed 32,768 Bytes (32KB)
+- maxTxSize must not be negative
+- ~ maxTxSize must not be decreased
+- ~ maxTxSize must not exceed maxBlockBodySize
+- 
+
+- 
+
