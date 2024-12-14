@@ -36,8 +36,6 @@ TC-05 (~ - no access to change history) treasuryCut must not be changed more tha
 
 EIUP-GEN-01 (x - "similar to") The execution prices must be set so ~~tha~~ the
 
-#### 4.
-
 ---
 
 ## Testing Layouts Below Here
