@@ -40,7 +40,7 @@ EIUP-GEN-01 (x - "similar to") The execution prices must be set so ~~tha~~ the
 
 ---
 
-##Testing Layouts Below Here
+## Testing Layouts Below Here
 
 ---
 
@@ -55,7 +55,7 @@ EIUP-GEN-01 (x - "similar to") The execution prices must be set so ~~tha~~ the
 
 ---
 
-##Testing Layouts Below Here
+## Testing Layouts Below Here
 
 ---
 
