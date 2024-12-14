@@ -50,6 +50,7 @@ EIUP-GEN-01 (x - "similar to") The execution prices must be set so ~~tha~~ the
 #### Network Parameters
 - 24,576 Bytes (24KB) >= `maxBlockBodySize` <= 122,880 Bytes (120KB)
 - `maxBlockBodySize` => `maxTxSize`
+##### Transaction Size (maxTxSize)
 - maxTxSize must not exceed 32,768 Bytes (32KB)
 - maxTxSize must not be negative
 - ~ maxTxSize must not be decreased
