@@ -1,3 +1,6 @@
+  "_source: https://github.com/IntersectMBO/cardano-node/blob/master/configuration/cardano/mainnet-conway-genesis.json"
+
+
 {
   "poolVotingThresholds": {
     "committeeNormal": 0.51,
