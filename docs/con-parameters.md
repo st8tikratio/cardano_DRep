@@ -14,10 +14,8 @@
     - []()
 
 ---
-
 ## Cardano Governance Parameters
 
----
 
 | PARAMETER SECTION                 | PARAMETER TITLE  | CURRENT (19-DEC-2024)      | CONSTITUTION THRESHOLD(S) |
 | ----------                        |  :----------:      |  :-------------:         |  :------------:      |
@@ -54,6 +52,11 @@
 ---
 
 ## Constitution Paramters (05-DEC-2024)
+- Symbol and Explanation
+  - (y) The Guardrail Script can be used to enforce the Guardrail
+  - (x) The Guardrail Script cannot be used to enforce the Guardrail
+  - (~ - reason) The Guardrail Script cannot be used to enforce the Guardrail for the reason given, but future ledger changes could enable this.
+
 
 | Section                 | Parameter Name                 | Parameter Type                                 | Value#1                                     | Value#2                            | Value#3              |
 | -------                 | --------------                 | -------------                                  | -------------                               | ------------------                 | ---------            |
