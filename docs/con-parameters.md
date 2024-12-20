@@ -11,7 +11,7 @@
     - [Cardano Developer Resources - Smart Contracts](https://docs.cardano.org/developer-resources/smart-contracts/plutus#plutus-developer-resources)
     - [Plutus User Guide - IOHK](https://plutus.cardano.intersectmbo.org/docs/)
     - [Plutus Repo - IntersectMBO](https://github.com/IntersectMBO/plutus#specifications-and-design)
-    - []()
+    - **NONE OF THE ABOVE PROVIDE V3 COST-MODELING**
 
 ---
 ## Cardano Governance Parameters
