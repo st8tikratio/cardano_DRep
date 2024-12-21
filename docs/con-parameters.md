@@ -87,15 +87,29 @@
 | Minimum Pool Cost                               |                                |                                                |                                                                                                                                                                                                                                                         |                                        |                       |
 |                                                 | minPoolCost                    | MPC-01 (y) <br> MPC-02 (y)                     | must not be negative                                                                                                                                                                                                                                    | must not exceed 500,000,000 (500 ada)  |                       |
 |                                                 | minPoolCost                    | MPC-03 (x - "should")                          | should be set in line with the economic cost for operating a pool                                                                                                                                                                                       |                                        |                       |        
-| Treasury Cut                                    |                                |                                                |                                                                                                                                                                                                                                                         |                                        |                       |   
-|                                                 | treasuryCut                    | TC-01 (y) <br> TC-02 (y)                       | must not be lower than 0.1 (10%)                                                                                                                                                                                                                        | must not exceed 0.3 (30%)              |                       |                    
-|                                                 | treasuryCut                    | TC-03 (y) <br> TC-04 (y)                       | must not be negative                                                                                                                                                                                                                                    | must not exceed 1.0 (100%)             |                       |                 
-|                                                 | treasuryCut                    | TC-05 (~ - no access to change history)        | must not be changed more than once in any 36 epoch period (approximately 6 months)                                                                                                                                                                      |                                        |                       |                           
 
-
-### Monetary Expansion
-- Parameter: `monetaryExpansion`
+#### Treasury Cut
 ```
+Parameter: treasuryCut
+
+Part of the rewards mechanism
+  • The treasury cut portion of the monetary expansion is transferred to the treasury before any pool rewards are paid
+  • Can be set in the range 0.0-1.0 (0%-100%)
+```
+
+| Param Name            |   Parameter/Guardrail                  | Value                                                                     |
+| -------------------   |  -----------------------               | ----------------                                                          |
+| treasuryCut           | TC-01 (y)                              | must not be lower than 0.1 (10%)                                          |                                                                                                                                                                                                                                                         
+|                       | TC-02 (y)                              | must not exceed 0.3 (30%)                                                 | 
+|                       | TC-03 (y)                              | must not be negative                                                      | 
+|                       | TC-04 (y)                              | must not exceed 1.0 (100%)         
+|                       | TC-05 (~ - no access to change history)| must not be changed more than once in any 36 epoch period (approximately 6 months)                                                                                                                                                                                            
+
+
+#### Monetary Expansion
+```
+Parameter: monetaryExpansion
+
 Part of the rewards mechanis
   • The monetary expansion controls the amount of reserves that is used for rewards each epoch
 
@@ -110,6 +124,22 @@ Governs the long-term sustainability of the Cardano Blockchain
 |                                                 | ME-03 (y)                                       | must not be negative                                                                                            |
 |                                                 | ME-04 (x - "should")                            | should not be varied by more than +/- 10% in any 73-epoch period (approximately 12 months)                      |
 |                                                 | ME-05 (x - "should")                            | should not be changed more than once in any 36-epoch period (approximately 6 months)                            |  
+
+
+
+
+##
+##
+##
+##
+##
+##
+
+
+
+
+
+
 
 
 |                  |                  |                    |                    |                              |                        |
