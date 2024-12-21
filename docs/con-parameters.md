@@ -69,7 +69,7 @@
 
 | Section                                         | Parameter Name                 | Parameter Type                                 | Value#1                                                                                                                                                                                                                                                 | Value#2                                | Value#3               |
 | ------------------                              | :---------------:              | :-------------:                                | :--------------:                                                                                                                                                                                                                                        | :-------------:                        | :----------------:    |
-| **2.2. Economic Parameters**                    |                                |                                                |                                                                                                                                                                                                                                                         |                                        |                       |  
+| **2.2  Economic Parameters**                    |                                |                                                |                                                                                                                                                                                                                                                         |                                        |                       |  
 | Changes to Specific Economic Parameters         |                                |                                                |                                                                                                                                                                                                                                                         |                                        |                       |
 |                                                 |   fee(tx)                      | =                                              | txFeeFixed + txFeePerByte x nBytes(tx)                                                                                                                                                                                                                  |                                        |                       |
 |                                                 | txFeePerByte                   | TFPB-01 (y) <br> TFPB-02 (y) <br> TFPB-03 (y)  | must not be lower than 30 (0.000030 ada)                                                                                                                                                                                                                | must not exceed 1,000 (0.001 ada)      | must not be negative  |
@@ -87,12 +87,81 @@
 | Minimum Pool Cost                               |                                |                                                |                                                                                                                                                                                                                                                         |                                        |                       |
 |                                                 | minPoolCost                    | MPC-01 (y) <br> MPC-02 (y)                     | must not be negative                                                                                                                                                                                                                                    | must not exceed 500,000,000 (500 ada)  |                       |
 |                                                 | minPoolCost                    | MPC-03 (x - "should")                          | should be set in line with the economic cost for operating a pool                                                                                                                                                                                       |                                        |                       |        
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
+| Treasury Cut                                    |                                |                                                |                                                                                                                                                                                                                                                         |                                        |                       |   
+|                                                 | treasuryCut                    | TC-01 (y) <br> TC-02 (y)                       | must not be lower than 0.1 (10%)                                                                                                                                                                                                                        | must not exceed 0.3 (30%)              |                       |                    
+|                                                 | treasuryCut                    | TC-03 (y) <br> TC-04 (y)                       | must not be negative                                                                                                                                                                                                                                    | must not exceed 1.0 (100%)             |                       |                 
+|                                                 | treasuryCut                    | TC-05 (~ - no access to change history)        | must not be changed more than once in any 36 epoch period (approximately 6 months)                                                                                                                                                                      |                                        |                       |                           
+| Monetrary Expansion Rate                        |                                |                                                |                                                                                                                                                                                                                                                         |                                        |                       |
+|                                                 | monetaryExpansion              | ME-01 (y) <br> ME-02 (y) <br> ME-03 (y)        | must not exceed 0.005                                                                                                                                                                                                                                   | must not be lower than 0.001           | must not be negative  |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
+|                  |                  |                    |                    |                              |                        |
 |                  |                  |                    |                    |
 |                  |                  |                    |                    |
 |                  |                  |                    |                    |
