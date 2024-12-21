@@ -213,10 +213,58 @@ Parameter #2: executionUnitPrices[priceMemory]
 | executionUnitPrices - General                   | EIUP-GEN-01 (x - "similar to")                  | The execution prices must be set so that <br> 1. the cost of executing a transaction with maximum CPU steps is similar to the cost of a maximum sized non-script transaction and <br> 2. the cost of executing a transaction with maximum memory units is similar to the cost of a maximum sized non-script transaction    |
 |                                                 | EIUP-GEN-02 (x - "should")                      | The execution prices should be adjusted whenever transaction fees are adjusted (txFeeFixed/txFeePerByte). The goal is to ensure that the processing delay is similar for "full" transactions, regardless of their type. <br>  • This helps ensure that the requirements on block diffusion/propagation times are met.        |
 
+### Transaction Fee Per Byte For A Reference Script
+```
+Parameter: minFeeRefScriptCoinsPerByte
+
+Defines the cost for using Plutus reference scripts in lovelace
+```
+| Param Name                                      | Paramter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | :--------------------:                            | ----------------                                                                                                |
+| minFeeRefScriptCoinsPerByte                     | MFRS-01 (y)                                       | must not exceed 1,000 (0.001 ada) <br> • This ensures that transactions can be paid for 
+|                                                 | MFRS-02 (y)                                       | must not be negative
+|                                                 | MFRS-03 (x - "should")                            | To maintain a consistent level of protection against denial-of-service attacks, minFeeRefScriptCoinsPerByte should be adjusted whenever Plutus Execution prices are adjusted (executionUnitPrices[steps/memory]) and whenever txFeeFixed is adjusted         |
+|                                                 | MFRS-04 (x - unquantifiable)                      | Any changes to minFeeRefScriptCoinsPerByte must consider the implications of reducing the cost of a denial-of-service attack or increasing the maximum transaction fee      |
+
+## 2.3. Network Parameters
+```
+The overall goals when managing the Cardano Blockchain network parameters are to:
+
+Match the available Cardano Blockchain Layer 1 network capacity to current or future traffic demands,
+including payment transactions, layer 1 DApps, sidechain management and governance needs
+
+Balance traffic demands for different user groups, including payment transactions, minters of
+sFungible/Non-Fungible Tokens, Plutus scripts, DeFi developers, Stake Pool Operators and voting transactions
+```
+### Triggers For Change
+```
+Changes to network parameters may be triggered by:
+  • Measured changes in traffic demands over a 2-epoch period (10 days)
+  • Anticipated changes in traffic demands
+  • Cardano Community requests
+```
+### Counter-indicators
+```
+Changes may need to be reversed and/or should not be enacted in the event of:
+  • Excessive block propagation delays
+  • Stake pools being unable to handle traffic volume
+  • Scripts being unable to complete execution
+```
+### Core Metrics
+```
+All decisions on parameter changes should be informed by:
+  • Block propagation delay profile
+  • Traffic volume (block size over time)
+  • Script volume (size of scripts and execution units)
+  • Script execution cost benchmarks
+  • Block propagation delay/diffusion benchmarks
+
+Detailed benchmarking results are required to confirm the effect of any changes on mainnet performance or
+behavior prior to enactment. The effects of different transaction mixes must be analyzed, including normal
+transactions, Plutus scripts, and governance actions.
+```
 
 
-
-##
 ##
 ##
 ##
