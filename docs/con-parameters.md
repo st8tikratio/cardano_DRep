@@ -350,7 +350,7 @@ The limit on the maximum number of CPU steps that can be used by Plutus scripts,
 
 ### Block Header Size
 ```
-Paramtere: maxBlockHeaderSize
+Paramter: maxBlockHeaderSize
 
 The size of the block header.
 ```
@@ -439,7 +439,7 @@ Defines the maximum number of epochs notice that a pool can give when planning t
 
 ### Collateral Percentage
 ```
-ParameterL collateralPercentage
+Parameter: collateralPercentage
 
 Defines how much collateral must be provided when executing a Plutus script as a percentage of the normal execution cost
   • Collateral is additional to fee payments
@@ -541,12 +541,182 @@ The deposit that is charged when submitting a governance action.
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-|
+| govDeposit                                      | GD-01 (y)                                       | must not be negative    |
+|                                                 | GD-02 (y)                                       | must not be lower than 1,000,000 (1 ada)    |
+|                                                 | GD-03a (y)                                      | must not exceed 10,000,000,000,000 (10 million ada)     |
+|                                                 | GD-04 (x - "should")                            | should be adjusted in line with fiat changes    |
 
+### Deposit for DReps
+```
+Parameter: dRepDeposit
 
+The deposit that is charged when registering a DRep.
+  • Helps to limit the number of active DReps
+```
 
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| dRepDeposit                                     | DRD-01 (y)                                      | must not be negative      |
+|                                                 | DRD-02 (y)                                      | must not be lower than 1,000,000 (1 ada)    |
+|                                                 | DRD-03 (y)                                      | must not exceed 100,000,000,000 (100,000 ada)      |
+|                                                 | DRD-04 (x - "should")                           | should be adjusted in line with fiat changes      |
 
+### DRep Activity Period 
+```
+Parameter: dRepActivity
 
+The period (as a whole number of epochs) after which a DRep is considered to be inactive for vote calculation purposes, if they do not vote on any proposal.
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| dRepActivity                                    | DRA-01 (y)                                      | must not be lower than 13 epochs (2 months)      |
+|                                                 | DRA-02 (y)                                      | must not exceed 37 epochs (6 months)      |
+|                                                 | DRA-03 (y)                                      | must not be negative              |
+|                                                 | DRA-04 (~ - no access to existing parameter values) | must be greater than govActionLifetime      |
+|                                                 | DRA-05 (x - "should")                           | should be calculated in human terms (2 months etc)      |
+
+### DRep and SPO Governance Action Thresholds
+```
+Paramter #1: dRepVotingThresholds[...]
+Paramter #2: poolVotingThresholds[...])
+
+Thresholds on the active voting stake that is required to ratify a specific type of governance action by either DReps or SPOs.
+  • Ensures legitimacy of the action
+
+The threshold parameters are listed below:
+
+dRepVotingThresholds:
+  • dvtCommitteeNoConfidence • dvtCommitteeNormal • dvtHardForkInitiation
+  • dvtMotionNoConfidence • dvtPPEconomicGroup • dvtPPGovGroup
+  • dvtPPNetworkGroup • dvtPPTechnicalGroup • dvtTreasuryWithdrawal
+  • dvtUpdateToConstitution
+
+poolVotingThresholds:
+  • pvtCommitteeNoConfidence • pvtCommitteeNormal • pvtHardForkInitiation
+  • pvtMotionNoConfidence • pvtPPSecurityGroup
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| Vote_General                                    | VT-GEN-01 (y)                                   | All thresholds must be greater than 50% and less than or equal to 100%      |
+|                                                 | VT-GEN-02a (y)                                  | Economic, network and technical/security parameter thresholds must be in the range 51%-75%      |
+|                                                 | VT-GEN-03 (y)                                   | Governance parameter thresholds must be in the range 75%-90%      |
+| Vote_Hardfork                                   | VT-HF-01 (y)                                    | Hard fork action thresholds must be in the range 51%-80%    |
+| Vote_Constitution                               | VT-CON-01 (y)                                   | New Constitution or Guardrails Script action thresholds must be in the range 65%-90%    |
+| Vote_Constitutional-Committee                   | VT-CC-01 (y)                                    | Update Constitutional Committee action thresholds must be in the range 51%-90%
+| Vote_No-Confidence                              | VT-NC-01 (y)                                    | No confidence action thresholds must be in the range 51%-75%
+
+### Governance Action Lifetime
+```
+Paramter: govActionLifetime
+
+The period after which a governance action will expire if it is not enacted - as a whole number of epochs
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| govActionLifetime                               | GAL-01 (y)                                      | must not be lower than 1 epoch (5 days)    |
+|                                                 | GAL-03 (x - "should")                           | should not be lower than 2 epochs (10 days)      |
+|                                                 | GAL-02 (y)                                      | must not exceed 15 epochs (75 days)      |
+|                                                 | GAL-04 (x - "should")                           | should be calibrated in human terms (eg 30 days, two weeks), to allow sufficient time for voting etc. to take place      |
+|                                                 | GAL-05 (~ - no access to existing parameter values) | must be less than dRepActivity        |
+
+### Maximum Constitutional Committee Term
+```
+Parameter: committeeMaxTermLength
+
+The limit on the maximum term length that a committee member may serve
+```
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| committeeMaxTermLength                          | CMTL-01a (y)                                    | must not be zero    |
+|                                                 | CMTL-02a (y)                                    | must not be negative      |
+|                                                 | CMTL-03a (y)                                    | must not be lower than 18 epochs (90 days, or approximately 3 months)      |
+|                                                 | CMTL-04a (y)                                    | must not exceed 293 epochs (approximately 4 years)        |
+|                                                 | CMTL-05a (x - "should")                         | should not exceed 220 epochs (approximately 3 years)      |
+
+### The Minimum Size Of The Constitutional Committee
+```
+Parameter: committeeMinSize
+
+The least number of members that can be included in a Constitutional Committee following a governance action to change the Constitutional Committee.
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| committeeMinSize                                | CMS-01 (y)                                      | must not be negative        |
+|                                                 | CMS-02 (y)                                      | must not be lower than 3    |
+|                                                 | CMS-03 (y)                                      | must not exceed 10          |
+
+## 2.6. Monitoring and Reversion of Parameter Changes
+```
+All network parameter changes must be monitored carefully for no less than 2 epochs (10 days)
+  • Changes must be reverted as soon as possible if block propagation delays exceed 4.5s for more than 5% of blocks over any 6 hour rolling window
+
+All other parameter changes should be monitored
+  • The reversion plan should be implemented if the overall effect on performance, security, functionality or long-term sustainability is unacceptable.
+
+A specific reversion/recovery plan must be produced for each parameter change. This plan must include:
+  • Which parameters need to change and in which ways in order to return to the previous state (or a similar state)
+  • How to recover the network in the event of disastrous failure
+
+This plan should be followed if problems are observed following the parameter change. Note that not all changes can be reverted. Additional care must be taken when making changes to these parameters.
+```
+
+## 2.7. Non-Updatable Protocol Parameters
+```
+Some fundamental protocol parameters cannot be changed by the Protocol Parameter Update governance action.
+These parameters can only be changed in a new Genesis file as part of a hard fork.
+It is not necessary to provide specific guardrails on updating these parameters.
+```
+
+# 3. Guardrails and Guidelines on Treasury Withdrawal Actions
+```
+Treasury withdrawal actions specify the destination and amount of a number of withdrawals from the Cardano treasury.
+```
+### Treasury
+```
+Parameter: TREASURY
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| TREASURY                                        | TREASURY-01a (x)                                | A net change limit for the Cardano treasury's balance per period of time must be agreed by the DReps via an on-chain governance action with a threshold of greater than 50% of the active voting stake      |
+|                                                 | TREASURY-02a (x)                                | Withdrawals from the Cardano Blockchain treasury made pursuant to an approved Cardano Blockchain ecosystem budget must not exceed the net change limit for the Cardano Treasury's balance per period of time    |
+|                                                 | TREASURY-03a (x)                                | Withdrawals from the Cardano Blockchain treasury must be denominated in ada      |
+|                                                 | TREASURY-04a (x)                                | Withdrawals from the Cardano Blockchain treasury must not be ratified until there is a Cardano Community approved Cardano Blockchain ecosystem budget then in effect pursuant to a previous on-chain governance action agreed by the DReps with a threshold of greater than 50% of the active voting stake
+
+# 4. Guardrails and Guidelines on Hard Fork Initiation Actions
+```
+The hard fork initiation action requires both a new major and a new minor protocol version to be specified.
+  • As positive integers
+
+As the result of a hard fork, new updatable protocol parameters may be introduced. Guardrails may be defined for these parameters, which will take effect following the hard fork. Existing updatable protocol parameters may also be deprecated by the hard fork, in which case the guardrails become obsolete for all future changes.
+```
+
+### Hardfork
+```
+Parameter: HARDFORK
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| HARDFORK                                        | HARDFORK-01 (~ - no access to existing parameter values) The major protocol version must be the same as or one greater than the major version that will be enacted immediately prior to this change. If the major protocol version is one greater, then the minor protocol version must be zero
+
+HARDFORK-02a (~ - no access to existing parameter values) Unless the major protocol version is also changed, the minor protocol version must be greater than the minor version that will be enacted immediately prior to this change
+
+HARDFORK-03 (~ - no access to existing parameter values) At least one of the protocol versions (major or minor or both) must change
+
+HARDFORK-04a (x) At least 85% of stake pools by active stake should have upgraded to a Cardano Blockchain node version that is capable of processing the rules associated with the new protocol version
+
+HARDFORK-05 (x) Any new updatable protocol parameters that are introduced with a hard fork must be included in this Appendix and suitable guardrails defined for those parameters
+
+HARDFORK-06 (x) Settings for any new protocol parameters that are introduced with a hard fork must be included in the appropriate Genesis file
+
+HARDFORK-07 (x) Any deprecated protocol parameters must be indicated in this Appendix
+
+HARDFORK-08 (~ - no access to Plutus cost model parameters) New Plutus versions must be supported by a version-specific Plutus cost model that covers each primitive that is available in the new Plutus version
 
 
 
