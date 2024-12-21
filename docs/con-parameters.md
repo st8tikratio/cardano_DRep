@@ -226,6 +226,8 @@ Defines the cost for using Plutus reference scripts in lovelace
 |                                                 | MFRS-03 (x - "should")                            | To maintain a consistent level of protection against denial-of-service attacks, minFeeRefScriptCoinsPerByte should be adjusted whenever Plutus Execution prices are adjusted (executionUnitPrices[steps/memory]) and whenever txFeeFixed is adjusted         |
 |                                                 | MFRS-04 (x - unquantifiable)                      | Any changes to minFeeRefScriptCoinsPerByte must consider the implications of reducing the cost of a denial-of-service attack or increasing the maximum transaction fee      |
 
+---
+
 ## 2.3. Network Parameters
 ```
 The overall goals when managing the Cardano Blockchain network parameters are to:
@@ -306,159 +308,52 @@ The maximum size of a transaction, in Bytes.
 |                                                 | MTS-05 (x - "should")                               | should not be increased by more than 2,560 Bytes (2.5KB) in any epoch, and preferably should be increased by 2,048 Bytes (2KB) or less per epoch    |
 |                                                 | MTS-06 (x - "should")                               | should not exceed 1/4 of the block size      |
 
+### Memory Unit Limits
+```
+Parameter #1: maxBlockExecutionUnits[memory]
+Parameter #2: maxTxExecutionUnits[memory]
+
+The limit on the maximum number of memory units that can be used by Plutus scripts, either per-transaction or per-block.
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | :--------------------:                            | ----------------                                                                                                |
+| maxTxExecutionUnits[memory]                     | MTEU-M-01 (y)                                     | must not exceed 40,000,000 units    |
+|                                                 | MTEU-M-02 (y)                                     | must not be negative    |
+|                                                 | MTEU-M-03 (~ - no access to existing parameter values) | must not be decreased    |
+|                                                 | MTEU-M-04 (x - "should")                           | should not be increased by more than 2,500,000 units in any epoch    |
+| maxBlockExecutionUnits[memory]                  | MBEU-M-01 (y)                                      | must not exceed 120,000,000 units    |
+|                                                 | MBEU-M-02 (y)                                      | must not be negative    |
+|                                                 | MBEU-M-03 (x - "should")                           | should not be changed (increased or decreased) by more than 10,000,000 units in ANY epoch
+|                                                 | MBEU-M-04a (x - unquantifiable)                    | The impact of any change to maxBlockExecutionUnits[memory] must be confirmed by detailed benchmarking/simulation and not exceed the requirements of the block diffusion/propagation time budgets, as also impacted by maxBlockExecutionUnits[steps] and maxBlockBodySize. Any increase must also consider previously agreed future requirements for the total block size (maxBlockBodySize) measured against the total block diffusion target of 3s with 95% block propagation within 5s. Future Plutus performance improvements may allow the per-block memory limit to be increased, but must be balanced against the overall diffusion limits as specified in the previous sentence, and future requirements
+| **MEU** ___not Identified___         | MEU-M-01 (~ - no access to existing parameter values) | maxBlockExecutionUnits[memory] must not be less than maxTxExecutionUnits[memory]
+
+### CPU Unit Limits
+```
+Parameter #1:
+Parameter #2:
+
+The limit on the maximum number of CPU steps that can be used by Plutus scripts, either per transaction or per-block.
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | :--------------------:                            | ----------------                                                                                                |
+| maxTxExecutionUnits[steps]                      | MTEU-S-01 (y)                                     | must not exceed 15,000,000,000 (15Bn) units      |
+|                                                 | MTEU-S-02 (y)                                     | must not be negative        |
+|                                                 | MTEU-S-03 (~ - no access to existing parameter values)  | must not be decreased      |
+|                                                 | MTEU-S-04 (x - "should")                           | should not be increased by more than 500,000,000 (500M) units in any epoch (5 days)    |
+| maxBlockExecutionUnits[steps]                   | MBEU-S-01 (y)                                      | must not exceed 40,000,000,000 (40Bn) units
+|                                                 | MBEU-S-02 (y)                                      | must not be negative
+|                                                 | MBEU-S-03 (x - "should")                           | should not be changed (increased or decreased) by more than 2,000,000,000 (2Bn) units in any epoch (5 days)
+|                                                 | MBEU-S-04a (x - unquantifiable)                    | The impact of the change to maxBlockExecutionUnits[steps] must be confirmed by detailed benchmarking/simulation and not exceed the requirements of the block diffusion/propagation time budgets, as also impacted by maxBlockExecutionUnits[memory] and maxBlockBodySize. Any increase must also consider previously identified future requirements for the total block size (maxBlockBodySize) measured against the total block diffusion target of 3s with 95% block propagation within 5s. Future Plutus performance improvements may allow the per-block step limit to be increased, but must be balanced against the overall diffusion limits as specified in the previous sentence, and future requirements      |
+| **MEU** ___NOT IDENTIFIED__                     | MEU-S-01 (~ - no access to existing parameter values) | maxBlockExecutionUnits[steps] must not be less than maxTxExecutionUnits[steps]    |
 
 
-##
-##
-##
 
 
+####
+############
 
-
-
-
-
-
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |                              |                        |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
 ---
 
 ## Plutus V3 Parameteres
@@ -470,52 +365,6 @@ The maximum size of a transaction, in Bytes.
 | 1000                | 173                 | 0                   | 1                   |
 | 1000                | 59957                 | 4                   | 1                   |
 | 11183                 |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
 |                  |                  |                    |                    |
 |                  |                  |                    |                    |
 
