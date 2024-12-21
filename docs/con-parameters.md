@@ -346,7 +346,157 @@ The limit on the maximum number of CPU steps that can be used by Plutus scripts,
 |                                                 | MBEU-S-02 (y)                                      | must not be negative
 |                                                 | MBEU-S-03 (x - "should")                           | should not be changed (increased or decreased) by more than 2,000,000,000 (2Bn) units in any epoch (5 days)
 |                                                 | MBEU-S-04a (x - unquantifiable)                    | The impact of the change to maxBlockExecutionUnits[steps] must be confirmed by detailed benchmarking/simulation and not exceed the requirements of the block diffusion/propagation time budgets, as also impacted by maxBlockExecutionUnits[memory] and maxBlockBodySize. Any increase must also consider previously identified future requirements for the total block size (maxBlockBodySize) measured against the total block diffusion target of 3s with 95% block propagation within 5s. Future Plutus performance improvements may allow the per-block step limit to be increased, but must be balanced against the overall diffusion limits as specified in the previous sentence, and future requirements      |
-| **MEU** ___NOT IDENTIFIED___                    | MEU-S-01 (~ - no access to existing parameter values) | maxBlockExecutionUnits[steps] must not be less than maxTxExecutionUnits[steps]    |
+| **MEU** ___not identified___                    | MEU-S-01 (~ - no access to existing parameter values) | maxBlockExecutionUnits[steps] must not be less than maxTxExecutionUnits[steps]    |
+
+### Block Header Size
+```
+Paramtere: maxBlockHeaderSize
+
+The size of the block header.
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| maxBlockHeaderSize                              | MBHS-01 (y)                                     | must not exceed 5,000 Bytes    |
+|                                                 | MBHS-02 (y)                                     | must not be negative    |
+|                                                 | MBHS-03 (x - "largest valid header" is subject to change)  | must be large enough for the largest valid header    |
+|                                                 | MBHS-04 (x - "should")                                     | should only normally be increased if the protocol changes
+|                                                 | MBHS-05 (x - "should")                                     | should be within TCP's initial congestion window (3 or 10 MTUs)
+
+## 2.4 Technical/Security Parameters
+```
+• The overall goals when managing the technical/security parameters are:
+   1. Ensure the security of the Cardano Blockchain network in terms of decentralization and protection against adversarial actions
+   2. Enable changes to the Plutus language
+```
+
+### Triggers for Change
+```
+1. Changes in the number of active SPOs
+2. Changes to the Plutus language
+3. Security threats
+4. Cardano Community requests
+```
+### Counter-indicators
+```
+• Economic concerns, e.g. when changing the number of stake pools
+```
+
+### Core Metrics
+```
+• Number of stake pools
+• Level of decentralization
+```
+
+### Target Number of Stake Pools
+```
+Parameter: stakePoolTargetNum
+
+Sets the target number of stake pools
+  • The expected number of stake pools when the network is in the equilibrium state
+  • Primarily a security parameter, ensuring decentralization by stake pool division/replication
+  • Has an economic effect as well as a security effect - economic advice is also required when changing this parameter
+  • Large changes in this parameter will trigger mass redelegation events
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| stakePoolTargetNum                              | SPTN-01 (y)                                     | must not be lower than 250        |
+|                                                 | SPTN-02 (y)                                     | must not exceed 2,000            |
+|                                                 | SPTN-03 (y)                                     | must not be negative        |
+|                                                 | SPTN-04 (y)                                     | must not be zero          |
+
+### Pledge Influence Factor
+```
+Paramter: poolPledgeInfluence
+
+Enables the pledge protection mechanism
+
+Provides protection against Sybil attack
+  • Higher values reward pools that have more pledge and penalize pools that have less pledge
+
+Has an economic effect as well as technical effect - economic advice is also required
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| poolPledgeInfluence                             | PPI-01 (y)                                      | must not be lower than 0.1      |
+|                                                 | PPI-02 (y)                                      | must not exceed 1.0      |
+|                                                 | PPI-03 (y)                                      | must not be negative      |
+|                                                 | PPI-04 (x - "should")                           | should not vary by more than +/- 10% in any 18-epoch period (approximately 3 months)    |
+
+### Pool Retirement Window
+```
+Parameter poolRetireMaxEpoch
+
+Defines the maximum number of epochs notice that a pool can give when planning to retire
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| poolRetireMaxEpoch                              | PRME-01 (y)                                      | must not be negative      |
+|                                                 | PRME-02 (x - "should")                           | should not be lower than 1      |
+
+### Collateral Percentage
+```
+ParameterL collateralPercentage
+
+Defines how much collateral must be provided when executing a Plutus script as a percentage of the normal execution cost
+  • Collateral is additional to fee payments
+  • If a script fails to execute, then the collateral is lost
+  • The collateral is never lost if a script executes successfully
+
+Provides security against low-cost attacks by making it more expensive rather than less expensive to execute failed scripts
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| collateralPercentage                            | CP-01 (y)                                       | must not be lower than 100    |
+|                                                 | CP-02 (y)                                       | must not exceed 200      |
+|                                                 | CP-03 (y)                                       | must not be negative      |
+|                                                 | CP-04 (y)                                       | must not be zero        |
+
+### Maximum Number Of Collateral Inputs
+```
+Parameter: maxCollateralInputs
+
+Defines the maximum number of inputs that can be used for collateral when executing a Plutus script
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| maxCollateralInputs                             | MCI-01 (y)                                      | must not be lower than 1        |
+
+### Maximum Value Size
+```
+Parameter: maxValueSize
+
+The limit on the serialized size of the Value in each output.
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
