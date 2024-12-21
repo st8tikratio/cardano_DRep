@@ -498,10 +498,50 @@ A different cost model is required for each Plutus version. Each cost model comp
 | costModel                                       | PCM-03a (~ - no access to Plutus cost model parameters) | Cost model values should not normally be negative. Negative values must be justified against the underlying cost model for the associated primitives      |
 |                                                 | PCM-04 (~ - no access to Plutus cost model parameters) | A cost model must be supplied for each Plutus language version that the protocol supports      |
 
+## 2.5 Governance Parameters
+```
+The overall goals when managing the governance parameters are to:
+  • Ensure governance stability
+  • Maintain a representative form of governance
+```
 
+### Triggers for Change
+```
+Changes to governance parameters may be triggered by:
+  • Cardano Community requests
+  • Regulatory requirements
+  • Unexpected or unwanted governance outcomes
+  • Entering a state of no confidence
+```
 
+### Counter-indicators
+```
+Changes may need to be reversed and/or should not be enacted in the event of:
+  • Unexpected effects on governance
+  • Excessive Layer 1 load due to on-chain voting or excessive numbers of governance actions
+```
 
+### Core Metrics
+```
+All decisions on parameter changes should be informed by:
+  • Governance participation levels
+  • Governance behaviors and patterns
+  • Regulatory considerations
+  • Confidence in the governance system
+  • The effectiveness of the governance system in managing necessary change
+```
 
+### Deposit for Governance Actions
+```
+Parameter: govDeposit
+
+The deposit that is charged when submitting a governance action.
+  • Helps to limit the number of actions that are submitted
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+|
 
 
 
