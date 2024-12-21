@@ -186,7 +186,7 @@ Governs the long-term sustainability of the Cardano Blockchain
   • The reserves are gradually depleted until no rewards are supplied
 ```
 
-| Param Name                                      | Paramter/Guardrail                              |  Value                                                                                                          |
+| Param Name                                      | Parameter/Guardrail                              |  Value                                                                                                          |
 | -------------------------                       | :--------------------:                            | ----------------                                                                                                |
 | monetaryExpansion                               | ME-01 (y)                                       | must not exceed 0.005                                                                                           |
 |                                                 | ME-02 (y)                                       | must not be lower than 0.001                                                                                    |
@@ -204,7 +204,7 @@ Parameter #2: executionUnitPrices[priceMemory]
 • Provides security against low-cost DoS attacks
 ```
 
-| Param Name                                      | Paramter/Guardrail                              |  Value                                                                                                          |
+| Param Name                                      | Parameter/Guardrail                              |  Value                                                                                                          |
 | -------------------------                       | :--------------------:                            | ----------------                                                                                                |
 | executionUnitPrices[priceSteps]                 | EIUP-PS-01 (y)                                  | must not exceed 2,000 / 10,000,000    | 
 |                                                 | EIUP-PS-02 (y)                                  | must not be lower than 500 / 10,000,000   |
@@ -219,7 +219,7 @@ Parameter: minFeeRefScriptCoinsPerByte
 
 Defines the cost for using Plutus reference scripts in lovelace
 ```
-| Param Name                                      | Paramter/Guardrail                                |  Value                                                                                                          |
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | :--------------------:                            | ----------------                                                                                                |
 | minFeeRefScriptCoinsPerByte                     | MFRS-01 (y)                                       | must not exceed 1,000 (0.001 ada) <br> • This ensures that transactions can be paid for 
 |                                                 | MFRS-02 (y)                                       | must not be negative
@@ -268,15 +268,46 @@ transactions, Plutus scripts, and governance actions.
 Parameter: NETWORK
 ```
 
-| Param Name                                      | Paramter/Guardrail                                |  Value                                                                                                          |
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | :--------------------:                            | ----------------                                                                                                |
 | NETWORK                                         | NETWORK-01 (x - "should")                         | No individual network parameter should change more than once per two epochs    |
 |                                                 | NETWORK-02 (x - "should")                         | Only one network parameter should be changed per epoch unless they are directly correlated, e.g., per-transaction and per-block memory unit limits      |
 
+### Block Size
+```
+Parameter: maxBlockBodySize
+
+The maximum size of a block, in Bytes.
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | :--------------------:                            | ----------------                                                                                                |
+| maxBlockBodySize                                | MBBS-01 (y)                                        | must not exceed 122,880 Bytes (120KB)           |
+|                                                 | MBBS-02 (y)                                        | must not be lower than 24,576 Bytes (24KB)           |
+|                                                 | MBBS-03 (x - "exceptional circumstances")          | must not be decreased, other than in exceptional circumstances where there are potential problems with security, performance, functionality or long-term sustainability                                       |            
+|                                                 | MBBS-04 (~ - no access to existing parameter values) | must be large enough to include at least one transaction (that is, maxBlockBodySize must be at least maxTxSize)      |
+|                                                 | MBBS-05 (x - "should")                               | should be changed by at most 10,240 Bytes (10KB) per epoch (5 days), and preferably by 8,192 Bytes (8KB) or less per epoch        |
+|                                                 | MBBS-06 (x - "should")                               | The block size should not induce an additional Transmission Control Protocol (TCP) round trip. Any increase beyond this must be backed by performance analysis, simulation and benchmarking          |
+|                                                 | MBBS-07 (x - "unquantifiable")                       | The impact of any change to maxBlockBodySize must be confirmed by detailed benchmarking/simulation and not exceed the requirements of the block diffusion/propagation time budgets, as described below. Any increase to maxBlockBodySize must also consider future requirements for Plutus script execution (maxBlockExecutionUnits[steps]) against the total block diffusion target of 3s with 95% block propagation within 5s. The limit on maximum block size may be increased in the future if this is supported by benchmarking and monitoring results    |
+
+### Transaction Size
+```
+Parameter: maxTxSize
+
+The maximum size of a transaction, in Bytes.
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | :--------------------:                            | ----------------                                                                                                |
+| maxTxSize                                       | MTS-01 (y)                                        | must not exceed 32,768 Bytes (32KB)    |
+|                                                 | MTS-02 (y)                                        | must not be negative        |
+|                                                 | MTS-03 (~ - no access to existing parameter values) | must not be decreased      |
+|                                                 | MTS-04 (~ - no access to existing parameter values) | must not exceed maxBlockBodySize    |
+|                                                 | MTS-05 (x - "should")                               | should not be increased by more than 2,560 Bytes (2.5KB) in any epoch, and preferably should be increased by 2,048 Bytes (2KB) or less per epoch    |
+|                                                 | MTS-06 (x - "should")                               | should not exceed 1/4 of the block size      |
 
 
-##
-##
+
 ##
 ##
 ##
