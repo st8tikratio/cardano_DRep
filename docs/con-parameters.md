@@ -476,7 +476,30 @@ The limit on the serialized size of the Value in each output.
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-|
+| maxValueSize                                    | MVS-01 (y)                                      | must not exceed 12,288 Bytes (12KB)      |
+|                                                 | MVS-02 (y)                                      | must not be negative        |
+|                                                 | MVS-03 (~ - no access to existing parameter values) | must be less than maxTxSize    |
+|                                                 | MVS-04 (~ - no access to existing parameter values) | must not be reduced        |
+|                                                 | MVS-05 (x - "sensible output" is subject to interpretation) | maxValueSize must be large enough to allow sensible outputs (e.g. any existing on-chain output or anticipated outputs that could be produced by new ledger rules)     |
+
+### Plutus Cost Models
+```
+Parameter: costModels
+
+Define the base costs for each Plutus primitive in terms of CPU and memory unit
+
+A different cost model is required for each Plutus version. Each cost model comprises many distinct cost model values. Cost models are defined for each Plutus language version. A new language version may introduce additional cost model values or remove existing cost model values.
+```
+
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| plutusCostModel                                 | PCM-01 (x - unquantifiable)                     | Cost model values must be set by benchmarking on a reference architecture      |
+|        OR                                       | PCM-02 (x - primitives and language versions aren't introduced in transactions) | The cost model must be updated if new primitives are introduced or a new Plutus language version is added    |
+| costModel                                       | PCM-03a (~ - no access to Plutus cost model parameters) | Cost model values should not normally be negative. Negative values must be justified against the underlying cost model for the associated primitives      |
+|                                                 | PCM-04 (~ - no access to Plutus cost model parameters) | A cost model must be supplied for each Plutus language version that the protocol supports      |
+
+
+
 
 
 
