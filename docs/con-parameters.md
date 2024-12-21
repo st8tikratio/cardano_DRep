@@ -125,12 +125,37 @@ Reducing the number of active stake addresses also reduces processing and memory
 |                       | SAD-02 (y)                      | must not exceed 5,000,000 (5 ada)          | 
 |                       | SAD-03 (y)                      | must not be negative                       |                                                                                                                                                                                                        
 
+### Stake Pool Deposit
+```
+Parameter: stakePoolDeposit
 
-| Stake Pool Deposit                              |                                |                                                |                                                                                                                                                                                                                                                         |                                        |                       |
-|                                                 | stakePoolDeposit               | SPD-01 (y) <br> SPD-02 (y) <br> SPD-03 (y)     | must not be lower than 250,000,000 (250 ada)                                                                                                                                                                                                            | must not exceed 500,000,000 (500 ada)  | must not be negative  |  
-| Minimum Pool Cost                               |                                |                                                |                                                                                                                                                                                                                                                         |                                        |                       |
-|                                                 | minPoolCost                    | MPC-01 (y) <br> MPC-02 (y)                     | must not be negative                                                                                                                                                                                                                                    | must not exceed 500,000,000 (500 ada)  |                       |
-|                                                 | minPoolCost                    | MPC-03 (x - "should")                          | should be set in line with the economic cost for operating a pool                                                                                                                                                                                       |                                        |                       |        
+Ensures that stake pools are retired by the stake pool operator when no longer needed by them
+  • Helps reduce long-term storage costs
+
+The rationale for the deposit is to incentivize that scarce memory resources are returned when they are no longer required.
+Rewards and stake snapshot calculations are also impacted by the number of active stake pools.
+
+
+```
+| Param Name            |   Parameter/Guardrail           | Value                                                                                                                                                                                                                                                                           |
+| -------------------   |  :-----------------------:      | ----------------                                                                                                                                                                                                                                                                |
+| stakePoolDeposit      | SPD-01 (y)                      | must not be lower than 250,000,000 (250 ada)          |
+|                       | SPD-02 (y)                      | must not exceed 500,000,000 (500 ada)                  |  
+|                       | SPD-03 (y)                      | must not be negative                                  |
+
+### Minimum Pool Cost
+```
+Parameter: minPoolCost
+
+Part of the rewards mechanism
+  • The minimum pool cost is transferred to the pool rewards address before any delegator rewards are paid
+```
+
+| Param Name            |   Parameter/Guardrail           | Value                                                                                                                                                                                                                                                                           |
+| -------------------   |  :-----------------------:      | ----------------                                                                                                                                                                                                                                                                |
+| minPoolCost           | MPC-01 (y)                     | must not exceed 500,000,000 (500 ada)                                    |                       
+|                       | MPC-02 (y)                     | must not be negative                                                     |                                                                                                                                                                                                                                    
+|                       | MPC-03 (x - "should")          | should be set in line with the economic cost for operating a pool        |
 
 ### Treasury Cut
 ```
