@@ -12,7 +12,8 @@
     - [Plutus User Guide - IOHK](https://plutus.cardano.intersectmbo.org/docs/)
     - [Plutus Repo - IntersectMBO](https://github.com/IntersectMBO/plutus#specifications-and-design)
     - **NONE OF THE ABOVE PROVIDE V3 COST-MODELING**
-
+- Parameters:
+  - [05-Dec-2024 Constitution via IMBO](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/draft-constitution-converted.md)  
 ---
 ## Cardano Governance Parameters
 
