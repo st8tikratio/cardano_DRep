@@ -80,7 +80,7 @@ Defines the cost for basic transactions in lovelace:
   • fee(tx) = txFeeFixed + txFeePerByte x nBytes(tx)
 ```
 | Param Name            |   Parameter/Guardrail           | Value                                                                                                                                                                                                                                                                           |
-| -------------------   |  :-----------------------:      | ----------------                                                                                                                                                                                                                                                                |
+| -------------------   |  -----------------------      | ----------------                                                                                                                                                                                                                                                                |
 | txFeePerByte          | TFPB-01 (y)                     | must not be lower than 30 (0.000030 ada)                                                                                                                                                                                                                                        |
 |                       | TFPB-02 (y)                     | must not exceed 1,000 (0.001 ada)                                                                                                                                                                                                                                               | 
 |                       | TFPB-03 (y)                     | must not be negative                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                
@@ -100,7 +100,7 @@ Defines the deposit (in lovelace) that is charged for each byte of storage tha i
   • Helps reduce long-term storage costs for node users by providing an incentive to return UTxOs when no longer needed, or to merge UTxOs.
 ```
 | Param Name            |   Parameter/Guardrail           | Value                                                                                                                                                                                                                                                                           |
-| -------------------   |  :-----------------------:      | ----------------                                                                                                                                                                                                                                                                |
+| -------------------   |  -----------------------      | ----------------                                                                                                                                                                                                                                                                |
 | utxoCostPerByte       | UCPB-01 (y)                     | must not be lower than 3,000 (0.003 ada) |
 |                       | UCPB-02 (y)                     | must not exceed 6,500 (0.0065 ada) |
 |                       | UCPB-03 (y)                     | must not be zero                                                                                                                                                                                                          
@@ -120,7 +120,7 @@ Reducing the number of active stake addresses also reduces processing and memory
 ```
 
 | Param Name            |   Parameter/Guardrail           | Value                                                                                                                                                                                                                                                                           |
-| -------------------   |  :-----------------------:      | ----------------                                                                                                                                                                                                                                                                |
+| -------------------   |  -----------------------        | ----------------                                                                                                                                                                                                                                                                |
 | stakeAddressDeposit   | SAD-01 (y)                      | must not be lower than 1,000,000 (1 ada    |
 |                       | SAD-02 (y)                      | must not exceed 5,000,000 (5 ada)          | 
 |                       | SAD-03 (y)                      | must not be negative                       |                                                                                                                                                                                                        
@@ -138,7 +138,7 @@ Rewards and stake snapshot calculations are also impacted by the number of activ
 
 ```
 | Param Name            |   Parameter/Guardrail           | Value                                                                                                                                                                                                                                                                           |
-| -------------------   |  :-----------------------:      | ----------------                                                                                                                                                                                                                                                                |
+| -------------------   |  -----------------------      | ----------------                                                                                                                                                                                                                                                                |
 | stakePoolDeposit      | SPD-01 (y)                      | must not be lower than 250,000,000 (250 ada)          |
 |                       | SPD-02 (y)                      | must not exceed 500,000,000 (500 ada)                  |  
 |                       | SPD-03 (y)                      | must not be negative                                  |
@@ -152,7 +152,7 @@ Part of the rewards mechanism
 ```
 
 | Param Name            |   Parameter/Guardrail           | Value                                                                                                                                                                                                                                                                           |
-| -------------------   |  :-----------------------:      | ----------------                                                                                                                                                                                                                                                                |
+| -------------------   |  -----------------------      | ----------------                                                                                                                                                                                                                                                                |
 | minPoolCost           | MPC-01 (y)                     | must not exceed 500,000,000 (500 ada)                                    |                       
 |                       | MPC-02 (y)                     | must not be negative                                                     |                                                                                                                                                                                                                                    
 |                       | MPC-03 (x - "should")          | should be set in line with the economic cost for operating a pool        |
@@ -167,7 +167,7 @@ Part of the rewards mechanism
 ```
 
 | Param Name            |   Parameter/Guardrail                  | Value                                                                     |
-| -------------------   |  :-----------------------:               | ----------------                                                          |
+| -------------------   |  -----------------------               | ----------------                                                          |
 | treasuryCut           | TC-01 (y)                              | must not be lower than 0.1 (10%)                                          |                                                                                                                                                                                                                                                         
 |                       | TC-02 (y)                              | must not exceed 0.3 (30%)                                                 | 
 |                       | TC-03 (y)                              | must not be negative                                                      | 
@@ -187,7 +187,7 @@ Governs the long-term sustainability of the Cardano Blockchain
 ```
 
 | Param Name                                      | Parameter/Guardrail                              |  Value                                                                                                          |
-| -------------------------                       | :--------------------:                            | ----------------                                                                                                |
+| -------------------------                       | -------------------                            | ----------------                                                                                                |
 | monetaryExpansion                               | ME-01 (y)                                       | must not exceed 0.005                                                                                           |
 |                                                 | ME-02 (y)                                       | must not be lower than 0.001                                                                                    |
 |                                                 | ME-03 (y)                                       | must not be negative                                                                                            |
@@ -205,7 +205,7 @@ Parameter #2: executionUnitPrices[priceMemory]
 ```
 
 | Param Name                                      | Parameter/Guardrail                              |  Value                                                                                                          |
-| -------------------------                       | :--------------------:                            | ----------------                                                                                                |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
 | executionUnitPrices[priceSteps]                 | EIUP-PS-01 (y)                                  | must not exceed 2,000 / 10,000,000    | 
 |                                                 | EIUP-PS-02 (y)                                  | must not be lower than 500 / 10,000,000   |
 | executionUnitPrices[priceMemory]                | EIUP-PM-01 (y)                                  | must not exceed 2,000 / 10,000      |
@@ -220,7 +220,7 @@ Parameter: minFeeRefScriptCoinsPerByte
 Defines the cost for using Plutus reference scripts in lovelace
 ```
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
-| -------------------------                       | :--------------------:                            | ----------------                                                                                                |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
 | minFeeRefScriptCoinsPerByte                     | MFRS-01 (y)                                       | must not exceed 1,000 (0.001 ada) <br> • This ensures that transactions can be paid for 
 |                                                 | MFRS-02 (y)                                       | must not be negative
 |                                                 | MFRS-03 (x - "should")                            | To maintain a consistent level of protection against denial-of-service attacks, minFeeRefScriptCoinsPerByte should be adjusted whenever Plutus Execution prices are adjusted (executionUnitPrices[steps/memory]) and whenever txFeeFixed is adjusted         |
@@ -271,7 +271,7 @@ Parameter: NETWORK
 ```
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
-| -------------------------                       | :--------------------:                            | ----------------                                                                                                |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
 | NETWORK                                         | NETWORK-01 (x - "should")                         | No individual network parameter should change more than once per two epochs    |
 |                                                 | NETWORK-02 (x - "should")                         | Only one network parameter should be changed per epoch unless they are directly correlated, e.g., per-transaction and per-block memory unit limits      |
 
@@ -283,7 +283,7 @@ The maximum size of a block, in Bytes.
 ```
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
-| -------------------------                       | :--------------------:                            | ----------------                                                                                                |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
 | maxBlockBodySize                                | MBBS-01 (y)                                        | must not exceed 122,880 Bytes (120KB)           |
 |                                                 | MBBS-02 (y)                                        | must not be lower than 24,576 Bytes (24KB)           |
 |                                                 | MBBS-03 (x - "exceptional circumstances")          | must not be decreased, other than in exceptional circumstances where there are potential problems with security, performance, functionality or long-term sustainability                                       |            
@@ -300,7 +300,7 @@ The maximum size of a transaction, in Bytes.
 ```
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
-| -------------------------                       | :--------------------:                            | ----------------                                                                                                |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
 | maxTxSize                                       | MTS-01 (y)                                        | must not exceed 32,768 Bytes (32KB)    |
 |                                                 | MTS-02 (y)                                        | must not be negative        |
 |                                                 | MTS-03 (~ - no access to existing parameter values) | must not be decreased      |
@@ -317,7 +317,7 @@ The limit on the maximum number of memory units that can be used by Plutus scrip
 ```
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
-| -------------------------                       | :--------------------:                            | ----------------                                                                                                |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
 | maxTxExecutionUnits[memory]                     | MTEU-M-01 (y)                                     | must not exceed 40,000,000 units    |
 |                                                 | MTEU-M-02 (y)                                     | must not be negative    |
 |                                                 | MTEU-M-03 (~ - no access to existing parameter values) | must not be decreased    |
@@ -337,7 +337,7 @@ The limit on the maximum number of CPU steps that can be used by Plutus scripts,
 ```
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
-| -------------------------                       | :--------------------:                            | ----------------                                                                                                |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
 | maxTxExecutionUnits[steps]                      | MTEU-S-01 (y)                                     | must not exceed 15,000,000,000 (15Bn) units      |
 |                                                 | MTEU-S-02 (y)                                     | must not be negative        |
 |                                                 | MTEU-S-03 (~ - no access to existing parameter values)  | must not be decreased      |
@@ -346,7 +346,7 @@ The limit on the maximum number of CPU steps that can be used by Plutus scripts,
 |                                                 | MBEU-S-02 (y)                                      | must not be negative
 |                                                 | MBEU-S-03 (x - "should")                           | should not be changed (increased or decreased) by more than 2,000,000,000 (2Bn) units in any epoch (5 days)
 |                                                 | MBEU-S-04a (x - unquantifiable)                    | The impact of the change to maxBlockExecutionUnits[steps] must be confirmed by detailed benchmarking/simulation and not exceed the requirements of the block diffusion/propagation time budgets, as also impacted by maxBlockExecutionUnits[memory] and maxBlockBodySize. Any increase must also consider previously identified future requirements for the total block size (maxBlockBodySize) measured against the total block diffusion target of 3s with 95% block propagation within 5s. Future Plutus performance improvements may allow the per-block step limit to be increased, but must be balanced against the overall diffusion limits as specified in the previous sentence, and future requirements      |
-| **MEU** ___NOT IDENTIFIED__                     | MEU-S-01 (~ - no access to existing parameter values) | maxBlockExecutionUnits[steps] must not be less than maxTxExecutionUnits[steps]    |
+| **MEU** ___NOT IDENTIFIED___                    | MEU-S-01 (~ - no access to existing parameter values) | maxBlockExecutionUnits[steps] must not be less than maxTxExecutionUnits[steps]    |
 
 
 
