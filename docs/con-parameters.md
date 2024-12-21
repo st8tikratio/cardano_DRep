@@ -67,6 +67,10 @@
 |                                  | _delegation key lovelace deposit_ (`stakeAddressDeposit`) <br> _pool registration lovelace deposit_ (`stakePoolDeposit`) <br> _minimum fixed rewards cut for pools_ (`minPoolCost`) <br> _DRep deposit amount_ (`dRepDeposit`) <br> _minimal Constitutional Committee size_ (`committeeMinSize`) <br> _maximum term length_ (in epochs) _for the Constitutional Committee members_ (`committeeMaxTermLength`)                                                            | PARAM-05a (y)                          | DReps must vote "yes" with a collective support of more than 50% of all active voting stake. This is enforced by the Guardrails on the DRep voting thresholds. |
 |                                  | _delegation key lovelace deposit_ (`stakeAddressDeposit`) <br> _pool registration lovelace deposit_ (`stakePoolDeposit`) <br> _minimum fixed rewards cut for pools_ (`minPoolCost`) <br> _DRep deposit amount_ (`dRepDeposit`) <br> _minimal Constitutional Committee size_ (`committeeMinSize`) <br> _maximum term length_ (in epochs) _for the Constitutional Committee members_ (`committeeMaxTermLength`)                                                            | PARAM-06a (x)                          | At least 3 months should normally pass between the publication of an off-chain proposal to change a parameter that is critical to the governance system and the submission of the corresponding on-chain governance action. This Guardrail may be relaxed in the event of a Severity 1 or Severity 2 network issue following careful technical discussion and evaluation. |
 
+---
+## 2.2 Economic Parameters
+
+### 
 | Section                                         | Parameter Name                 | Parameter Type                                 | Value#1                                                                                                                                                                                                                                                 | Value#2                                | Value#3               |
 | ------------------                              | :---------------:              | :-------------:                                | :--------------:                                                                                                                                                                                                                                        | :-------------:                        | :----------------:    |
 | **2.2  Economic Parameters**                    |                                |                                                |                                                                                                                                                                                                                                                         |                                        |                       |  
@@ -88,7 +92,7 @@
 |                                                 | minPoolCost                    | MPC-01 (y) <br> MPC-02 (y)                     | must not be negative                                                                                                                                                                                                                                    | must not exceed 500,000,000 (500 ada)  |                       |
 |                                                 | minPoolCost                    | MPC-03 (x - "should")                          | should be set in line with the economic cost for operating a pool                                                                                                                                                                                       |                                        |                       |        
 
-#### Treasury Cut
+### Treasury Cut
 ```
 Parameter: treasuryCut
 
@@ -98,7 +102,7 @@ Part of the rewards mechanism
 ```
 
 | Param Name            |   Parameter/Guardrail                  | Value                                                                     |
-| -------------------   |  -----------------------               | ----------------                                                          |
+| -------------------   |  :-----------------------:               | ----------------                                                          |
 | treasuryCut           | TC-01 (y)                              | must not be lower than 0.1 (10%)                                          |                                                                                                                                                                                                                                                         
 |                       | TC-02 (y)                              | must not exceed 0.3 (30%)                                                 | 
 |                       | TC-03 (y)                              | must not be negative                                                      | 
@@ -106,7 +110,7 @@ Part of the rewards mechanism
 |                       | TC-05 (~ - no access to change history)| must not be changed more than once in any 36 epoch period (approximately 6 months)                                                                                                                                                                                            
 
 
-#### Monetary Expansion
+### Monetary Expansion
 ```
 Parameter: monetaryExpansion
 
@@ -118,7 +122,7 @@ Governs the long-term sustainability of the Cardano Blockchain
 ```
 
 | Param Name                                      | Paramter/Guardrail                              |  Value                                                                                                          |
-| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| -------------------------                       | :--------------------:                            | ----------------                                                                                                |
 | monetaryExpansion                               | ME-01 (y)                                       | must not exceed 0.005                                                                                           |
 |                                                 | ME-02 (y)                                       | must not be lower than 0.001                                                                                    |
 |                                                 | ME-03 (y)                                       | must not be negative                                                                                            |
