@@ -107,11 +107,25 @@ Defines the deposit (in lovelace) that is charged for each byte of storage tha i
 |                       | UCPB-04 (y)                     | must not be negative                                                                                                                                                                                                                                    |     
 |                       | UCPB-05a (x - "should")         | Changes should account for <br> 1. The acceptable cost of attack <br> 2. The acceptable time for an attack <br> 3. The acceptable memory configuration for full node users <br> 4. The sizes of UTxOs and <br> 5. The current total node memory usage   |                                    
 
+### Stake Address Deposit
+```
+Parameter: stakeAddressDeposit
+
+Ensures that stake addresses are retired when no longer needed
+  • Helps reduce long-term storage costs
+  • Helps limit CPU and memory costs in the ledger
+
+The rationale for the deposit is to incentivize that scarce memory resources are returned when they are no longer required.
+Reducing the number of active stake addresses also reduces processing and memory costs at the epoch boundary when calculating stake snapshots.
+```
+
+| Param Name            |   Parameter/Guardrail           | Value                                                                                                                                                                                                                                                                           |
+| -------------------   |  :-----------------------:      | ----------------                                                                                                                                                                                                                                                                |
+| stakeAddressDeposit   | SAD-01 (y)                      | must not be lower than 1,000,000 (1 ada    |
+|                       | SAD-02 (y)                      | must not exceed 5,000,000 (5 ada)          | 
+|                       | SAD-03 (y)                      | must not be negative                       |                                                                                                                                                                                                        
 
 
-
-| Stake Address Deposit                           |                                |                                                |                                                                                                                                                                                                                                                         |                                        |                       |
-|                                                 | stakeAddressDeposit            | SAD-01 (y) <br> SAD-02 (y) <br> SAD-03 (y)     | must not be lower than 1,000,000 (1 ada)                                                                                                                                                                                                                | must not exceed 5,000,000 (5 ada       | must not be negative  |
 | Stake Pool Deposit                              |                                |                                                |                                                                                                                                                                                                                                                         |                                        |                       |
 |                                                 | stakePoolDeposit               | SPD-01 (y) <br> SPD-02 (y) <br> SPD-03 (y)     | must not be lower than 250,000,000 (250 ada)                                                                                                                                                                                                            | must not exceed 500,000,000 (500 ada)  | must not be negative  |  
 | Minimum Pool Cost                               |                                |                                                |                                                                                                                                                                                                                                                         |                                        |                       |
