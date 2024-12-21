@@ -87,7 +87,7 @@ Defines the cost for basic transactions in lovelace:
 | txFeeFixed            | TFF-01 (y)                      | must not be lower than 100,000 (0.1 ada)                                                                                                                                                                                                                                        |
 |                       | TFF-02 (y)                      | must not exceed 10,000,000 (10 ada)                                                                                                                                                                                                                                             | 
 |                       | TFF-03 (y)                      | must not be negative                                                                                                                                                                                                                                                            |                                                                                                                                                                                                              
-| txFeeGeneral (?)      | TFGEN-01 (x - "should")         | To maintain a consistent level of protection agains denial-of-service attacks, txFeeFixed and txFeeFixed should be adjusted whenever Plutus Execution prices are adjusted (executionUnitPrices[steps/memory])                                                                   |
+| txFee - General       | TFGEN-01 (x - "should")         | To maintain a consistent level of protection agains denial-of-service attacks, txFeeFixed and txFeeFixed should be adjusted whenever Plutus Execution prices are adjusted (executionUnitPrices[steps/memory])                                                                   |
 |                       | TFGEN-02 (x - unquantifiable)   | Any changes to txFeeFixed or txFeeFixed must consider the implications of reducing the cost of a denial-of-service attack or increasing the maximum transaction fee so that it becomes impossible to construct a transaction.                                                   |
 
 ### UTxO cost per byte
@@ -193,6 +193,25 @@ Governs the long-term sustainability of the Cardano Blockchain
 |                                                 | ME-03 (y)                                       | must not be negative                                                                                            |
 |                                                 | ME-04 (x - "should")                            | should not be varied by more than +/- 10% in any 73-epoch period (approximately 12 months)                      |
 |                                                 | ME-05 (x - "should")                            | should not be changed more than once in any 36-epoch period (approximately 6 months)                            |  
+
+### Plutus Script Execution Prices
+```
+Parameter #1: executionUnitPrices[priceSteps
+Parameter #2: executionUnitPrices[priceMemory]
+
+• Define the fees for executing Plutus scripts
+• Gives an economic return for Plutus script execution
+• Provides security against low-cost DoS attacks
+```
+
+| Param Name                                      | Paramter/Guardrail                              |  Value                                                                                                          |
+| -------------------------                       | :--------------------:                            | ----------------                                                                                                |
+| executionUnitPrices[priceSteps]                 | EIUP-PS-01 (y)                                  | must not exceed 2,000 / 10,000,000    | 
+|                                                 | EIUP-PS-02 (y)                                  | must not be lower than 500 / 10,000,000   |
+| executionUnitPrices[priceMemory]                | EIUP-PM-01 (y)                                  | must not exceed 2,000 / 10,000      |
+|                                                 | EIUP-PM-02 (y)                                  | must not be lower than 400 / 10,000    |
+| executionUnitPrices - General                   | EIUP-GEN-01 (x - "similar to")                  | The execution prices must be set so that <br> 1. the cost of executing a transaction with maximum CPU steps is similar to the cost of a maximum sized non-script transaction and <br> 2. the cost of executing a transaction with maximum memory units is similar to the cost of a maximum sized non-script transaction    |
+|                                                 | EIUP-GEN-02 (x - "should")                      | The execution prices should be adjusted whenever transaction fees are adjusted (txFeeFixed/txFeePerByte). The goal is to ensure that the processing delay is similar for "full" transactions, regardless of their type. <br>  • This helps ensure that the requirements on block diffusion/propagation times are met.        |
 
 
 
