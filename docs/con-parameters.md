@@ -263,6 +263,16 @@ Detailed benchmarking results are required to confirm the effect of any changes 
 behavior prior to enactment. The effects of different transaction mixes must be analyzed, including normal
 transactions, Plutus scripts, and governance actions.
 ```
+### Network
+```
+Parameter: NETWORK
+```
+
+| Param Name                                      | Paramter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | :--------------------:                            | ----------------                                                                                                |
+| NETWORK                                         | NETWORK-01 (x - "should")                         | No individual network parameter should change more than once per two epochs    |
+|                                                 | NETWORK-02 (x - "should")                         | Only one network parameter should be changed per epoch unless they are directly correlated, e.g., per-transaction and per-block memory unit limits      |
+
 
 
 ##
