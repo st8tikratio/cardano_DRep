@@ -91,8 +91,8 @@
 |                                                 | MVS-03 (~ - no access to existing parameter values) | must be less than maxTxSize    |
 |                                                 | MVS-04 (~ - no access to existing parameter values) | must not be reduced        |
 |                                                 | MVS-05 (x - "sensible output" is subject to interpretation) | maxValueSize must be large enough to allow sensible outputs (e.g. any existing on-chain output or anticipated outputs that could be produced by new ledger rules)     |
-| `**MEU** ___not Identified___`                  | MEU-M-01 (~ - no access to existing parameter values) | maxBlockExecutionUnits[memory] must not be less than maxTxExecutionUnits[memory]
-| `**MEU** ___not identified___`                  | MEU-S-01 (~ - no access to existing parameter values) | maxBlockExecutionUnits[steps] must not be less than maxTxExecutionUnits[steps]    |
+| **`MEU`** ___`not Identified`___                | MEU-M-01 (~ - no access to existing parameter values) | maxBlockExecutionUnits[memory] must not be less than maxTxExecutionUnits[memory]
+| **`MEU`** ___`not identified`___                | MEU-S-01 (~ - no access to existing parameter values) | maxBlockExecutionUnits[steps] must not be less than maxTxExecutionUnits[steps]    |
 | `minFeeRefScriptCoinsPerByte`                   | MFRS-01 (y)                                       | must not exceed 1,000 (0.001 ada) <br> • This ensures that transactions can be paid for 
 |                                                 | MFRS-02 (y)                                       | must not be negative
 |                                                 | MFRS-03 (x - "should")                            | To maintain a consistent level of protection against denial-of-service attacks, minFeeRefScriptCoinsPerByte should be adjusted whenever Plutus Execution prices are adjusted (executionUnitPrices[steps/memory]) and whenever txFeeFixed is adjusted         |
