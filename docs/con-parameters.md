@@ -16,6 +16,7 @@ Symbol and Explanation
 ```
 
 # 2. Guardrails and Guidelines on Protocol Parameter Update Actions
+🔻 Note that users may scroll code blocks left to right🔻
 ```
 Below are Guardrails and guidelines for changing updatable protocol parameter settings via the protocol parameter
 update governance action such that the Cardano Blockchain is never in an unrecoverable state as a result of such changes.
