@@ -1,4 +1,4 @@
-# Cardano Governance Thresholds
+# Pre-Plomin Cardano Governance Thresholds
 
 ### NOTE
 - The `Genesis Parameter Title` fields were taken from the Conway-Genesis.JSON file [here](https://github.com/IntersectMBO/cardano-node/blob/master/configuration/cardano/mainnet-conway-genesis.json) and copied to [here](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/conway-genesis.json)
