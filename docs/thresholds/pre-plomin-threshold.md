@@ -7,12 +7,12 @@
 
 ---
 ## Table of Contents
-1. [SPO Voting Thresholds]()
-2. [DRep Voting Thresholds]()
-3. [Constitution Committee]()
-4. [DReps]()
-5. [Governance Actions]()
-6. [Plutus V3]()
+1. [SPO Voting Thresholds](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/pre-plomin-threshold.md#spo-voting-thresholds)
+2. [DRep Voting Thresholds](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/pre-plomin-threshold.md#drep-voting-thresholds)
+3. [Constitution Committee](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/pre-plomin-threshold.md#constitution-committee)
+4. [DReps](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/pre-plomin-threshold.md#dreps)
+5. [Governance Actions](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/pre-plomin-threshold.md#governance-actions)
+6. [Plutus V3](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/pre-plomin-threshold.md#plutus-v3)
 
 
 
