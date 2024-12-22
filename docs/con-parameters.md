@@ -1,4 +1,5 @@
 # Constitution Parameters With Details
+- [source](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/draft-constitution-converted.md)
 
 ---
 
@@ -6,9 +7,6 @@
 ###### 🛑 this doc will not be updated beyond the first governance change to thresholds 🛑
 
 ---
-
-# Constitution Parameters (05-DEC-2024)
-- [source](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/draft-constitution-converted.md)
 
 ```
 Symbol and Explanation
@@ -28,7 +26,7 @@ actions rather than any other convention.
 
 | Param Name            |   Parameter/Guardrail         | Value                                                                                                                                                                                                                                                                           |
 | -------------------   |  -----------------------      | ----------------                                                                                                                                                                                                                                                                |
-| PARAM                 | PARAM-01 (y)                  | Any protocol parameter that is not explicitly named in this document must not be changed by a Parameter update governance action                                           |
+| `PARAM`               | PARAM-01 (y)                  | Any protocol parameter that is not explicitly named in this document must not be changed by a Parameter update governance action                                           |
 |                       | PARAM-02a (y)                 | Where a protocol parameter is explicitly listed in this document but no checkable Guardrails are specified, the Guardrails Script must not impose any constraints on changes to the parameter. Checkable Guardrails are shown by a (y)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
 ## 2.1. Critical Protocol Parameters 
@@ -58,7 +56,7 @@ Parameter: PARAM
 
 | Param Name            |   Parameter/Guardrail         | Value                                                                                                                                                                                                      |
 | -------------------   |  -----------------------      | ----------------                                                                                                                                                                                           |
-| PARAM                 | PARAM-03a (y)                 | Critical protocol parameters require an SPO vote in addition to a DRep vote: SPOs must say "yes" with a collective support of more than 50% of all active block production stake. This is enforced by the Guardrails on the stake pool voting threshold.    |
+| `PARAM`               | PARAM-03a (y)                 | Critical protocol parameters require an SPO vote in addition to a DRep vote: SPOs must say "yes" with a collective support of more than 50% of all active block production stake. This is enforced by the Guardrails on the stake pool voting threshold.    |
 |                       | PARAM-04a (x)                 | At least 3 months should normally pass between the publication of an off-chain proposal to change a critical protocol parameter and the submission of the corresponding on-chain governance action. This Guardrail may be relaxed in the event of a Severity 1 or Severity 2 network issue following careful technical discussion and evaluation.      |
 
 ### Parameters That Are CRITICAL TO THE GOVERNANCE SYSTEM
@@ -78,7 +76,7 @@ Parameter: PARAM
 
 | Param Name            |   Parameter/Guardrail         | Value                                                                                                                                                                                                      |
 | -------------------   |  -----------------------      | ----------------                                                                                                                                                                                           |
-| PARAM                 | PARAM-05a (y)                 | DReps must vote "yes" with a collective support of more than 50% of all active voting stake. This is enforced by the Guardrails on the DRep voting thresholds.      |
+| `PARAM`               | PARAM-05a (y)                 | DReps must vote "yes" with a collective support of more than 50% of all active voting stake. This is enforced by the Guardrails on the DRep voting thresholds.      |
 |                       | PARAM-06a (x)                 | At least 3 months should normally pass between the publication of an off-chain proposal to change a parameter that is critical to the governance system and the submission of the corresponding on-chain governance action. This Guardrail may be relaxed in the event of a Severity 1 or Severity 2 network issue following careful technical discussion and evaluation.      |
 
 ---
@@ -95,13 +93,13 @@ Defines the cost for basic transactions in lovelace:
 ```
 | Param Name            |   Parameter/Guardrail           | Value                                                                                                                                                                                                                                                                           |
 | -------------------   |  -----------------------      | ----------------                                                                                                                                                                                                                                                                |
-| txFeePerByte          | TFPB-01 (y)                     | must not be lower than 30 (0.000030 ada)                                                                                                                                                                                                                                        |
+| `txFeePerByte`        | TFPB-01 (y)                     | must not be lower than 30 (0.000030 ada)                                                                                                                                                                                                                                        |
 |                       | TFPB-02 (y)                     | must not exceed 1,000 (0.001 ada)                                                                                                                                                                                                                                               | 
 |                       | TFPB-03 (y)                     | must not be negative                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                
-| txFeeFixed            | TFF-01 (y)                      | must not be lower than 100,000 (0.1 ada)                                                                                                                                                                                                                                        |
+| `txFeeFixed`          | TFF-01 (y)                      | must not be lower than 100,000 (0.1 ada)                                                                                                                                                                                                                                        |
 |                       | TFF-02 (y)                      | must not exceed 10,000,000 (10 ada)                                                                                                                                                                                                                                             | 
 |                       | TFF-03 (y)                      | must not be negative                                                                                                                                                                                                                                                            |                                                                                                                                                                                                              
-| txFee - General       | TFGEN-01 (x - "should")         | To maintain a consistent level of protection agains denial-of-service attacks, txFeeFixed and txFeeFixed should be adjusted whenever Plutus Execution prices are adjusted (executionUnitPrices[steps/memory])                                                                   |
+| `txFee - General`     | TFGEN-01 (x - "should")         | To maintain a consistent level of protection agains denial-of-service attacks, txFeeFixed and txFeeFixed should be adjusted whenever Plutus Execution prices are adjusted (executionUnitPrices[steps/memory])                                                                   |
 |                       | TFGEN-02 (x - unquantifiable)   | Any changes to txFeeFixed or txFeeFixed must consider the implications of reducing the cost of a denial-of-service attack or increasing the maximum transaction fee so that it becomes impossible to construct a transaction.                                                   |
 
 ### UTxO cost per byte
@@ -115,7 +113,7 @@ Defines the deposit (in lovelace) that is charged for each byte of storage tha i
 ```
 | Param Name            |   Parameter/Guardrail           | Value                                                                                                                                                                                                                                                                           |
 | -------------------   |  -----------------------      | ----------------                                                                                                                                                                                                                                                                |
-| utxoCostPerByte       | UCPB-01 (y)                     | must not be lower than 3,000 (0.003 ada) |
+| `utxoCostPerByte`     | UCPB-01 (y)                     | must not be lower than 3,000 (0.003 ada) |
 |                       | UCPB-02 (y)                     | must not exceed 6,500 (0.0065 ada) |
 |                       | UCPB-03 (y)                     | must not be zero                                                                                                                                                                                                          
 |                       | UCPB-04 (y)                     | must not be negative                                                                                                                                                                                                                                    |     
@@ -135,7 +133,7 @@ Reducing the number of active stake addresses also reduces processing and memory
 
 | Param Name            |   Parameter/Guardrail           | Value                                                                                                                                                                                                                                                                           |
 | -------------------   |  -----------------------        | ----------------                                                                                                                                                                                                                                                                |
-| stakeAddressDeposit   | SAD-01 (y)                      | must not be lower than 1,000,000 (1 ada    |
+| `stakeAddressDeposit` | SAD-01 (y)                      | must not be lower than 1,000,000 (1 ada    |
 |                       | SAD-02 (y)                      | must not exceed 5,000,000 (5 ada)          | 
 |                       | SAD-03 (y)                      | must not be negative                       |                                                                                                                                                                                                        
 
@@ -153,7 +151,7 @@ Rewards and stake snapshot calculations are also impacted by the number of activ
 ```
 | Param Name            |   Parameter/Guardrail           | Value                                                                                                                                                                                                                                                                           |
 | -------------------   |  -----------------------      | ----------------                                                                                                                                                                                                                                                                |
-| stakePoolDeposit      | SPD-01 (y)                      | must not be lower than 250,000,000 (250 ada)          |
+| `stakePoolDeposit`    | SPD-01 (y)                      | must not be lower than 250,000,000 (250 ada)          |
 |                       | SPD-02 (y)                      | must not exceed 500,000,000 (500 ada)                  |  
 |                       | SPD-03 (y)                      | must not be negative                                  |
 
@@ -167,7 +165,7 @@ Part of the rewards mechanism
 
 | Param Name            |   Parameter/Guardrail           | Value                                                                                                                                                                                                                                                                           |
 | -------------------   |  -----------------------      | ----------------                                                                                                                                                                                                                                                                |
-| minPoolCost           | MPC-01 (y)                     | must not exceed 500,000,000 (500 ada)                                    |                       
+| `minPoolCost`         | MPC-01 (y)                     | must not exceed 500,000,000 (500 ada)                                    |                       
 |                       | MPC-02 (y)                     | must not be negative                                                     |                                                                                                                                                                                                                                    
 |                       | MPC-03 (x - "should")          | should be set in line with the economic cost for operating a pool        |
 
@@ -182,7 +180,7 @@ Part of the rewards mechanism
 
 | Param Name            |   Parameter/Guardrail                  | Value                                                                     |
 | -------------------   |  -----------------------               | ----------------                                                          |
-| treasuryCut           | TC-01 (y)                              | must not be lower than 0.1 (10%)                                          |                                                                                                                                                                                                                                                         
+| `treasuryCut`         | TC-01 (y)                              | must not be lower than 0.1 (10%)                                          |                                                                                                                                                                                                                                                         
 |                       | TC-02 (y)                              | must not exceed 0.3 (30%)                                                 | 
 |                       | TC-03 (y)                              | must not be negative                                                      | 
 |                       | TC-04 (y)                              | must not exceed 1.0 (100%)         
@@ -201,7 +199,7 @@ Governs the long-term sustainability of the Cardano Blockchain
 
 | Param Name                                      | Parameter/Guardrail                              |  Value                                                                                                          |
 | -------------------------                       | -------------------                            | ----------------                                                                                                |
-| monetaryExpansion                               | ME-01 (y)                                       | must not exceed 0.005                                                                                           |
+| `monetaryExpansion`                             | ME-01 (y)                                       | must not exceed 0.005                                                                                           |
 |                                                 | ME-02 (y)                                       | must not be lower than 0.001                                                                                    |
 |                                                 | ME-03 (y)                                       | must not be negative                                                                                            |
 |                                                 | ME-04 (x - "should")                            | should not be varied by more than +/- 10% in any 73-epoch period (approximately 12 months)                      |
@@ -219,11 +217,11 @@ Parameter #2: executionUnitPrices[priceMemory]
 
 | Param Name                                      | Parameter/Guardrail                              |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| executionUnitPrices[priceSteps]                 | EIUP-PS-01 (y)                                  | must not exceed 2,000 / 10,000,000    | 
+| `executionUnitPrices[priceSteps]`               | EIUP-PS-01 (y)                                  | must not exceed 2,000 / 10,000,000    | 
 |                                                 | EIUP-PS-02 (y)                                  | must not be lower than 500 / 10,000,000   |
-| executionUnitPrices[priceMemory]                | EIUP-PM-01 (y)                                  | must not exceed 2,000 / 10,000      |
+| `executionUnitPrices[priceMemory]`              | EIUP-PM-01 (y)                                  | must not exceed 2,000 / 10,000      |
 |                                                 | EIUP-PM-02 (y)                                  | must not be lower than 400 / 10,000    |
-| executionUnitPrices - General                   | EIUP-GEN-01 (x - "similar to")                  | The execution prices must be set so that <br> 1. the cost of executing a transaction with maximum CPU steps is similar to the cost of a maximum sized non-script transaction and <br> 2. the cost of executing a transaction with maximum memory units is similar to the cost of a maximum sized non-script transaction    |
+| `executionUnitPrices` - General                 | EIUP-GEN-01 (x - "similar to")                  | The execution prices must be set so that <br> 1. the cost of executing a transaction with maximum CPU steps is similar to the cost of a maximum sized non-script transaction and <br> 2. the cost of executing a transaction with maximum memory units is similar to the cost of a maximum sized non-script transaction    |
 |                                                 | EIUP-GEN-02 (x - "should")                      | The execution prices should be adjusted whenever transaction fees are adjusted (txFeeFixed/txFeePerByte). The goal is to ensure that the processing delay is similar for "full" transactions, regardless of their type. <br>  • This helps ensure that the requirements on block diffusion/propagation times are met.        |
 
 ### Transaction Fee Per Byte For A Reference Script
@@ -234,7 +232,7 @@ Defines the cost for using Plutus reference scripts in lovelace
 ```
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| minFeeRefScriptCoinsPerByte                     | MFRS-01 (y)                                       | must not exceed 1,000 (0.001 ada) <br> • This ensures that transactions can be paid for 
+| `minFeeRefScriptCoinsPerByte`                   | MFRS-01 (y)                                       | must not exceed 1,000 (0.001 ada) <br> • This ensures that transactions can be paid for 
 |                                                 | MFRS-02 (y)                                       | must not be negative
 |                                                 | MFRS-03 (x - "should")                            | To maintain a consistent level of protection against denial-of-service attacks, minFeeRefScriptCoinsPerByte should be adjusted whenever Plutus Execution prices are adjusted (executionUnitPrices[steps/memory]) and whenever txFeeFixed is adjusted         |
 |                                                 | MFRS-04 (x - unquantifiable)                      | Any changes to minFeeRefScriptCoinsPerByte must consider the implications of reducing the cost of a denial-of-service attack or increasing the maximum transaction fee      |
@@ -285,7 +283,7 @@ Parameter: NETWORK
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| NETWORK                                         | NETWORK-01 (x - "should")                         | No individual network parameter should change more than once per two epochs    |
+| `NETWORK`                                       | NETWORK-01 (x - "should")                         | No individual network parameter should change more than once per two epochs    |
 |                                                 | NETWORK-02 (x - "should")                         | Only one network parameter should be changed per epoch unless they are directly correlated, e.g., per-transaction and per-block memory unit limits      |
 
 ### Block Size
@@ -297,7 +295,7 @@ The maximum size of a block, in Bytes.
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| maxBlockBodySize                                | MBBS-01 (y)                                        | must not exceed 122,880 Bytes (120KB)           |
+| `maxBlockBodySize`                              | MBBS-01 (y)                                        | must not exceed 122,880 Bytes (120KB)           |
 |                                                 | MBBS-02 (y)                                        | must not be lower than 24,576 Bytes (24KB)           |
 |                                                 | MBBS-03 (x - "exceptional circumstances")          | must not be decreased, other than in exceptional circumstances where there are potential problems with security, performance, functionality or long-term sustainability                                       |            
 |                                                 | MBBS-04 (~ - no access to existing parameter values) | must be large enough to include at least one transaction (that is, maxBlockBodySize must be at least maxTxSize)      |
@@ -314,7 +312,7 @@ The maximum size of a transaction, in Bytes.
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| maxTxSize                                       | MTS-01 (y)                                        | must not exceed 32,768 Bytes (32KB)    |
+| `maxTxSize`                                     | MTS-01 (y)                                        | must not exceed 32,768 Bytes (32KB)    |
 |                                                 | MTS-02 (y)                                        | must not be negative        |
 |                                                 | MTS-03 (~ - no access to existing parameter values) | must not be decreased      |
 |                                                 | MTS-04 (~ - no access to existing parameter values) | must not exceed maxBlockBodySize    |
@@ -331,15 +329,15 @@ The limit on the maximum number of memory units that can be used by Plutus scrip
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| maxTxExecutionUnits[memory]                     | MTEU-M-01 (y)                                     | must not exceed 40,000,000 units    |
+| `maxTxExecutionUnits[memory]`                   | MTEU-M-01 (y)                                     | must not exceed 40,000,000 units    |
 |                                                 | MTEU-M-02 (y)                                     | must not be negative    |
 |                                                 | MTEU-M-03 (~ - no access to existing parameter values) | must not be decreased    |
 |                                                 | MTEU-M-04 (x - "should")                           | should not be increased by more than 2,500,000 units in any epoch    |
-| maxBlockExecutionUnits[memory]                  | MBEU-M-01 (y)                                      | must not exceed 120,000,000 units    |
+| `maxBlockExecutionUnits[memory]`                | MBEU-M-01 (y)                                      | must not exceed 120,000,000 units    |
 |                                                 | MBEU-M-02 (y)                                      | must not be negative    |
 |                                                 | MBEU-M-03 (x - "should")                           | should not be changed (increased or decreased) by more than 10,000,000 units in ANY epoch
 |                                                 | MBEU-M-04a (x - unquantifiable)                    | The impact of any change to maxBlockExecutionUnits[memory] must be confirmed by detailed benchmarking/simulation and not exceed the requirements of the block diffusion/propagation time budgets, as also impacted by maxBlockExecutionUnits[steps] and maxBlockBodySize. Any increase must also consider previously agreed future requirements for the total block size (maxBlockBodySize) measured against the total block diffusion target of 3s with 95% block propagation within 5s. Future Plutus performance improvements may allow the per-block memory limit to be increased, but must be balanced against the overall diffusion limits as specified in the previous sentence, and future requirements
-| **MEU** ___not Identified___         | MEU-M-01 (~ - no access to existing parameter values) | maxBlockExecutionUnits[memory] must not be less than maxTxExecutionUnits[memory]
+| **`MEU`** ___not Identified___                  | MEU-M-01 (~ - no access to existing parameter values) | maxBlockExecutionUnits[memory] must not be less than maxTxExecutionUnits[memory]
 
 ### CPU Unit Limits
 ```
@@ -351,15 +349,15 @@ The limit on the maximum number of CPU steps that can be used by Plutus scripts,
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| maxTxExecutionUnits[steps]                      | MTEU-S-01 (y)                                     | must not exceed 15,000,000,000 (15Bn) units      |
+| `maxTxExecutionUnits[steps]`                    | MTEU-S-01 (y)                                     | must not exceed 15,000,000,000 (15Bn) units      |
 |                                                 | MTEU-S-02 (y)                                     | must not be negative        |
 |                                                 | MTEU-S-03 (~ - no access to existing parameter values)  | must not be decreased      |
 |                                                 | MTEU-S-04 (x - "should")                           | should not be increased by more than 500,000,000 (500M) units in any epoch (5 days)    |
-| maxBlockExecutionUnits[steps]                   | MBEU-S-01 (y)                                      | must not exceed 40,000,000,000 (40Bn) units
+| `maxBlockExecutionUnits[steps]`                 | MBEU-S-01 (y)                                      | must not exceed 40,000,000,000 (40Bn) units
 |                                                 | MBEU-S-02 (y)                                      | must not be negative
 |                                                 | MBEU-S-03 (x - "should")                           | should not be changed (increased or decreased) by more than 2,000,000,000 (2Bn) units in any epoch (5 days)
 |                                                 | MBEU-S-04a (x - unquantifiable)                    | The impact of the change to maxBlockExecutionUnits[steps] must be confirmed by detailed benchmarking/simulation and not exceed the requirements of the block diffusion/propagation time budgets, as also impacted by maxBlockExecutionUnits[memory] and maxBlockBodySize. Any increase must also consider previously identified future requirements for the total block size (maxBlockBodySize) measured against the total block diffusion target of 3s with 95% block propagation within 5s. Future Plutus performance improvements may allow the per-block step limit to be increased, but must be balanced against the overall diffusion limits as specified in the previous sentence, and future requirements      |
-| **MEU** ___not identified___                    | MEU-S-01 (~ - no access to existing parameter values) | maxBlockExecutionUnits[steps] must not be less than maxTxExecutionUnits[steps]    |
+| **`MEU`** ___not identified___                  | MEU-S-01 (~ - no access to existing parameter values) | maxBlockExecutionUnits[steps] must not be less than maxTxExecutionUnits[steps]    |
 
 ### Block Header Size
 ```
@@ -370,7 +368,7 @@ The size of the block header.
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| maxBlockHeaderSize                              | MBHS-01 (y)                                     | must not exceed 5,000 Bytes    |
+| `maxBlockHeaderSize`                            | MBHS-01 (y)                                     | must not exceed 5,000 Bytes    |
 |                                                 | MBHS-02 (y)                                     | must not be negative    |
 |                                                 | MBHS-03 (x - "largest valid header" is subject to change)  | must be large enough for the largest valid header    |
 |                                                 | MBHS-04 (x - "should")                                     | should only normally be increased if the protocol changes
@@ -414,7 +412,7 @@ Sets the target number of stake pools
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| stakePoolTargetNum                              | SPTN-01 (y)                                     | must not be lower than 250        |
+| `stakePoolTargetNum`                            | SPTN-01 (y)                                     | must not be lower than 250        |
 |                                                 | SPTN-02 (y)                                     | must not exceed 2,000            |
 |                                                 | SPTN-03 (y)                                     | must not be negative        |
 |                                                 | SPTN-04 (y)                                     | must not be zero          |
@@ -433,7 +431,7 @@ Has an economic effect as well as technical effect - economic advice is also req
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| poolPledgeInfluence                             | PPI-01 (y)                                      | must not be lower than 0.1      |
+| `poolPledgeInfluence`                           | PPI-01 (y)                                      | must not be lower than 0.1      |
 |                                                 | PPI-02 (y)                                      | must not exceed 1.0      |
 |                                                 | PPI-03 (y)                                      | must not be negative      |
 |                                                 | PPI-04 (x - "should")                           | should not vary by more than +/- 10% in any 18-epoch period (approximately 3 months)    |
@@ -447,7 +445,7 @@ Defines the maximum number of epochs notice that a pool can give when planning t
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| poolRetireMaxEpoch                              | PRME-01 (y)                                      | must not be negative      |
+| `poolRetireMaxEpoch`                            | PRME-01 (y)                                      | must not be negative      |
 |                                                 | PRME-02 (x - "should")                           | should not be lower than 1      |
 
 ### Collateral Percentage
@@ -464,7 +462,7 @@ Provides security against low-cost attacks by making it more expensive rather th
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| collateralPercentage                            | CP-01 (y)                                       | must not be lower than 100    |
+| `collateralPercentage`                          | CP-01 (y)                                       | must not be lower than 100    |
 |                                                 | CP-02 (y)                                       | must not exceed 200      |
 |                                                 | CP-03 (y)                                       | must not be negative      |
 |                                                 | CP-04 (y)                                       | must not be zero        |
@@ -478,7 +476,7 @@ Defines the maximum number of inputs that can be used for collateral when execut
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| maxCollateralInputs                             | MCI-01 (y)                                      | must not be lower than 1        |
+| `maxCollateralInputs`                           | MCI-01 (y)                                      | must not be lower than 1        |
 
 ### Maximum Value Size
 ```
@@ -489,7 +487,7 @@ The limit on the serialized size of the Value in each output.
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| maxValueSize                                    | MVS-01 (y)                                      | must not exceed 12,288 Bytes (12KB)      |
+| `maxValueSize`                                  | MVS-01 (y)                                      | must not exceed 12,288 Bytes (12KB)      |
 |                                                 | MVS-02 (y)                                      | must not be negative        |
 |                                                 | MVS-03 (~ - no access to existing parameter values) | must be less than maxTxSize    |
 |                                                 | MVS-04 (~ - no access to existing parameter values) | must not be reduced        |
@@ -506,9 +504,9 @@ A different cost model is required for each Plutus version. Each cost model comp
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| plutusCostModel                                 | PCM-01 (x - unquantifiable)                     | Cost model values must be set by benchmarking on a reference architecture      |
-|        OR                                       | PCM-02 (x - primitives and language versions aren't introduced in transactions) | The cost model must be updated if new primitives are introduced or a new Plutus language version is added    |
-| costModel                                       | PCM-03a (~ - no access to Plutus cost model parameters) | Cost model values should not normally be negative. Negative values must be justified against the underlying cost model for the associated primitives      |
+| `plutusCostModel` **OR** `costModel`            | PCM-01 (x - unquantifiable)                     | Cost model values must be set by benchmarking on a reference architecture      |
+|                                                 | PCM-02 (x - primitives and language versions aren't introduced in transactions) | The cost model must be updated if new primitives are introduced or a new Plutus language version is added    |
+|                                                 | PCM-03a (~ - no access to Plutus cost model parameters) | Cost model values should not normally be negative. Negative values must be justified against the underlying cost model for the associated primitives      |
 |                                                 | PCM-04 (~ - no access to Plutus cost model parameters) | A cost model must be supplied for each Plutus language version that the protocol supports      |
 
 ## 2.5 Governance Parameters
@@ -554,7 +552,7 @@ The deposit that is charged when submitting a governance action.
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| govDeposit                                      | GD-01 (y)                                       | must not be negative    |
+| `govDeposit`                                    | GD-01 (y)                                       | must not be negative    |
 |                                                 | GD-02 (y)                                       | must not be lower than 1,000,000 (1 ada)    |
 |                                                 | GD-03a (y)                                      | must not exceed 10,000,000,000,000 (10 million ada)     |
 |                                                 | GD-04 (x - "should")                            | should be adjusted in line with fiat changes    |
@@ -569,7 +567,7 @@ The deposit that is charged when registering a DRep.
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| dRepDeposit                                     | DRD-01 (y)                                      | must not be negative      |
+| `dRepDeposit`                                   | DRD-01 (y)                                      | must not be negative      |
 |                                                 | DRD-02 (y)                                      | must not be lower than 1,000,000 (1 ada)    |
 |                                                 | DRD-03 (y)                                      | must not exceed 100,000,000,000 (100,000 ada)      |
 |                                                 | DRD-04 (x - "should")                           | should be adjusted in line with fiat changes      |
@@ -583,7 +581,7 @@ The period (as a whole number of epochs) after which a DRep is considered to be 
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| dRepActivity                                    | DRA-01 (y)                                      | must not be lower than 13 epochs (2 months)      |
+| `dRepActivity`                                  | DRA-01 (y)                                      | must not be lower than 13 epochs (2 months)      |
 |                                                 | DRA-02 (y)                                      | must not exceed 37 epochs (6 months)      |
 |                                                 | DRA-03 (y)                                      | must not be negative              |
 |                                                 | DRA-04 (~ - no access to existing parameter values) | must be greater than govActionLifetime      |
@@ -610,15 +608,15 @@ poolVotingThresholds:
   • pvtMotionNoConfidence • pvtPPSecurityGroup
 ```
 
-| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
-| -------------------------                       | --------------------                            | ----------------                                                                                                |
-| Vote_General                                    | VT-GEN-01 (y)                                   | All thresholds must be greater than 50% and less than or equal to 100%      |
-|                                                 | VT-GEN-02a (y)                                  | Economic, network and technical/security parameter thresholds must be in the range 51%-75%      |
-|                                                 | VT-GEN-03 (y)                                   | Governance parameter thresholds must be in the range 75%-90%      |
-| Vote_Hardfork                                   | VT-HF-01 (y)                                    | Hard fork action thresholds must be in the range 51%-80%    |
-| Vote_Constitution                               | VT-CON-01 (y)                                   | New Constitution or Guardrails Script action thresholds must be in the range 65%-90%    |
-| Vote_Constitutional-Committee                   | VT-CC-01 (y)                                    | Update Constitutional Committee action thresholds must be in the range 51%-90%
-| Vote_No-Confidence                              | VT-NC-01 (y)                                    | No confidence action thresholds must be in the range 51%-75%
+| Param Name                                        | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                         | --------------------                            | ----------------                                                                                                |
+| `Vote-General`                                    | VT-GEN-01 (y)                                   | All thresholds must be greater than 50% and less than or equal to 100%      |
+|                                                   | VT-GEN-02a (y)                                  | Economic, network and technical/security parameter thresholds must be in the range 51%-75%      |
+|                                                   | VT-GEN-03 (y)                                   | Governance parameter thresholds must be in the range 75%-90%      |
+| `Vote_Hardfork`                                   | VT-HF-01 (y)                                    | Hard fork action thresholds must be in the range 51%-80%    |
+| `Vote_Constitution`                               | VT-CON-01 (y)                                   | New Constitution or Guardrails Script action thresholds must be in the range 65%-90%    |
+| `Vote_Constitutional-Committee`                   | VT-CC-01 (y)                                    | Update Constitutional Committee action thresholds must be in the range 51%-90%
+| `Vote_No-Confidence`                              | VT-NC-01 (y)                                    | No confidence action thresholds must be in the range 51%-75%
 
 ### Governance Action Lifetime
 ```
@@ -629,7 +627,7 @@ The period after which a governance action will expire if it is not enacted - as
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| govActionLifetime                               | GAL-01 (y)                                      | must not be lower than 1 epoch (5 days)    |
+| `govActionLifetime`                             | GAL-01 (y)                                      | must not be lower than 1 epoch (5 days)    |
 |                                                 | GAL-03 (x - "should")                           | should not be lower than 2 epochs (10 days)      |
 |                                                 | GAL-02 (y)                                      | must not exceed 15 epochs (75 days)      |
 |                                                 | GAL-04 (x - "should")                           | should be calibrated in human terms (eg 30 days, two weeks), to allow sufficient time for voting etc. to take place      |
@@ -643,7 +641,7 @@ The limit on the maximum term length that a committee member may serve
 ```
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| committeeMaxTermLength                          | CMTL-01a (y)                                    | must not be zero    |
+| `committeeMaxTermLength`                        | CMTL-01a (y)                                    | must not be zero    |
 |                                                 | CMTL-02a (y)                                    | must not be negative      |
 |                                                 | CMTL-03a (y)                                    | must not be lower than 18 epochs (90 days, or approximately 3 months)      |
 |                                                 | CMTL-04a (y)                                    | must not exceed 293 epochs (approximately 4 years)        |
@@ -658,7 +656,7 @@ The least number of members that can be included in a Constitutional Committee f
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| committeeMinSize                                | CMS-01 (y)                                      | must not be negative        |
+| `committeeMinSize`                              | CMS-01 (y)                                      | must not be negative        |
 |                                                 | CMS-02 (y)                                      | must not be lower than 3    |
 |                                                 | CMS-03 (y)                                      | must not exceed 10          |
 
@@ -697,7 +695,7 @@ Parameter: TREASURY
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| TREASURY                                        | TREASURY-01a (x)                                | A net change limit for the Cardano treasury's balance per period of time must be agreed by the DReps via an on-chain governance action with a threshold of greater than 50% of the active voting stake      |
+| `TREASURY`                                      | TREASURY-01a (x)                                | A net change limit for the Cardano treasury's balance per period of time must be agreed by the DReps via an on-chain governance action with a threshold of greater than 50% of the active voting stake      |
 |                                                 | TREASURY-02a (x)                                | Withdrawals from the Cardano Blockchain treasury made pursuant to an approved Cardano Blockchain ecosystem budget must not exceed the net change limit for the Cardano Treasury's balance per period of time    |
 |                                                 | TREASURY-03a (x)                                | Withdrawals from the Cardano Blockchain treasury must be denominated in ada      |
 |                                                 | TREASURY-04a (x)                                | Withdrawals from the Cardano Blockchain treasury must not be ratified until there is a Cardano Community approved Cardano Blockchain ecosystem budget then in effect pursuant to a previous on-chain governance action agreed by the DReps with a threshold of greater than 50% of the active voting stake
@@ -719,7 +717,7 @@ Parameter: HARDFORK
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| HARDFORK                                        | HARDFORK-01 (~ - no access to existing parameter values) | The major protocol version must be the same as or one greater than the major version that will be enacted immediately prior to this change. If the major protocol version is one greater, then the minor protocol version must be zero |
+| `HARDFORK`                                      | HARDFORK-01 (~ - no access to existing parameter values) | The major protocol version must be the same as or one greater than the major version that will be enacted immediately prior to this change. If the major protocol version is one greater, then the minor protocol version must be zero |
 |                                                 | HARDFORK-02a (~ - no access to existing parameter values)| Unless the major protocol version is also changed, the minor protocol version must be greater than the minor version that will be enacted immediately prior to this change |
 |                                                 | HARDFORK-03 (~ - no access to existing parameter values) | At least one of the protocol versions (major or minor or both) must change      |
 |                                                 | HARDFORK-04a (x)                                         | At least 85% of stake pools by active stake should have upgraded to a Cardano Blockchain node version that is capable of processing the rules associated with the new protocol version      |
@@ -742,13 +740,13 @@ Parameter: UPDATE
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| UPDATE                                          | UPDATE-CC-01a (x)                               | Update Constitutional Committee and/or threshold and/or term governance actions must not be ratified until ada holders have ratified through an on-chain governance action this Constitution
+| `UPDATE`                                        | UPDATE-CC-01a (x)                               | Update Constitutional Committee and/or threshold and/or term governance actions must not be ratified until ada holders have ratified through an on-chain governance action this Constitution
 
 ---
 
 # 6. Guardrails and Guidelines on New Constitution or Guardrails Script Actions
 ```
-Parameter: NEW_CONSTITUTION
+Parameter: NEW-CONSTITUTION
 
 New constitution or Guardrails Script actions change the hash of the on-chain Constitution and the associated Guardrails Script.
 ```
@@ -756,7 +754,7 @@ New constitution or Guardrails Script actions change the hash of the on-chain Co
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| NEW CONSTITUTION                                | NEW-CONSTITUTION-01a (x)                        | A New Constitution or Guardrails Script governance action must be submitted to define any required guardrails for new parameters that are introduced via a Hard Fork governance action      |
+| `NEW-CONSTITUTION`                                | NEW-CONSTITUTION-01a (x)                        | A New Constitution or Guardrails Script governance action must be submitted to define any required guardrails for new parameters that are introduced via a Hard Fork governance action      |
 |                                                 | NEW-CONSTITUTION-02 (x)                         | If specified, the new Guardrails Script must be consistent with this Constitution        |
 
 ---
@@ -835,41 +833,3 @@ The protocol parameters are grouped by type, allowing different thresholds to be
 | maximum term length (in epochs) for the constitutional committee members | `committeeMaxTermLength`      |
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-####
-############
-
----
-
-## Plutus V3 Parameteres
-
-
-- Resources:
-  - Plutus:
-    - [Chris Moreton's Plutus Pioneer Program Notes](https://plutus-pioneer-program.readthedocs.io/en/latest/plutus_pioneer_program.html)
-    - [Cardano Docs - Plutus](https://developers.cardano.org/docs/smart-contracts/plutus/#how-to-guides)
-    - [Cardano Developer Resources - Smart Contracts](https://docs.cardano.org/developer-resources/smart-contracts/plutus#plutus-developer-resources)
-    - [Plutus User Guide - IOHK](https://plutus.cardano.intersectmbo.org/docs/)
-    - [Plutus Repo - IntersectMBO](https://github.com/IntersectMBO/plutus#specifications-and-design)
-    - **NONE OF THE ABOVE PROVIDE V3 COST-MODELING**
-
-
-|  Param#1         | Param#2          | Param#3            | Param#4            |
-|  -----------     | -----------      | -----------        | --------------     |
-| 10788           | 420                 | 1                   | 1                   |
-| 1000                | 173                 | 0                   | 1                   |
-| 1000                | 59957                 | 4                   | 1                   |
-| 11183                 |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
-
