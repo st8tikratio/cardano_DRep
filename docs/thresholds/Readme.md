@@ -20,6 +20,7 @@
 ---
 
 ## Plutus V3 Cost Model Links (External, IntersectMBO):
+- [Overview of Plutus Core Cost Model - PDF](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/downloads/plutus-core-cost-model-overview.pdf)
 - [Plutus Cost Model](https://github.com/IntersectMBO/plutus/tree/master/plutus-core/cost-model)
 - [Plutus Cost Model Data](https://github.com/IntersectMBO/plutus/tree/master/plutus-core/cost-model/data)
 - [93 References to "costModel" in Intersect Plutus Repo](https://github.com/search?q=repo%3AIntersectMBO%2Fplutus%20costModel&type=code)
