@@ -34,7 +34,7 @@ TC-05 (~ - no access to change history) treasuryCut must not be changed more tha
 
 #### 3.
 
-EIUP-GEN-01 (x - "similar to") The execution prices must be set so ~~tha~~ the
+EIUP-GEN-01 (x - "similar to") The execution prices must be set so ~~tha~~ that
 
 
 minimal constitutional committee size (committeeMinSize)
