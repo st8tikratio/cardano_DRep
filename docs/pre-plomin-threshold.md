@@ -1,5 +1,8 @@
 # Cardano Governance Thresholds
-[Source]()
+
+### NOTE
+- The Genesis Parameter Title fields were taken from the Conway-Genesis.JSON file [here](https://github.com/IntersectMBO/cardano-node/blob/master/configuration/cardano/mainnet-conway-genesis.json) and copied to [here]()
+- The Consittution Parameter fields were taken from [2024-12-05/draft-constitution-converted.md.](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/draft-constitution-converted.md)
 
 ## SPOs
 ```
