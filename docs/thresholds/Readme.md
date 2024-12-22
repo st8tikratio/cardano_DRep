@@ -1,4 +1,4 @@
-# List Of Documents Related To Constitutional & Governance Thresholds
+# List Of Documents Related To Constitutional & Governance Parameters and Thresholds
 #### Created 22 Dec 2024
 
 ---
