@@ -52,7 +52,7 @@
 
 ---
 
-# Constitution Paramters (05-DEC-2024)
+# Constitution Parameters (05-DEC-2024)
 - [source](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/draft-constitution-converted.md)
 
 ```
