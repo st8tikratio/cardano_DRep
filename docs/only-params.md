@@ -4,6 +4,12 @@
 - [st8tikratio - con-parameters - markdown](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/con-parameters.md)
 
 ## Parameters ONLY
+```
+Symbol and Explanation
+  - (y) The Guardrail Script can be used to enforce the Guardrail
+  - (x) The Guardrail Script cannot be used to enforce the Guardrail
+  - (~ - reason) The Guardrail Script cannot be used to enforce the Guardrail for the reason given, but future ledger changes could enable this.
+```
 
 | Param Name            |   Parameter/Guardrail         | Value                                                                                                                                                                                                                                                                           |
 | -------------------   |  -----------------------      | ----------------                                                                                                                                                                                                                                                                |
