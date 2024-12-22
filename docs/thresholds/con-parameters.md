@@ -1,4 +1,4 @@
-# Constitution Parameters With Details
+# Detailed Constitution Parameters
 - [source](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/draft-constitution-converted.md)
 
 ---
