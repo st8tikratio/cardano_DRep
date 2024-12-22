@@ -14,13 +14,26 @@
     - [Plutus User Guide - IOHK](https://plutus.cardano.intersectmbo.org/docs/)
     - [Plutus Repo - IntersectMBO](https://github.com/IntersectMBO/plutus#specifications-and-design)
     - **NONE OF THE ABOVE PROVIDE V3 COST-MODELING**
+    - [Cost Model | Plutus Documentation - Intersect MBO](https://plutus.cardano.intersectmbo.org/docs/delve-deeper/cost-model)
+    - [See also notes.md](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/notes.md)
 
 
-|  Param#1         | Param#2          | Param#3            | Param#4            |
-|  -----------     | -----------      | -----------        | --------------     |
-| 10788           | 420                 | 1                   | 1                   |
-| 1000                | 173                 | 0                   | 1                   |
-| 1000                | 59957                 | 4                   | 1                   |
-| 11183                 |                  |                    |                    |
-|                  |                  |                    |                    |
-|                  |                  |                    |                    |
+---
+
+# WRONG
+
+| #     | Return Value        | Parameter                                   |
+| --    | -----------         | -----------                                 |
+| 1.    | 10788               | addInteger-cpu-arguments-intercept          | 
+| 2.    | 420                 | addInteger-cpu-arguments-slope              |
+| 3.    | 1                   | addInteger-memory-arguments-intercept       |
+| 4.    | 1                   | addInteger-memory-arguments-slope           |
+| 5.    | 1000                | appendByteString-cpu-arguments-intercept	  |
+| 6.    | 173                 | appendByteString-cpu-arguments-slope	      |
+| 7.    | 0                   | appendByteString-memory-arguments-intercept |	
+| 8.    | 1                   | appendByteString-memory-arguments-slope	    |
+| 9.    | 1000                | appendString-cpu-arguments-intercept	      |
+| 10.   | 59957               | appendString-cpu-arguments-slope	          |
+| 11.   | 4                   | appendString-memory-arguments-intercept	    |
+| 12.   | 1                   | appendString-memory-arguments-slope	        |
+| 13.   | 11183               | bData-cpu-arguments	                        |       
