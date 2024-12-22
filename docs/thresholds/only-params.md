@@ -6,7 +6,7 @@
 - [IntersectMBO - Constitution - 05 Dec 2024 - markdown](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/draft-constitution-converted.md) or [here](https://github.com/st8tikratio/Cardano_Con_and_Gov/blob/main/mds/final-constitution.md)
 - [st8tikratio - con-parameters - markdown](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/con-parameters.md)
 #### Other Parameter Links
-- [Pre-Plomin-2 Parameters](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/pre-plomin-threshold.md)
+- [Pre-Plomin Threshold Parameters](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/pre-plomin-threshold.md)
 
 ---
 
