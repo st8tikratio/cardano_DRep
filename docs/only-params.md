@@ -1,10 +1,9 @@
-# Contained Herein Are Just The Parameters From The Constitution Dated 05 Dec 2024
-
+# Constitutional Parameters in Alphabetical Order
 ## Sources
-- 
-_ 
+- [IntersectMBO - Constitution - 05 Dec 2024 - markdown](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/draft-constitution-converted.md)
+_ [st8tikratio - con-parameters - markdown](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/con-parameters.md)
 
-## Parameters
+## Parameters ONLY
 
 | Param Name            |   Parameter/Guardrail         | Value                                                                                                                                                                                                                                                                           |
 | -------------------   |  -----------------------      | ----------------                                                                                                                                                                                                                                                                |
