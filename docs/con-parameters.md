@@ -762,28 +762,28 @@ The protocol parameters are grouped by type, allowing different thresholds to be
 
 | Param Name                                      | Parameter/Guardrail             |
 | -------------------------                       | --------------------            |
-| maximum block body size                         | maxBlockBodySize                |
-| maximum transaction size                        | maxTxSize                       |
-| maximum block header size                       | maxBlockHeaderSize              |
-| maximum size of a serialized asset value        | maxValueSize                    |
-| maximum script execution units in a single transaction | maxTxExecutionUnits[steps] |
-| maximum script execution units in a single block | maxBlockExecutionUnits[steps]  |
-| maximum number of collateral inputs              | maxCollateralInputs            |
+| maximum block body size                         | `maxBlockBodySize`                |
+| maximum transaction size                        | `maxTxSize`                       |
+| maximum block header size                       | `maxBlockHeaderSize`              |
+| maximum size of a serialized asset value        | `maxValueSize`                    |
+| maximum script execution units in a single transaction | `maxTxExecutionUnits[steps]` |
+| maximum script execution units in a single block | `maxBlockExecutionUnits[steps]`  |
+| maximum number of collateral inputs              | `maxCollateralInputs`            |
 
 ### The economic parameter group consists of:
 
 | Param Name                                      | Parameter/Guardrail             |
 | -------------------------                       | --------------------            |
-| minimum fee coefficient                         | txFeePerByte                    |
-| minimum fee constant                            | txFeeFixed                      |
-| minimum fee per byte for reference scripts      | minFeeRefScriptCoinsPerByte     |
-| delegation key lovelace deposit                 | stakeAddressDeposit             | 
-| pool registration lovelace deposit              | stakePoolDeposit                |
-| monetary expansion                              | monetaryExpansion               |
-| treasury expansion                              | treasuryCut                     |
-| minimum fixed rewards cut for pools             | minPoolCost                     |
-| minimum lovelace deposit per byte of serialized UTxO | coinsPerUTxOByte           |
-| prices of Plutus execution units                | executionUnitPrices[priceSteps/priceMemory]   |
+| minimum fee coefficient                         | `txFeePerByte`                    |
+| minimum fee constant                            | `txFeeFixed`                      |
+| minimum fee per byte for reference scripts      | `minFeeRefScriptCoinsPerByte`     |
+| delegation key lovelace deposit                 | `stakeAddressDeposit`             | 
+| pool registration lovelace deposit              | `stakePoolDeposit`                |
+| monetary expansion                              | `monetaryExpansion`               |
+| treasury expansion                              | `treasuryCut`                     |
+| minimum fixed rewards cut for pools             | `minPoolCost`                     |
+| minimum lovelace deposit per byte of serialized UTxO | `coinsPerUTxOByte`           |
+| prices of Plutus execution units                | `executionUnitPrices[priceSteps/priceMemory]`   |
 
 
 
