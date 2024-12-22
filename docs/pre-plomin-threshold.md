@@ -14,7 +14,7 @@ Parameter: poolVotingThresholds
 | motionNoConfidence                    | 0.51                   |                           |
 | ppSecurityGroup                       | 0.51                   |                           |
 
-## DReps
+## DRep Voting Thresholds
 ```
 Parameter: drepVotingThresholds
 ```
@@ -33,23 +33,41 @@ Parameter: drepVotingThresholds
 | treasuryWithdrawal                | 0.60                     |                           |
 
 ## Constitution Committee
-| PARAMETER TITLE                   | CURRENT (22-DEC-2024)    | CONSTITUTION THRESHOLD(S) |
-| :----------                       |  :-------------:         |  :------------:           |
-| committeeMinSize                  | 7                        |                           |
-| committeeMaxTermLength (epochs)   | 146                      |                           |
-| drepDeposit (lovelace)            | 500000000                |                           |
-| drepActivity (epochs)             | 20                       |                           |
+
+| PARAMETER TITLE                   | CURRENT (22-DEC-2024)    | CONSTITUTION THRESHOLD(S)                    |
+| :----------                       |  :-------------:         |  :------------:                              |
+| committeeMinSize                  | 7                        |  3 - 10                                      |
+| committeeMaxTermLength (epochs)   | 146                      |  18 - 239 epochs <br> 3 months - 4 years     |
+
+## DReps
+```
+Notes: The Genesis JSON file uses lovelace while the Constitutiton uses ada for drepDeposit
+```
+| PARAMETER TITLE                   | CURRENT (22-DEC-2024)    | CONSTITUTION THRESHOLD(S)                                     |
+| :----------                       |  :-------------:         |  :------------:                                               |
+| drepDeposit (lovelace)            | 500000000                | 1,000,000  - 100,000,000,000 lovelace <br> 1 - 100,000 ada    |
+| drepActivity (epochs)             | 20                       | 13 - 37 epochs <br> 2 - 6 months                              |
 
 ## Governance Actions
-| PARAMETER TITLE                   | CURRENT (22-DEC-2024)    | CONSTITUTION THRESHOLD(S) |
-| :----------                       |  :-------------:         |  :------------:           |
-| govActionLifetime (epochs)        | 6                        |                           |
-| govActionDeposit (lovelace)       | 100000000000             |                           |
+```
+Notes: Does govAction (from Constitution) = govActionDeposit (from Genesis JSON)?
+
+If yes, goveActionDeposit threshold is: 1,000,000 (1 ada) - 10,000,000,000,000 (10 million ada)
+```
+| PARAMETER TITLE                   | CURRENT (22-DEC-2024)    | CONSTITUTION THRESHOLD(S)                               |
+| :----------                       |  :-------------:         |  :------------:                                         |
+| govActionLifetime (epochs)        | 6                        | 1 - 15 epochs <br> 5 - 75 days                          |
+| govActionDeposit (lovelace)       | 100000000000             | see Notes above                                         |
 
 ## Plutus V3
-| PARAMETER TITLE                         | CURRENT (22-DEC-2024)    | CONSTITUTION THRESHOLD(S) |
-| :----------                             |  :-------------:         |  :------------:           |
-| minFeeRefScriptCostPerByte (lovelace)   | 15                       |                           |
+```
+Notes: Does minFeeRefScriptCoinsPerByte	(from constitution) = minFeeRefScriptCostPerByte (from Genesis JSON)?
+
+If yes, Constitution Threshold is: not negative, not > 0.001 ada (1,000 lovelace) 	
+```
+| PARAMETER TITLE                         | CURRENT (22-DEC-2024)    | CONSTITUTION THRESHOLD(S)                |
+| :----------                             |  :-------------:         |  :------------:                          |
+| minFeeRefScriptCostPerByte (lovelace)   | 15                       | see Notes above                          |
 
 ---
 
