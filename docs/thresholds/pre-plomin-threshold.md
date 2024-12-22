@@ -1,9 +1,9 @@
 # Cardano Governance Thresholds
 
 ### NOTE
-- The `Genesis Parameter Title` fields were taken from the Conway-Genesis.JSON file [here](https://github.com/IntersectMBO/cardano-node/blob/master/configuration/cardano/mainnet-conway-genesis.json) and copied to [here]()
+- The `Genesis Parameter Title` fields were taken from the Conway-Genesis.JSON file [here](https://github.com/IntersectMBO/cardano-node/blob/master/configuration/cardano/mainnet-conway-genesis.json) and copied to [here](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/conway-genesis.json)
 - The `Consittution Parameter` fields were taken from [2024-12-05/draft-constitution-converted.md.](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/draft-constitution-converted.md)
-- **ALL CONSTITUTION THRESHOLDS** are simplified. For complete values see the [here - Parameter Only Doc], [here - Constitution Parameters w/ Descript], or [here - Intersect's Con Markdown]
+- **ALL CONSTITUTION THRESHOLDS** are simplified. For complete values see the [Alphabetical Listing Of Parameters](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/only-params.md), [Constitution Parameters w/ Descriptions](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/con-parameters.md), or [Intersect's Constitution in  Markdown](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/draft-constitution-converted.md)
 
 ---
 
