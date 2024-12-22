@@ -52,24 +52,83 @@
 
 ---
 
-## Constitution Paramters (05-DEC-2024)
-- Symbol and Explanation
+# Constitution Paramters (05-DEC-2024)
+- [source](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/draft-constitution-converted.md)
+
+```
+Symbol and Explanation
   - (y) The Guardrail Script can be used to enforce the Guardrail
   - (x) The Guardrail Script cannot be used to enforce the Guardrail
   - (~ - reason) The Guardrail Script cannot be used to enforce the Guardrail for the reason given, but future ledger changes could enable this.
+```
 
+# 2. Guardrails and Guidelines on Protocol Parameter Update Actions
+```
+Below are Guardrails and guidelines for changing updatable protocol parameter settings via the protocol parameter
+update governance action such that the Cardano Blockchain is never in an unrecoverable state as a result of such changes.
 
-| Section                          | Parameter Name                 | Parameter Type                                 | Value#1                                     |
-| -------                          | --------------                 | -------------                                  | -------------                               |
-| 2 Guardrails                     | Guardrails                     | PARAM-01 (y)                                   | Any protocol parameter that is not explicitly named in this document must not be changed by a Parameter update governance action                                           |
-|                                  | Guardrails                     | PARAM-02a (y)                                  | Where a protocol parameter is explicitly listed in this document but no checkable Guardrails are specified, the Guardrails Script must not impose any constraints on changes to the parameter. Checkable Guardrails are shown by a (y)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| 2.1 Critical Protocol Parameters | _maximum block body size_ (`maxBlockBodySize`) <br> _maximum transaction size_ (`maxTxSize`) <br> _maximum block header size_ (`maxBlockHeaderSize`) <br> _maximum size of a serialized asset value_ (`maxValueSize`) <br> _maximum script execution/memory units in a single block_ (`maxBlockExecutionUnits[steps/memory]`) <br> _minimum fee coefficient_ (`txFeePerByte`) <br> _minimum fee constant_ (`txFeeFixed`) <br> _minimum fee per byte for reference scripts_ (`minFeeRefScriptCoinsPerByte`) <br> _minimum lovelace deposit per byte of serialized UTxO_ (`utxoCostPerByte`) <br> _governance action deposit_ (`govDeposit`)                     | PARAM-03a (y)                                  | Critical protocol parameters require an SPO vote in addition to a DRep vote: SPOs must say "yes" with a collective support of more than 50% of all active block production stake. This is enforced by the Guardrails on the stake pool voting threshold.                                                                                           |
-|                                  | _maximum block body size_ (`maxBlockBodySize`) <br> _maximum transaction size_ (`maxTxSize`) <br> _maximum block header size_ (`maxBlockHeaderSize`) <br> _maximum size of a serialized asset value_ (`maxValueSize`) <br> _maximum script execution/memory units in a single block_ (`maxBlockExecutionUnits[steps/memory]`) <br> _minimum fee coefficient_ (`txFeePerByte`) <br> _minimum fee constant_ (`txFeeFixed`) <br> _minimum fee per byte for reference scripts_ (`minFeeRefScriptCoinsPerByte`) <br> _minimum lovelace deposit per byte of serialized UTxO_ (`utxoCostPerByte`) <br> _governance action deposit_ (`govDeposit`)                     | PARAM-04a (x)                                  | At least 3 months should normally pass between the publication of an off-chain proposal to change a critical protocol parameter and the submission of the corresponding on-chain governance action. This Guardrail may be relaxed in the event of a Severity 1 or Severity 2 network issue following careful technical discussion and evaluation.  |
-|                                  | _delegation key lovelace deposit_ (`stakeAddressDeposit`) <br> _pool registration lovelace deposit_ (`stakePoolDeposit`) <br> _minimum fixed rewards cut for pools_ (`minPoolCost`) <br> _DRep deposit amount_ (`dRepDeposit`) <br> _minimal Constitutional Committee size_ (`committeeMinSize`) <br> _maximum term length_ (in epochs) _for the Constitutional Committee members_ (`committeeMaxTermLength`)                                                            | PARAM-05a (y)                          | DReps must vote "yes" with a collective support of more than 50% of all active voting stake. This is enforced by the Guardrails on the DRep voting thresholds. |
-|                                  | _delegation key lovelace deposit_ (`stakeAddressDeposit`) <br> _pool registration lovelace deposit_ (`stakePoolDeposit`) <br> _minimum fixed rewards cut for pools_ (`minPoolCost`) <br> _DRep deposit amount_ (`dRepDeposit`) <br> _minimal Constitutional Committee size_ (`committeeMinSize`) <br> _maximum term length_ (in epochs) _for the Constitutional Committee members_ (`committeeMaxTermLength`)                                                            | PARAM-06a (x)                          | At least 3 months should normally pass between the publication of an off-chain proposal to change a parameter that is critical to the governance system and the submission of the corresponding on-chain governance action. This Guardrail may be relaxed in the event of a Severity 1 or Severity 2 network issue following careful technical discussion and evaluation. |
+Note that, to avoid ambiguity, this Appendix uses the parameter name that is used in protocol parameter update governance
+actions rather than any other convention.
+```
+
+| Param Name            |   Parameter/Guardrail         | Value                                                                                                                                                                                                                                                                           |
+| -------------------   |  -----------------------      | ----------------                                                                                                                                                                                                                                                                |
+| GUARDRAILS            | PARAM-01 (y)                  | Any protocol parameter that is not explicitly named in this document must not be changed by a Parameter update governance action                                           |
+|                       | PARAM-02a (y)                 | Where a protocol parameter is explicitly listed in this document but no checkable Guardrails are specified, the Guardrails Script must not impose any constraints on changes to the parameter. Checkable Guardrails are shown by a (y)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+
+## 2.1. Critical Protocol Parameters 
+
+```
+The below protocol parameters are critical from a security point of view.
+```
+
+### Parameters That Are CRITICAL TO THE OPERATION OF THE BLOCKCHAIN
+
+| Param Name            |   Parameter/Guardrail         |                                                                                                                                                                                                                                                                   
+| -------------------   |  -----------------------      |                                                                                                                                                                                                                                                               
+| maximum block body size | `maxBlockBodySize`    |
+| maximum transaction size | `maxTxSize`     |
+| maximum block header size |  `maxBlockHeaderSize`    |
+| maximum size of a serialized asset value | `maxValueSize`    |
+| maximum script execution/memory units in a single block | `maxBlockExecutionUnits[steps/memory]`     |
+| minimum fee coefficient |  `txFeePerByte`      |
+| minimum fee constant |   `txFeeFixed`      |
+| minimum fee per byte for reference scripts | `minFeeRefScriptCoinsPerByte`      |
+| minimum lovelace deposit per byte of serialized UTxO   |   `utxoCostPerByte`    |
+| governance action deposit |   `govDeposit`    |
+
+```
+Parameter: PARAM
+```
+
+| Param Name            |   Parameter/Guardrail         | Value                                                                                                                                                                                                      |
+| -------------------   |  -----------------------      | ----------------                                                                                                                                                                                           |
+| PARAM                 | PARAM-03a (y)                 | Critical protocol parameters require an SPO vote in addition to a DRep vote: SPOs must say "yes" with a collective support of more than 50% of all active block production stake. This is enforced by the Guardrails on the stake pool voting threshold.    |
+|                       | PARAM-04a (x)                 | At least 3 months should normally pass between the publication of an off-chain proposal to change a critical protocol parameter and the submission of the corresponding on-chain governance action. This Guardrail may be relaxed in the event of a Severity 1 or Severity 2 network issue following careful technical discussion and evaluation.      |
+
+### Parameters That Are CRITICAL TO THE GOVERNANCE SYSTEM
+
+| Param Name            |   Parameter/Guardrail         |                                                                                                                                                                                                                                                                   
+| -------------------   |  -----------------------      |                                                                                                                                                                                                                                                               
+| delegation key lovelace deposit | `stakeAddressDeposit`    |
+| pool registration lovelace deposit | `stakePoolDeposit`    |
+| minimum fixed rewards cut for pools | `minPoolCost`      |
+| DRep deposit amount                 | `dRepDeposit`      |
+| minimal Constitutional Committee size | `committeeMinSize`      |
+| maximum term length (in epochs) for the Constitutional Committee members | `committeeMaxTermLength`      |
+
+```
+Parameter: PARAM
+```
+
+| Param Name            |   Parameter/Guardrail         | Value                                                                                                                                                                                                      |
+| -------------------   |  -----------------------      | ----------------                                                                                                                                                                                           |
+| PARAM                 | PARAM-05a (y)                 | DReps must vote "yes" with a collective support of more than 50% of all active voting stake. This is enforced by the Guardrails on the DRep voting thresholds.      |
+|                       | PARAM-06a (x)                 | At least 3 months should normally pass between the publication of an off-chain proposal to change a parameter that is critical to the governance system and the submission of the corresponding on-chain governance action. This Guardrail may be relaxed in the event of a Severity 1 or Severity 2 network issue following careful technical discussion and evaluation.      |
 
 ---
 ## 2.2 Economic Parameters
+
 
 ### Transaction Fee Per Byte & Fixed Transaction Fee
 ```
@@ -671,6 +730,8 @@ These parameters can only be changed in a new Genesis file as part of a hard for
 It is not necessary to provide specific guardrails on updating these parameters.
 ```
 
+---
+
 # 3. Guardrails and Guidelines on Treasury Withdrawal Actions
 ```
 Treasury withdrawal actions specify the destination and amount of a number of withdrawals from the Cardano treasury.
@@ -686,6 +747,8 @@ Parameter: TREASURY
 |                                                 | TREASURY-02a (x)                                | Withdrawals from the Cardano Blockchain treasury made pursuant to an approved Cardano Blockchain ecosystem budget must not exceed the net change limit for the Cardano Treasury's balance per period of time    |
 |                                                 | TREASURY-03a (x)                                | Withdrawals from the Cardano Blockchain treasury must be denominated in ada      |
 |                                                 | TREASURY-04a (x)                                | Withdrawals from the Cardano Blockchain treasury must not be ratified until there is a Cardano Community approved Cardano Blockchain ecosystem budget then in effect pursuant to a previous on-chain governance action agreed by the DReps with a threshold of greater than 50% of the active voting stake
+
+---
 
 # 4. Guardrails and Guidelines on Hard Fork Initiation Actions
 ```
@@ -711,7 +774,9 @@ Parameter: HARDFORK
 |                                                 | HARDFORK-07 (x)                                          | Any deprecated protocol parameters must be indicated in this Appendix        |
 |                                                 | HARDFORK-08 (~ - no access to Plutus cost model parameters) | New Plutus versions must be supported by a version-specific Plutus cost model that covers each primitive that is available in the new Plutus version |
 
-# Guardrails and Guidelines on Update Constitutional Committee or Threshold Actions
+---
+
+# 5. Guardrails and Guidelines on Update Constitutional Committee or Threshold Actions
 ```
 Update Constitutional Committee or Threshold governance actions may change the size, composition or required voting thresholds for the Constitutional Committee.
 ```
@@ -724,6 +789,8 @@ Parameter: UPDATE
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
 | UPDATE                                          | UPDATE-CC-01a (x)                               | Update Constitutional Committee and/or threshold and/or term governance actions must not be ratified until ada holders have ratified through an on-chain governance action this Constitution
+
+---
 
 # 6. Guardrails and Guidelines on New Constitution or Guardrails Script Actions
 ```
@@ -738,6 +805,8 @@ New constitution or Guardrails Script actions change the hash of the on-chain Co
 | NEW CONSTITUTION                                | NEW-CONSTITUTION-01a (x)                        | A New Constitution or Guardrails Script governance action must be submitted to define any required guardrails for new parameters that are introduced via a Hard Fork governance action      |
 |                                                 | NEW-CONSTITUTION-02 (x)                         | If specified, the new Guardrails Script must be consistent with this Constitution        |
 
+---
+
 # 7. Guardrails and Guidelines on No Confidence Actions
 ```
 No confidence actions signal a state of no confidence in the governance system. No guardrails are imposed on No Confidence actions.
@@ -745,6 +814,7 @@ No confidence actions signal a state of no confidence in the governance system. 
 GUARDRAILS: NONE
 ```
 
+---
 
 # 8. GUARDRAILS AND GUIDELINES ON INFO ACTIONS
 ```
@@ -752,6 +822,8 @@ Info actions are not enacted on-chain. No guardrails are imposed on Info actions
 
 GUARDRAILS: NONE
 ```
+
+---
 
 # 9. List of Protocol Parameter Groups
 ```
@@ -784,6 +856,30 @@ The protocol parameters are grouped by type, allowing different thresholds to be
 | minimum fixed rewards cut for pools             | `minPoolCost`                     |
 | minimum lovelace deposit per byte of serialized UTxO | `coinsPerUTxOByte`           |
 | prices of Plutus execution units                | `executionUnitPrices[priceSteps/priceMemory]`   |
+
+### The technical/security parameter group consists of:
+
+| Param Name                                      | Parameter/Guardrail             |
+| -------------------------                       | --------------------            |
+| pool pledge influence                           | `poolPledgeInfluence`           |
+| pool retirement maximum epoch                   | `poolRetireMaxEpoch)`           |
+| desired number of pools                         | `stakePoolTargetNum`            |
+| Plutus execution cost models                    | `costModels`                    |
+| proportion of collateral needed for scripts     | `collateralPercentage`          |
+
+### The governance parameter group consists of:
+
+| Param Name                                      | Parameter/Guardrail             |
+| -------------------------                       | --------------------            |
+| governance voting thresholds                    | `dRepVotingThresholds[...]`     |
+|                                                 | `poolVotingThresholds[...]`     |
+| governance action maximum lifetime in epochs    | `govActionLifetime`             |
+| governance action deposit*                      | `govActionDeposit`              |
+| DRep deposit amount                             | `dRepDeposit`                   |
+| DRep activity period in epochs                  | `dRepActivity`                  |
+| minimal constitutional committee size           | `committeeMinSize`              |
+| maximum term length (in epochs) for the constitutional committee members | `committeeMaxTermLength`      |
+
 
 
 
