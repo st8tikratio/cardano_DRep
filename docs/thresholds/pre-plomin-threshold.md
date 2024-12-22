@@ -6,8 +6,19 @@
 - **ALL CONSTITUTION THRESHOLDS** are simplified. For complete values see the [Alphabetical Listing Of Parameters](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/only-params.md), [Constitution Parameters w/ Descriptions](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/con-parameters.md), or [Intersect's Constitution in  Markdown](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/draft-constitution-converted.md)
 
 ---
+## Table of Contents
+1. [SPO Voting Thresholds]()
+2. [DRep Voting Thresholds]()
+3. [Constitution Committee]()
+4. [DReps]()
+5. [Governance Actions]()
+6. [Plutus V3]()
 
-## SPOs
+
+
+
+---
+## SPO Voting Thresholds
 ```
 Parameter: poolVotingThresholds
 ```
