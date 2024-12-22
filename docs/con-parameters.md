@@ -702,22 +702,39 @@ Parameter: HARDFORK
 
 | Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
 | -------------------------                       | --------------------                            | ----------------                                                                                                |
-| HARDFORK                                        | HARDFORK-01 (~ - no access to existing parameter values) The major protocol version must be the same as or one greater than the major version that will be enacted immediately prior to this change. If the major protocol version is one greater, then the minor protocol version must be zero
+| HARDFORK                                        | HARDFORK-01 (~ - no access to existing parameter values) | The major protocol version must be the same as or one greater than the major version that will be enacted immediately prior to this change. If the major protocol version is one greater, then the minor protocol version must be zero |
+|                                                 | HARDFORK-02a (~ - no access to existing parameter values)| Unless the major protocol version is also changed, the minor protocol version must be greater than the minor version that will be enacted immediately prior to this change |
+|                                                 | HARDFORK-03 (~ - no access to existing parameter values) | At least one of the protocol versions (major or minor or both) must change      |
+|                                                 | HARDFORK-04a (x)                                         | At least 85% of stake pools by active stake should have upgraded to a Cardano Blockchain node version that is capable of processing the rules associated with the new protocol version      |
+|                                                 | HARDFORK-05 (x)                                          | Any new updatable protocol parameters that are introduced with a hard fork must be included in this Appendix and suitable guardrails defined for those parameters     |
+|                                                 | HARDFORK-06 (x)                                          | Settings for any new protocol parameters that are introduced with a hard fork must be included in the appropriate Genesis file    |
+|                                                 | HARDFORK-07 (x)                                          | Any deprecated protocol parameters must be indicated in this Appendix        |
+|                                                 | HARDFORK-08 (~ - no access to Plutus cost model parameters) | New Plutus versions must be supported by a version-specific Plutus cost model that covers each primitive that is available in the new Plutus version |
 
-HARDFORK-02a (~ - no access to existing parameter values) Unless the major protocol version is also changed, the minor protocol version must be greater than the minor version that will be enacted immediately prior to this change
+# Guardrails and Guidelines on Update Constitutional Committee or Threshold Actions
+```
+Update Constitutional Committee or Threshold governance actions may change the size, composition or required voting thresholds for the Constitutional Committee.
+```
 
-HARDFORK-03 (~ - no access to existing parameter values) At least one of the protocol versions (major or minor or both) must change
+### Update Const
+```
+Parameter: UPDATE
+```
 
-HARDFORK-04a (x) At least 85% of stake pools by active stake should have upgraded to a Cardano Blockchain node version that is capable of processing the rules associated with the new protocol version
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| UPDATE                                          | UPDATE-CC-01a (x)                               | Update Constitutional Committee and/or threshold and/or term governance actions must not be ratified until ada holders have ratified through an on-chain governance action this Constitution
 
-HARDFORK-05 (x) Any new updatable protocol parameters that are introduced with a hard fork must be included in this Appendix and suitable guardrails defined for those parameters
+# 6. Guardrails and Guidelines on New Constitution or Guardrails Script Actions
+```
+New constitution or Guardrails Script actions change the hash of the on-chain Constitution and the associated Guardrails Script.
+```
+### New Constitution
 
-HARDFORK-06 (x) Settings for any new protocol parameters that are introduced with a hard fork must be included in the appropriate Genesis file
-
-HARDFORK-07 (x) Any deprecated protocol parameters must be indicated in this Appendix
-
-HARDFORK-08 (~ - no access to Plutus cost model parameters) New Plutus versions must be supported by a version-specific Plutus cost model that covers each primitive that is available in the new Plutus version
-
+| Param Name                                      | Parameter/Guardrail                                |  Value                                                                                                          |
+| -------------------------                       | --------------------                            | ----------------                                                                                                |
+| NEW CONSTITUTION                                | NEW-CONSTITUTION-01a (x)                        | A New Constitution or Guardrails Script governance action must be submitted to define any required guardrails for new parameters that are introduced via a Hard Fork governance action      |
+|                                                 | NEW-CONSTITUTION-02 (x)                         | If specified, the new Guardrails Script must be consistent with this Constitution        |
 
 
 
