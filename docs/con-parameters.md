@@ -233,7 +233,6 @@ Part of the rewards mechanism
 |                       | TC-04 (y)                              | must not exceed 1.0 (100%)         
 |                       | TC-05 (~ - no access to change history)| must not be changed more than once in any 36 epoch period (approximately 6 months)                                                                                                                                                                                            
 
-
 ### Monetary Expansion
 ```
 Parameter: monetaryExpansion
@@ -880,9 +879,7 @@ The protocol parameters are grouped by type, allowing different thresholds to be
 | minimal constitutional committee size           | `committeeMinSize`              |
 | maximum term length (in epochs) for the constitutional committee members | `committeeMaxTermLength`      |
 
-
-
-
+---
 
 
 
