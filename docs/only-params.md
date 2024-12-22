@@ -48,8 +48,8 @@ Symbol and Explanation
 | `executionUnitPrices[priceSteps]`               | EIUP-PS-01 (y)                                  | must not exceed 2,000 / 10,000,000    | 
 |                                                 | EIUP-PS-02 (y)                                  | must not be lower than 500 / 10,000,000   |
 | `govActionLifetime`                             | GAL-01 (y)                                      | must not be lower than 1 epoch (5 days)    |
-|                                                 | GAL-03 (x - "should")                           | should not be lower than 2 epochs (10 days)      |
 |                                                 | GAL-02 (y)                                      | must not exceed 15 epochs (75 days)      |
+|                                                 | GAL-03 (x - "should")                           | should not be lower than 2 epochs (10 days)      |
 |                                                 | GAL-04 (x - "should")                           | should be calibrated in human terms (eg 30 days, two weeks), to allow sufficient time for voting etc. to take place      |
 |                                                 | GAL-05 (~ - no access to existing parameter values) | must be less than dRepActivity        |
 | `govDeposit`                                    | GD-01 (y)                                       | must not be negative    |
