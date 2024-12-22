@@ -5,6 +5,8 @@
 - The `Consittution Parameter` fields were taken from [2024-12-05/draft-constitution-converted.md.](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/draft-constitution-converted.md)
 - **ALL CONSTITUTION THRESHOLDS** are simplified. For complete values see the [here - Parameter Only Doc], [here - Constitution Parameters w/ Descript], or [here - Intersect's Con Markdown]
 
+---
+
 ## SPOs
 ```
 Parameter: poolVotingThresholds
