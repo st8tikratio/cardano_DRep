@@ -1,4 +1,4 @@
-# Constitutional Parameters in Alphabetical Order
+# Alphabetically Ordered Constitutional Parameters
 
 ---
 
