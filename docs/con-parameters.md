@@ -716,7 +716,7 @@ Parameter: HARDFORK
 Update Constitutional Committee or Threshold governance actions may change the size, composition or required voting thresholds for the Constitutional Committee.
 ```
 
-### Update Const
+### Update Constitutional Committee
 ```
 Parameter: UPDATE
 ```
@@ -727,6 +727,8 @@ Parameter: UPDATE
 
 # 6. Guardrails and Guidelines on New Constitution or Guardrails Script Actions
 ```
+Parameter: NEW_CONSTITUTION
+
 New constitution or Guardrails Script actions change the hash of the on-chain Constitution and the associated Guardrails Script.
 ```
 ### New Constitution
@@ -736,7 +738,52 @@ New constitution or Guardrails Script actions change the hash of the on-chain Co
 | NEW CONSTITUTION                                | NEW-CONSTITUTION-01a (x)                        | A New Constitution or Guardrails Script governance action must be submitted to define any required guardrails for new parameters that are introduced via a Hard Fork governance action      |
 |                                                 | NEW-CONSTITUTION-02 (x)                         | If specified, the new Guardrails Script must be consistent with this Constitution        |
 
+# 7. Guardrails and Guidelines on No Confidence Actions
+```
+No confidence actions signal a state of no confidence in the governance system. No guardrails are imposed on No Confidence actions.
 
+GUARDRAILS: NONE
+```
+
+
+# 8. GUARDRAILS AND GUIDELINES ON INFO ACTIONS
+```
+Info actions are not enacted on-chain. No guardrails are imposed on Info actions.
+
+GUARDRAILS: NONE
+```
+
+# 9. List of Protocol Parameter Groups
+```
+The protocol parameters are grouped by type, allowing different thresholds to be set for each group.
+```
+
+### The network parameter group consists of:
+
+| Param Name                                      | Parameter/Guardrail             |
+| -------------------------                       | --------------------            |
+| maximum block body size                         | maxBlockBodySize                |
+| maximum transaction size                        | maxTxSize                       |
+| maximum block header size                       | maxBlockHeaderSize              |
+| maximum size of a serialized asset value        | maxValueSize                    |
+| maximum script execution units in a single transaction | maxTxExecutionUnits[steps] |
+| maximum script execution units in a single block | maxBlockExecutionUnits[steps]  |
+| maximum number of collateral inputs              | maxCollateralInputs            |
+
+### The economic parameter group consists of:
+
+| Param Name                                      | Parameter/Guardrail             |
+| -------------------------                       | --------------------            |
+| minimum fee coefficient                         | txFeePerByte                    |
+| minimum fee constant                            | txFeeFixed                      |
+| minimum fee per byte for reference scripts      | minFeeRefScriptCoinsPerByte     |
+| delegation key lovelace deposit                 | stakeAddressDeposit             | 
+| pool registration lovelace deposit              | stakePoolDeposit                |
+| monetary expansion                              | monetaryExpansion               |
+| treasury expansion                              | treasuryCut                     |
+| minimum fixed rewards cut for pools             | minPoolCost                     |
+| minimum lovelace deposit per byte of serialized UTxO | coinsPerUTxOByte           |
+| prices of Plutus execution units                | executionUnitPrices[priceSteps/priceMemory]   |
 
 
 
