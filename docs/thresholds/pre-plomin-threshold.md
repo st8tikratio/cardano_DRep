@@ -69,7 +69,7 @@ Notes: The Genesis JSON file uses lovelace while the Constitutiton uses ada for 
 ```
 Notes: Does govAction (from Constitution) = govActionDeposit (from Genesis JSON)?
 
-If yes, goveActionDeposit threshold is: 1,000,000 (1 ada) - 10,000,000,000,000 (10 million ada)
+If yes, govActionDeposit threshold is: 1,000,000 (1 ada) - 10,000,000,000,000 (10 million ada)
 ```
 | GENESIS PARAMETER TITLE       | CONSTITUTION PARAMETER    | CURRENT (22-DEC-2024)    | CONSTITUTION THRESHOLD(S) |
 |  :----------                  | :----------------:        |  :-------------:         |  :------------:           |
