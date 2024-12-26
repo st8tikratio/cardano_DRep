@@ -1,5 +1,8 @@
 # <span style="color:magenta">Governance Short-List</span>
 
+### <span style="color:orange">Parameters and Thresholds:</span>
+- [Compiled here](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/Readme.md)
+
 ### <span style="color:orange">Final Constitution (from Constitutional Convention):</span>
 - ```Blake2b-256 Hash: 2a61e2f4b63442978140c77a70daab3961b22b12b63b13949a390c097214d1c5```
 - [Source](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/README.md)
