@@ -5,11 +5,11 @@
 
 ## Available Docs For Community Usage
 1. [Pre-Plomin Hardfork Thresholds with Constitutional References](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/pre-plomin-threshold.md) - 22-Dec-2024 • [PDF](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/downloads/cardano-pre-plomin-cardano-governance-thresholds_by-st8tikratio.pdf)
-- Based on Conway-Genesis File and the 05-Dec-2024 Constitution
+  - Based on Conway-Genesis File and the 05-Dec-2024 Constitution
 2. [Detailed Cardano and Governance Parameters](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/con-parameters.md) - 22-Dec-2024 • [PDF](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/downloads/detailed-con-parameters_by-st8tikratio.pdf)
-- Based on the 05-Dec-2024 Constitutiton
+  - Based on the 05-Dec-2024 Constitutiton
 3. [Alphabetical Listing of Parameters](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/only-params.md) - 22-Dec-2024 • [PDF](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/downloads/alphabetical-governance-thresholds_only-params_by-st8tikratio.pdf)
-- Based on the 05-Dec-2024 Constitution
+  - Based on the 05-Dec-2024 Constitution
 
 --- 
 
