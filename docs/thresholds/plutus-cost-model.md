@@ -16,12 +16,13 @@
 
 ---
 
-# ACCURATE Below
+# Making Sense of Plutus Data from Conway Genesis JSON
+##### 🛑 There are issues with the data provided by Intersect, further research is being performed 🛑
+- **Numbers** 7-24, 31, 43, 44, 77-89 **ARE NOT** reflected, or cross-referenced, in both **source** docs below. These discrepancies are being researched.
 - JSON Lines = Plutus builtinCostModelC - [here](https://github.com/IntersectMBO/plutus/blob/master/plutus-core/cost-model/data/builtinCostModelC.json) - [copy]()
 - JSON Ouput Lines = mainnet-conway-genesis.json - [here](https://github.com/IntersectMBO/cardano-node/blob/master/configuration/cardano/mainnet-conway-genesis.json) - [copy]()
 - where `arg` = `argument`
 - where `icept` = `intercept`
-##### There are issues with the data provided by Intersect, further research is being performed.
 
 | No.   | JSON Lines    | JSON<br>Output<br>Lines | Parameter                 | `cpu.arg.icept` **OR**`arg.1`                  | `cpu.arg.slope` **OR** `arg.2` **OR** `cpu.arg.sub-arg.1`                     | `cpu.arg.3` **OR** `cpu.arg.sub-arg.2`         | `cpu.arg.4` **OR** `cpu.arg.sub-arg.3`        | `cpu.arg.5` **OR** `cpu.arg.sub-arg.4`       | `cpu.arg.6` **OR** `cpu.arg.sub-arg.5`         | `cpu.arg.7` **OR** `cpu.arg.sub-arg.6`        | `cpu.arg.sub-arg.7`| `cpu.arg.sub-type.1`  | `cpu.type`            | `memory.arg.icept` **OR** `arg.1`                   | `memory.arg.min`        | `memory.arg.slope` **OR** `arg.2`               | `memory.type`                     |
 | --    | ---------     | -------                 | -------------             | -----------                                    | ---------                                                                     | ---------                                      | --------                                      | --------                                     | --------                                       | ------                                        | ----------         | ---------             | ---------             | :----------------:                                  | :----------:            | :------------:                                  | ----------                      |
