@@ -22,7 +22,7 @@
 
 # WRONG
 
-| No.   | JSON lines    | JSON Output Line  | Cost                      | cpu.arguments.intercept <br> **OR** <br> arg.1 | cpu.arguments.slope <br> **OR** <br> arg.2  | cpu.type      |memory.arguments.intercept  <br> **OR** <br> arg.1   | memory.arguments.slope <br> **OR** <br> arg.2   | memory.type   |
+| No.   | JSON lines    | JSON<br>Output<br>Line  | Cost                      | cpu.arguments.intercept <br> **OR** <br> arg.1 | cpu.arguments.slope <br> **OR** <br> arg.2  | cpu.type      |memory.arguments.intercept  <br> **OR** <br> arg.1   | memory.arguments.slope <br> **OR** <br> arg.2   | memory.type   |
 | --    | ---------     | -------           | -------------             | -----------                                    | ---------                                   | ---------     | :----------------:                                  | :------------:                                  | ----------    |
 | 1.    | 2 - 17        | 29 - 32           | addInteger                | 100788                                         | 420                                         | max_size      | 1                                                   | 1                                               | max_size      |
 | 2.    | 18 - 33       | 33 - 36           | appendByteString          | 1000                                           | 173                                         | added_sizes   | 0                                                   | 1                                               | added_sizes   |
