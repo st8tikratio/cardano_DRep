@@ -5,16 +5,16 @@
 
 ## Available Docs For Community Usage
 
-#### 1. [Pre-Plomin Hardfork Thresholds with Constitutional References](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/pre-plomin-threshold.md) - 22-Dec-2024 • [PDF](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/downloads/cardano-pre-plomin-cardano-governance-thresholds_by-st8tikratio.pdf)
+#### 1. [Pre-Plomin Hardfork Thresholds with Constitutional References](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/pre-plomin-threshold.md) • 22-Dec-2024 • [PDF](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/downloads/cardano-pre-plomin-cardano-governance-thresholds_by-st8tikratio.pdf)
 - Based on Conway-Genesis File and the 05-Dec-2024 Constitution
 
-#### 2. [Detailed Cardano and Governance Parameters](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/con-parameters.md) - 22-Dec-2024 • [PDF](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/downloads/detailed-con-parameters_by-st8tikratio.pdf)
+#### 2. [Detailed Cardano and Governance Parameters](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/con-parameters.md) • 22-Dec-2024 • [PDF](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/downloads/detailed-con-parameters_by-st8tikratio.pdf)
 - Based on the 05-Dec-2024 Constitutiton
 
-#### 3. [Alphabetical Listing of Parameters](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/only-params.md) - 22-Dec-2024 • [PDF](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/downloads/alphabetical-governance-thresholds_only-params_by-st8tikratio.pdf)
+#### 3. [Alphabetical Listing of Parameters](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/only-params.md) • 22-Dec-2024 • [PDF](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/downloads/alphabetical-governance-thresholds_only-params_by-st8tikratio.pdf)
 - Based on the 05-Dec-2024 Constitution
 
-#### 4. [Plutus Cost Model Functions/Parameters](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/plutus-cost-model.md) - 28 Dec 2024
+#### 4. [Plutus Cost Model Functions/Parameters](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/plutus-cost-model.md) • 28 Dec 2024 • [PDF-best effort](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/downloads/plutus-cost-model_partial-output_by_st8tikratio.pdf)
 - Compares the `mainnet-conway-genesis.json` output file to the `plutus builtinCostModelC.json` file
 - There are a few output values that do not correlate
 
