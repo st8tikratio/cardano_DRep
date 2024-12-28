@@ -1,6 +1,7 @@
 # Plutus V3 Cost-Model Functions/Parameters
 
-# Resources
+# Links/Resources
+
 - [Chris Moreton's Plutus Pioneer Program Notes](https://plutus-pioneer-program.readthedocs.io/en/latest/plutus_pioneer_program.html)
 - [Cardano Docs - Plutus](https://developers.cardano.org/docs/smart-contracts/plutus/#how-to-guides)
 - [Cardano Developer Resources - Smart Contracts](https://docs.cardano.org/developer-resources/smart-contracts/plutus#plutus-developer-resources)
@@ -8,7 +9,14 @@
 - [Plutus Repo - IntersectMBO](https://github.com/IntersectMBO/plutus#specifications-and-design)
 - [Cost Model | Plutus Documentation - Intersect MBO](https://plutus.cardano.intersectmbo.org/docs/delve-deeper/cost-model)
 - [See also notes.md](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/notes.md)
-## Closest
+
+## Plutus V3 Cost Model Links (External, IntersectMBO):
+- [Overview of Plutus Core Cost Model - PDF](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/downloads/plutus-core-cost-model-overview.pdf)
+- [Plutus Cost Model](https://github.com/IntersectMBO/plutus/tree/master/plutus-core/cost-model)
+- [Plutus Cost Model Data](https://github.com/IntersectMBO/plutus/tree/master/plutus-core/cost-model/data)
+- [93 References to "costModel" in Intersect Plutus Repo](https://github.com/search?q=repo%3AIntersectMBO%2Fplutus%20costModel&type=code)
+- [Plutus Core Readme.md](https://github.com/IntersectMBO/plutus/blob/master/README.adoc)
+- [Plutus Cost Model Overview (line 389) - **DOES NOT MATCH conway-genesis.json** - Appears truncated](https://github.com/IntersectMBO/plutus/blob/master/doc/cost-model-overview/cost-model-overview.tex)
 - [Plutus Cost Model Generation](https://github.com/IntersectMBO/plutus/blob/master/plutus-core/cost-model/CostModelGeneration.md)
 - [Plutus Core Specification (as of 28 Dec 2024)](https://ci.iog.io/build/1230997/download/1/plutus-core-specification.pdf)
 - [Plutus Builtin Cost Model](https://github.com/IntersectMBO/plutus/blob/master/plutus-core/cost-model/data/builtinCostModelC.json)
