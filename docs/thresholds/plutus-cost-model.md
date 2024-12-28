@@ -57,6 +57,10 @@
 | 30.   | 341 - 356     |                         | decodeUtf8                | 91189                                          | 769                                         |            |             |            |            |           | linear_in_x     | 4                                                   | 2                                               | linear_in_x   |   
 | 31.   | 331 - 340     |                         | constrData                | 22151                                          | --                                          |            |             |            |            |           | constant_cost   | 32                                                  | --                                              | constant_cost |   
 
+---
+
+###
+
 | 32.   | 357 - 384     |                         | divideInteger             | 85848                                          | --                                          |            |             |            |            |           | constant_cost   | 32                                                  | --                                              | constant_cost |   
 | 29.   | 331 - 340     |                         | constrData                | 22151                                          | --                                          |            |             |            |            |           | constant_cost   | 32                                                  | --                                              | constant_cost |   
 | 29.   | 331 - 340     |                         | constrData                | 22151                                          | --                                          |            |             |            |            |           | constant_cost   | 32                                                  | --                                              | constant_cost |   
