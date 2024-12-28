@@ -1,22 +1,18 @@
-####
-############
-
----
-
 ## Plutus V3 Parameteres
 
-
-- Resources:
-  - Plutus:
-    - [Chris Moreton's Plutus Pioneer Program Notes](https://plutus-pioneer-program.readthedocs.io/en/latest/plutus_pioneer_program.html)
-    - [Cardano Docs - Plutus](https://developers.cardano.org/docs/smart-contracts/plutus/#how-to-guides)
-    - [Cardano Developer Resources - Smart Contracts](https://docs.cardano.org/developer-resources/smart-contracts/plutus#plutus-developer-resources)
-    - [Plutus User Guide - IOHK](https://plutus.cardano.intersectmbo.org/docs/)
-    - [Plutus Repo - IntersectMBO](https://github.com/IntersectMBO/plutus#specifications-and-design)
-    - **NONE OF THE ABOVE PROVIDE V3 COST-MODELING**
-    - [Cost Model | Plutus Documentation - Intersect MBO](https://plutus.cardano.intersectmbo.org/docs/delve-deeper/cost-model)
-    - [See also notes.md](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/notes.md)
-
+# Resources
+- [Chris Moreton's Plutus Pioneer Program Notes](https://plutus-pioneer-program.readthedocs.io/en/latest/plutus_pioneer_program.html)
+- [Cardano Docs - Plutus](https://developers.cardano.org/docs/smart-contracts/plutus/#how-to-guides)
+- [Cardano Developer Resources - Smart Contracts](https://docs.cardano.org/developer-resources/smart-contracts/plutus#plutus-developer-resources)
+- [Plutus User Guide - IOHK](https://plutus.cardano.intersectmbo.org/docs/)
+- [Plutus Repo - IntersectMBO](https://github.com/IntersectMBO/plutus#specifications-and-design)
+- [Cost Model | Plutus Documentation - Intersect MBO](https://plutus.cardano.intersectmbo.org/docs/delve-deeper/cost-model)
+- [See also notes.md](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/notes.md)
+## Closest
+- [Plutus Cost Model Generation](https://github.com/IntersectMBO/plutus/blob/master/plutus-core/cost-model/CostModelGeneration.md)
+- [Plutus Core Specification (as of 28 Dec 2024)](https://ci.iog.io/build/1230997/download/1/plutus-core-specification.pdf)
+- [Plutus Builtin Cost Model](https://github.com/IntersectMBO/plutus/blob/master/plutus-core/cost-model/data/builtinCostModelC.json)
+- [Mainnet Conway Genesis JSON](https://github.com/IntersectMBO/cardano-node/blob/master/configuration/cardano/mainnet-conway-genesis.json)
 
 ---
 
