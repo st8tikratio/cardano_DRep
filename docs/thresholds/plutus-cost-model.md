@@ -1,4 +1,4 @@
-## Plutus V3 Parameteres
+# Plutus V3 Cost-Model Functions/Parameters
 
 # Resources
 - [Chris Moreton's Plutus Pioneer Program Notes](https://plutus-pioneer-program.readthedocs.io/en/latest/plutus_pioneer_program.html)
