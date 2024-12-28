@@ -23,6 +23,8 @@
 # ACCURATE Below
 - where `arg` = `argument`
 - where `icept` = `intercept`
+- JSON lines = Plutus builtinCostModelC - [here](https://github.com/IntersectMBO/plutus/blob/master/plutus-core/cost-model/data/builtinCostModelC.json) - [copy]()
+- JSON ouput = mainnet-conway-genesis.json - [here](https://github.com/IntersectMBO/cardano-node/blob/master/configuration/cardano/mainnet-conway-genesis.json) - [copy]()
 
 
 | No.   | JSON lines    | JSON<br>Output<br>Line  | Cost                      | cpu.arg.icept <br> **OR** <br> arg.1           | cpu.arg.slope <br> **OR** <br> arg.2 <br> **OR** <br> cpu.arg.sub-arg.1       | cpu.arg.3 <br> **OR** <br> cpu.arg.sub-arg.2   | cpu.arg.4 <br> **OR** <br> cpu.arg.sub-arg.3  | cpu.arg.5 <br> **OR** <br> cpu.arg.sub-arg.4 | cpu.arg.6 <br> **OR** <br> cpu.arg.sub-arg.5   | cpu.arg.7 <br> **OR** <br> cpu.arg.sub-arg.6  | cpu.arg.sub-arg.7  | cpu.arg.sub-type.1    |   cpu.type            |memory.arg.icept  <br> **OR** <br> arg.1             | memory.arg.min          | memory.arg.slope <br> **OR** <br> arg.2         | memory.type       |
