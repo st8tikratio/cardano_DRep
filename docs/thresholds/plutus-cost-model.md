@@ -18,7 +18,7 @@
 
 # Making Sense of Plutus Data from Conway Genesis JSON
 ##### 🛑 There are issues with the data provided by Intersect, further research is being performed 🛑
-- **Numbers** 76-88 (lines 104-116) below **ARE NOT** reflected, or cross-referenced, in both **source** docs. These discrepancies are being researched.
+- **Numbers** 76-88 below **ARE NOT** reflected, or cross-referenced, in both **source** docs. These discrepancies are being researched.
 - JSON Lines = Plutus builtinCostModelC - [here](https://github.com/IntersectMBO/plutus/blob/master/plutus-core/cost-model/data/builtinCostModelC.json) - [copy]()
 - JSON Ouput Lines = mainnet-conway-genesis.json - [here](https://github.com/IntersectMBO/cardano-node/blob/master/configuration/cardano/mainnet-conway-genesis.json) - [copy]()
 - where `arg` = `argument`
