@@ -1,5 +1,5 @@
 # List Of Documents Related To Constitutional & Governance Parameters and Thresholds
-#### Created 22 Dec 2024
+###### Created 22 Dec 2024 • Updated 28 Dec 2024
 
 ---
 
@@ -15,22 +15,16 @@
 - Based on the 05-Dec-2024 Constitution
 
 #### 4. [Plutus Cost Model Functions/Parameters](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/plutus-cost-model.md) - 28 Dec 2024
-- Compares these two documents/files:
-  - [builtinCostModelC.json](https://github.com/IntersectMBO/plutus/blob/master/plutus-core/cost-model/data/builtinCostModelC.json) • [copy](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/builtinCostModelC.json)
-  - [mainnet-conway-genesis.json](https://github.com/IntersectMBO/cardano-node/blob/master/configuration/cardano/mainnet-conway-genesis.json) • [copy](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/conway-genesis.json)
- 
+- Compares the `mainnet-conway-genesis.json` output file to the `plutus builtinCostModelC.json` file
+- There are a few output values that do not correlate
+
 --- 
 
 ## Sources For The Above Docs
-1. `Voted-On (05-Dec-2024) Constitution from Argentina/Nairobi Constitutional Convention` - [Intersect MBO](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/draft-constitution-converted.md) • [copied](https://github.com/st8tikratio/Cardano_Con_and_Gov/blob/main/mds/final-constitution.md)
-2. `conway-genesis.json` - [Intersect MBO](https://github.com/IntersectMBO/cardano-node/blob/master/configuration/cardano/mainnet-conway-genesis.json) - [copied](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/conway-genesis.json)
+1. `Voted-On (05-Dec-2024) Constitution from Argentina/Nairobi Constitutional Convention` • [Intersect MBO](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/draft-constitution-converted.md) • [copy](https://github.com/st8tikratio/Cardano_Con_and_Gov/blob/main/mds/final-constitution.md)
+2. `conway-genesis.json` • [Intersect MBO](https://github.com/IntersectMBO/cardano-node/blob/master/configuration/cardano/mainnet-conway-genesis.json) • [copy](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/conway-genesis.json)
+3. `plutus builtinCostModelC.json` • [IntersectMBO](https://github.com/IntersectMBO/plutus/blob/master/plutus-core/cost-model/data/builtinCostModelC.json) • [copy](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/builtinCostModelC.json)
+4. `mainnet-conway-genesis.json` • [IntersectMBO](https://github.com/IntersectMBO/cardano-node/blob/master/configuration/cardano/mainnet-conway-genesis.json) • [copy](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/conway-genesis.json)
 
 ---
 
-## Plutus V3 Cost Model Links (External, IntersectMBO):
-- [Overview of Plutus Core Cost Model - PDF](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/downloads/plutus-core-cost-model-overview.pdf)
-- [Plutus Cost Model](https://github.com/IntersectMBO/plutus/tree/master/plutus-core/cost-model)
-- [Plutus Cost Model Data](https://github.com/IntersectMBO/plutus/tree/master/plutus-core/cost-model/data)
-- [93 References to "costModel" in Intersect Plutus Repo](https://github.com/search?q=repo%3AIntersectMBO%2Fplutus%20costModel&type=code)
-- [Plutus Core Readme.md](https://github.com/IntersectMBO/plutus/blob/master/README.adoc)
-- [Plutus Cost Model Overview (line 389) - **DOES NOT MATCH conway-genesis.json** - Appears truncated](https://github.com/IntersectMBO/plutus/blob/master/doc/cost-model-overview/cost-model-overview.tex)
