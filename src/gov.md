@@ -3,10 +3,15 @@
 ### <span style="color:orange">Parameters and Thresholds:</span>
 - [Compiled here](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/Readme.md)
 
+- [Cardanoscan Parameter Dash](https://cardanoscan.io/protocolparams)
+
 ### <span style="color:orange">Final Constitution (from Constitutional Convention):</span>
 - ```Blake2b-256 Hash: 2a61e2f4b63442978140c77a70daab3961b22b12b63b13949a390c097214d1c5```
+
 - [Source](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/README.md)
+
 - [PDF](https://github.com/st8tikratio/Cardano_Con_and_Gov/blob/main/pdfs/final-constitution.pdf)
+
 - [Markdown](https://github.com/st8tikratio/Cardano_Con_and_Gov/blob/main/mds/final-constitution.md)
 
 ### <span style="color:orange">Is It Fair, Democratic, Decentralized?</span>
