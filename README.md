@@ -76,6 +76,7 @@
 
 ### Parameters and Thresholds
 - [Compiled here](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/Readme.md)
+- [Cardanoscan Parameter Dash](https://cardanoscan.io/protocolparams)
 
 ### Final Constitution (from Constitutional Convention)
 - `Blake2b-256 Hash`: 2a61e2f4b63442978140c77a70daab3961b22b12b63b13949a390c097214d1c5
