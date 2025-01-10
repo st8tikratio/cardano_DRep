@@ -47,7 +47,7 @@
 - to provide transparency where it is lacking and where data is intentionally obscured;
 - to push Cardano governance beyond one-ada/one-vote and tamp down on the plutocractic nature of blockchain;
 - to be the dissenting vote against those who which to gain, maintain or increase their influence on the Cardano blockchain;
-- to follow the following principles when considering and voting as a delegate representative:
+- to follow these principles when considering and voting as a delegate representative:
   - Transparency
   - Equality
   - Education
