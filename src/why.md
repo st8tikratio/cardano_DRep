@@ -14,7 +14,7 @@
 <br></br>
 9. to be the dissenting vote against those who which to gain, maintain or increase their influence on the Cardano blockchain;
 <br></br>
-10. to follow the following principles when considering and voting as a delegate representative:
+10. to follow these principles when considering and voting as a delegate representative:
     - Transparency
     - Self-Sovereignty
     - Education
