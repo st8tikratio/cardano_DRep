@@ -1,5 +1,3 @@
-<img class="banner" src="https://github.com/st8tikratio/cardano_DRep/blob/main/src/img/teahouse-git-web-banner.jpg" alt="japanese-tea-house" width="device-width" height="device-height" />
-
 # <span style="color:magenta">About</span>
 
 Hello all! Welcome to the `RtD` (Ratio the DRep) web-book. Here you'll find everything you need to know about me and useful governance links.
