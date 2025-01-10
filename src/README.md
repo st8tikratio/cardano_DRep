@@ -1,4 +1,4 @@
-![img](https://github.com/st8tikratio/cardano_DRep/blob/main/src/img/teahouse-git-web-banner.jpg)
+<img src="https://github.com/st8tikratio/cardano_DRep/blob/main/src/img/teahouse-git-web-banner.jpg" alt="Japanese Tea House">
 
 # <span style="color:magenta">About</span>
 
