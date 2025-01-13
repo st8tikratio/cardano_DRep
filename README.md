@@ -24,7 +24,7 @@
 4. Send a message to `@st8tik` on [`X / Twitter`](https://x.com/st8tik).
 5. Chat on [`Keybase`](https://keybase.io/xo_xo)
 6. Send an [`email`](mailto:ratio_the_drep@sudomail.com)
-7. `more platforms coming (as needed)...`
+7. `more platforms coming (if requested)...`
 
 ---
 
