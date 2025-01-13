@@ -68,7 +68,7 @@
   2. [DRep Directory #2 by Lido Nation](https://www.1694.io/en/dreps/list)
 - Then search using the following:
    1. **Name:** `ratio` OR `st8tik` OR `st8tikratio`
-   2. **DRep ID:** `drep1zagwghdf0q2yz0ra70p6zgvmug9zns2yxefygsfn6suq5qvgqq0`
+   2. **DRep ID:** `drep1ygt4peza49upgsfu0heu8gfpn03q52wpgsm9y3zpx02rszs5qgfw5`
 - [JSON ID file](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/Ratio_St8tik_St8tikRatio.jsonld)
 
 ---
