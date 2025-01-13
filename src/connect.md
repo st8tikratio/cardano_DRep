@@ -12,7 +12,7 @@
 
 6. Send an [`email`](mailto:ratio_the_drep@sudomail.com)
 
-7. `more platforms coming (as needed)...`
+7. `more platforms coming (if needed)...`
 
 ---
 
