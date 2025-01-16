@@ -9,6 +9,7 @@
 - There are two ways to access the **DRep Directories**
   1. [DRep Directory #1 by Intersect MBO](https://gov.tools/drep_directory)
   2. [DRep Directory #2 by Lido Nation](https://www.1694.io/en/dreps/list)
+  3. [DRep Directory #3 by Tempo.Vote](https://tempo.vote/)
 
 - Then search using the following:
    1. **Name:** `ratio` OR `st8tik` OR `st8tikratio`
