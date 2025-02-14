@@ -13,9 +13,7 @@
 
 ---
 
-************************************************************************************************************************************************
-[Draft Net Change Limit Info Actions](https://committees.docs.intersectmbo.org/intersect-budget-committee/about/2025-budget-process/draft-net-change-limit-info-action)
-************************************************************************************************************************************************
+### [Draft Net Change Limit Info Actions](https://committees.docs.intersectmbo.org/intersect-budget-committee/about/2025-budget-process/draft-net-change-limit-info-action)
 
 ---
 
