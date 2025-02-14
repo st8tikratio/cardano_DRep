@@ -6,6 +6,7 @@
 1. [Projected Net Change Limit](https://committees.docs.intersectmbo.org/intersect-budget-committee/about/2025-budget-process/draft-net-change-limit-info-action)
 2. [Delivery Assurance Function](https://intersectmbo.org/news/who-needs-delivery-assurance)
 3. [Cardano Budget Process Calendar](https://lu.ma/cardanobudgetprocess)
+4. [Draft Net Change Limit Info Actions](https://committees.docs.intersectmbo.org/intersect-budget-committee/about/2025-budget-process/draft-net-change-limit-info-action)
 
 ---
 
@@ -13,9 +14,6 @@
 
 ---
 
-### [Draft Net Change Limit Info Actions](https://committees.docs.intersectmbo.org/intersect-budget-committee/about/2025-budget-process/draft-net-change-limit-info-action)
-
----
 
 ### ALL BUDGETS
 #### Cardano Core Budget: [here](https://budgetcommittee.docs.intersectmbo.org/budget-proposal/2025-cardano-budget-proposal-a-cardano-blockchain-ecosystem-budget/core-budget) - Provide [feedback](https://forum.cardano.org/t/cardano-innovation-budget-proposal/143046/1)
