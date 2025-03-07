@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "Here are my thoughts:\n- Potentially forces funded proposers to build products that increase chain usage since there will be reduced funds availability.\n- This is an appropriate experiment of governance and the parameter can be reversed or modified in time if side-effects prove too drastic.\n- I believe the onboarding opportunity would still remain low and it will have minimal effects on tx count or governance participation.\n- More tx fees go to staked wallet holders. This does include CEX and other key holders.\n- It can further decentralize (only the security of) the blockchain; but how much is enough, or too much.\n- This further increases the size of the wallets at the top.\n- It's certainly not going to destroy the blockchain.\n\nEither way the whales and founders still win but maybe some of the community can receive compensation for the knowledge sharing and extractive nature of all things Cardano."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
