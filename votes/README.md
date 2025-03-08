@@ -1,7 +1,7 @@
 # Voting Actions
 ###### Showing most recent month first
 
-### March 2005
+### March 2025
 1. Decrease Treasury Tax from 20% to 10% 
     - `Voting Direction:` **YES**
     - `Type:` Parameter Change
@@ -14,7 +14,7 @@
 
 ---
 
-### January 2005
+### January 2025
 1. Cardano Constitution to Replace the Interim Constitution
     - `Voting Direction:` **NO**
     - `Type:` Governance Action
