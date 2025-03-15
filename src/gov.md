@@ -8,6 +8,8 @@
 ### <span style="color:orange">Final Constitution (from Constitutional Convention):</span>
 - ```Blake2b-256 Hash: 2a61e2f4b63442978140c77a70daab3961b22b12b63b13949a390c097214d1c5```
 
+- [IPFS](https://ipfs.io/ipfs/bafkreiazhhawe7sjwuthcfgl3mmv2swec7sukvclu3oli7qdyz4uhhuvmy)
+
 - [Source](https://github.com/IntersectMBO/draft-constitution/blob/main/2024-12-05/README.md)
 
 - [PDF](https://github.com/st8tikratio/Cardano_Con_and_Gov/blob/main/pdfs/final-constitution.pdf)
