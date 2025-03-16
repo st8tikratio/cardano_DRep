@@ -77,6 +77,10 @@
 
 ## Governance
 
+### Outcomes and CC Votes
+- [Governance Voting Outcomes](https://gov.tools/outcomes?sort=newestFirst)
+- [Voting Updates - Constitutional Committee](https://constitution.gov.tools/en/voting-updates)
+
 ### Parameters and Thresholds
 - [Compiled here](https://github.com/st8tikratio/cardano_DRep/blob/main/docs/thresholds/Readme.md)
 - [Cardanoscan Parameter Dash](https://cardanoscan.io/protocolparams)
