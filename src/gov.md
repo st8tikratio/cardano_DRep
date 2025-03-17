@@ -16,6 +16,9 @@
 
 - [Markdown](https://github.com/st8tikratio/Cardano_Con_and_Gov/blob/main/mds/final-constitution.md)
 
+### <span style="color:orange">Governance Proposal Submissions</span>
+- [Intersect Submitted Proposals](https://github.com/IntersectMBO/governance-actions)
+
 ### <span style="color:orange">Governance Outcomes and Constitutional Committee Votes</span>
 - [Governance Voting Outcomes](https://gov.tools/outcomes?sort=newestFirst)
 - [Voting Updates - Constitutional Committee](https://constitution.gov.tools/en/voting-updates)
