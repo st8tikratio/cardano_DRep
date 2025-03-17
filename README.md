@@ -77,6 +77,9 @@
 
 ## Governance
 
+### Governance Proposal Submissions
+- [Intersect Submitted Proposals](https://github.com/IntersectMBO/governance-actions)
+
 ### Outcomes and CC Votes
 - [Governance Voting Outcomes](https://gov.tools/outcomes?sort=newestFirst)
 - [Voting Updates - Constitutional Committee](https://constitution.gov.tools/en/voting-updates)
