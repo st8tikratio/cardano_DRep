@@ -6,11 +6,21 @@
     - `Voting Direction:` **YES**
     - `Type:` Parameter Change
     - `Date Submitted:` 30 Jan 2025
-    - `Date/Time Voted:`05 Feb 2025, 2039 UTC
+    - `Date/Time Voted:`07 Mar 2025, 2239 UTC
     - `jsonID File:` [here](https://github.com/st8tikratio/cardano_DRep/blob/main/votes/mar2025/decrease-treasury-tax-20-10.jsonld)
     - `Justification:`[markdown](https://github.com/st8tikratio/cardano_DRep/blob/main/votes/mar2025/tax-reduction-justification.md) 
     - `Tx Hash:` 1bcbbf1811715b4d9f9dd21e41e0326ba149a3046a6586c1ee2e9673fcaff5e9
     - [`Link To Proposal`](https://gov.tools/governance_actions/941502b0aa104c850d197923259444d2b57cab7af18b63143775465aaacc84f5#0)
+
+2. Defining the Cardano Vision and Roadmap for 2025 and beyond
+    - `Voting Direction:` **NO**
+    - `Type:` Info Action
+    - `Date Submitted:` 28 Feb 2025
+    - `Date/Time Voted:` 19 Mar 2025, 1059 UTC
+    - `josnID File:` [here](https://github.com/st8tikratio/cardano_DRep/blob/main/votes/mar2025/abuse-drep-role.jsonld)
+    - `Justification:` [markdown](https://github.com/st8tikratio/cardano_DRep/blob/main/votes/mar2025/abuse-drep-role-justification.md)
+    - `Tx Hash:` 5f45ba40d92f6d66bfc48d9c46a244b6b6c4b13dd963f09cf1aa7eca3dadddf8
+    - [`Link To Proposal`](https://gov.tools/connected/governance_actions/56f39054758f1a3cedc1de9225d66bf270b62dfdbfbc5399f1d6d43aceffc636#0)
 
 ---
 
