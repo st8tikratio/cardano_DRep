@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "19 March 2025, 1051 UTC\n\nThis Info Action proposes to use the gov.tools (aka governance platform) as a tool to process and iterate roadmap items and the budgets associated with them.\n\nActions of this nature are abusive to DReps and their roles within the community. Every Info Action that is submitted to gauge a “community temp check” is wasteful with each vote costing DReps ~ 0.18 ADA. This also assumes that DReps are actually representative of the BROADER Cardano Community. I would argue they are not, though participation is increasing. Further, these types of actions continue to give those DReps with outsized delegation the ability to drive the direction of Cardano and its roadmap items.\n\nIt is Intersect that has decided to take this responsibility or creating the roadmap and budgets; to be the administrators of all things Cardano. Except this was not a voted position and certainly there are no plans to “temp check” the MBO’s actual role within Cardano. This is a responsibility that was taken up by this organization and I, for one, will not support or prop up Intersect’s work as though I am some how representative of everyone everywhere.\n\nContinued abuse of power by entities within Cardano are very detrimental to the community, the chain and its future. Instead what should have happened is an appropriate platform should have been built out for the entire community to interact with/on. Associated with this should have been some means (oh, an app maybe or newsletter) to notify the broader community of their (Intersect’s) intentions, the proposed roadmap, proposed budgets or other actions/activities that may impact Cardano’s financial capabilities and longevity. Instead, they have abused their position, have been called out on it, and now want the easiest possible way to claim the roadmaps and budgets were/are “community driven.”\n\nAs some Intersect members have pointed out, many of its members are unpaid (at this time they are). To this I counter: DReps are not paid. Yet I continue to do this work and will continue as long as governance is deemed fair, democratic, honest and transparent. If anything Intersect has shown none of the above, though through a plethora of data EVERYWHERE claim they are fulfilling these, what should be, requirements of their role.\n\nIn summary, this action is unethical and shows continued abuse of Intersect’s supposed power, any of which remains unchecked, as they attempt to centralize Cardano’s administration and abuse the role of DReps all the while ignoring the broader community. Intersect should be ashamed of their activities, actions, its abuse and malformed integrity.\n\nMy vote is NO. It will continue to be NO for all Intersect proposals that continue to ignore the broader community and show their ineptitude and bad faith. They are not an organization focused on the Cardano Community as much as they are a walled-garden where all things Cardano must originate lest they be unfunded and ignored. Intersect is a business entity (non-profit) and as such are given all respects that are given to the Triad, or founding entities. "
+  },
+  "hashAlgorithm": "blake2b-256"
+}
