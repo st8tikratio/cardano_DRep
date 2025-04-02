@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "Post related to this proposal:\"\n\nhttps://x.com/st8tik/status/1905605885885374799\nhttps://x.com/st8tik/status/1904577457019052287\n\nMore Rationale:\n\nThis proposal is counterintuitive and is an attempt by Intersect to flex whatever power the organization thinks it has within the Cardano ecosystem.\n\nThe organization has also failed to fulfill its obligation as a CC member by not voting (constitutional or unconstitutional) on a competing proposal; ensuring its influence is felt, observed and, contagious.\n\nThere are multiple issues - conflict of interest is one - for Intersect to counter-propose as both CC and, wannabe, sole Cardano maintainer.\n\nThe amount of disgust for IMBO cannot be expressed in words. No matter any potential future good, IMBO has already created a persona it cannot escape.\n\nWhomever reads this rationale be certain that IMBO has taken more effort and time from my life than necessary. The organization is in no state to be making any proposals and the Cardano governance model. however much it is lauded as a breakthrough, a first, a starting point, is indeed broken and prone to absolute abuse. Focus should lie elsewhere, beyond personal agendas, handouts and get-rich-off-the-backs-of-others mentalities.\n\nGood luck Cardano; you deserve and need much more than whatever this is called and whomever they claim to be."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
